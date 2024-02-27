@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png'); margin: 0%;" aria-label="hero">
+    <div class="container">
+        <div class="form-container">
+            <div class="form-title">Register</div>
+            {{ form_start(registrationForm) }}
+            <!-- Login Information -->
+            <div class="form-section">
+    <div class="form-field">
+        {{ form_label(registrationForm.first_name) }}
+        {{ form_widget(registrationForm.first_name) }}
+        {{ form_errors(registrationForm.first_name) }}
+    </div>
+    <br>
+    <div class="form-field">
+        {{ form_label(registrationForm.last_name) }}
+        {{ form_widget(registrationForm.last_name) }}
+        {{ form_errors(registrationForm.last_name) }}
+    </div>
+        <br>
+
+    <div class="form-field">
+        {{ form_label(registrationForm.email) }}
+        {{ form_widget(registrationForm.email) }}
+        {{ form_errors(registrationForm.email) }}
+    </div>
+        <br>
+
+    <div class="form-field">
+        {{ form_label(registrationForm.plainPassword) }}
+        {{ form_widget(registrationForm.plainPassword) }}
+        {{ form_errors(registrationForm.plainPassword) }}
+    </div>
+        <br>
+
+    <div class="form-field">
+        {{ form_label(registrationForm.agreeTerms) }}
+        {{ form_widget(registrationForm.agreeTerms) }}
+        {{ form_errors(registrationForm.agreeTerms) }}
+    </div>
+        <br>
+
+</div>
+
+            <!-- Additional Fields -->
+            <div class="form-section">
+                <!-- Include additional fields as needed -->
+            </div>
+            <button type="submit" class="btn">Register</button>
+            {{ form_end(registrationForm) }}
+            <div class="form-title">Already Registered? <u><a href="{{ path('app_login') }}" style="display: inline; color: #216aca;" onmouseover="this.style.color='#03d9ff'" onmouseout="this.style.color='#216aca'">Login Here</a></u></div>
+        </div>
+        <figure class="hero-banner">
+            <img src="./assets/images/bg.svg" width="587" height="839" alt="hero banner" class="w-100">
+            <center><h2>New Here ?</h2></center>
+        </figure>
+    </div>
+</section>
+{% endblock %}

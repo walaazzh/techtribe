@@ -1,0 +1,41 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}Appointments Table{% endblock %}
+
+{% block body %}
+    <h1>Appointments Table</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date_heure</th>
+                <th>Statue</th>
+                <th>Date_heure_creation</th>
+                <th>Date_heure_der_modif</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for rendezvou in rendezvouses %}
+            <tr>
+                <td>{{ rendezvou.id }}</td>
+                <td>{{ rendezvou.dateHeure ? rendezvou.dateHeure|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ rendezvou.statue }}</td>
+                <td>{{ rendezvou.dateHeureCreation ? rendezvou.dateHeureCreation|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ rendezvou.dateHeureDerModif ? rendezvou.dateHeureDerModif|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('app_rendezvous_show', {'id': rendezvou.id}) }}">show</a>
+                    <a href="{{ path('app_rendezvous_edit', {'id': rendezvou.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_rendezvous_new') }}">Create new</a>
+{% endblock %}

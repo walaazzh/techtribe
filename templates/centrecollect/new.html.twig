@@ -1,0 +1,11 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}New Centredecollect{% endblock %}
+
+{% block body %}
+    <h1>Create new Centredecollect</h1>
+
+    {{ include('centrecollect/_form.html.twig') }}
+
+    <a href="{{ path('app_centrecollect_index') }}">back to list</a>
+{% endblock %}

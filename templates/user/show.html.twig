@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User Details{% endblock %}
+
+{% block body %}
+<div class="container1">
+<section class="section hero" id="home">
+        <div class="hero-content">
+            <p class="section-subtitle">User Details</p>
+         {{ user.firstName }}
+            <div class="user-details">
+                <strong>ID:</strong> {{ user.id }}<br>
+                <strong>Email:</strong> {{ user.email }}<br>
+                <strong>First Name:</strong> {{ user.firstName }}<br>
+                <strong>Last Name:</strong> {{ user.lastName }}<br>
+            </div>
+                <a href="{{ path('user_edit', {'id': user.id}) }}" class="btn">Edit</a>
+                <br>
+                <a href="{{ path('app_home') }}" class="btn">Back to Home</a>
+        
+    </div>
+</section>
+{% endblock %}

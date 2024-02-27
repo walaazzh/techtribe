@@ -1,0 +1,39 @@
+{# templates/user/index.html.twig #}
+
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}User List{% endblock %}
+
+{% block body %}
+<div class="bg-secondary rounded h-100 p-4">
+    <h6 class="mb-4">User List</h6>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Email</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Roles</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.lastName }}</td>
+                <td>{{ user.roles|join(', ') }}</td> {# Display roles as comma-separated list #}
+                <td>
+                    <a href="{{ path('user_admin_show', {'id': user.id}) }}"class="btn btn-primary">view</a>
+                    <a href="{{ path('user_admin_edit', {'id': user.id}) }}"class="btn btn-primary">edit</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+<a href="{{ path('user_add') }}" class="btn btn-primary">Add user </a>
+</div>
+{% endblock %}

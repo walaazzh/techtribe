@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New BloodStock{% endblock %}
+
+{% block body %}
+<div class="container1"> <!-- Add the container here -->
+
+    <h1>Create new BloodStock</h1>
+
+    {{ include('blood_stock/_form.html.twig') }}
+
+    <a href="{{ path('app_blood_stock_index') }}">back to list</a>
+{% endblock %}

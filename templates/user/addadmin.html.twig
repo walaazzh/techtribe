@@ -1,0 +1,14 @@
+{# templates/admin/user/add.html.twig #}
+
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}Add User{% endblock %}
+
+{% block body %}
+    <h2>Add User</h2>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+
+    <button class="btn btn-primary" type="submit">Add User</button>
+    {{ form_end(form) }}
+{% endblock %}
