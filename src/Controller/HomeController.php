@@ -47,6 +47,7 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+<<<<<<< HEAD
     #[Route('/userbook', name: 'userbook')]
     public function rendezvous(): Response
     {
@@ -54,5 +55,7 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+=======
+>>>>>>> 23a1a9b (walaa new commit)
 }
 

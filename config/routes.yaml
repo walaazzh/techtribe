@@ -3,7 +3,11 @@
 #    controller: App\Controller\DefaultController::index
 app_home:
     path: /
+<<<<<<< HEAD
     controller: App\Controller\HomeController::index
 send_email:
     path: /send-email
     controller: App\Controller\EmailController::sendEmail
+=======
+    controller: App\Controller\HomeController::index
+>>>>>>> 23a1a9b (walaa new commit)

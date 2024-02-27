@@ -10,15 +10,20 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "doctrine/annotations": "^2.0",
 =======
         "cmen/google-charts-bundle": "^6.0",
         "doctrine/annotations": "*",
 >>>>>>> Rayen_Majdoub
+=======
+        "doctrine/annotations": "^2.0",
+>>>>>>> 23a1a9b (walaa new commit)
         "doctrine/dbal": "^3",
         "doctrine/doctrine-bundle": "^2.11",
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^3.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -27,6 +32,8 @@
 =======
 >>>>>>> Rayen_Majdoub
         "google/recaptcha": "*",
+=======
+>>>>>>> 23a1a9b (walaa new commit)
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.26",
         "sensio/framework-extra-bundle": "^6.2",
@@ -40,6 +47,7 @@
         "symfony/form": "5.4.*",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "knplabs/knp-paginator-bundle": "^5.9",
 >>>>>>> chiheb+walaa
@@ -47,6 +55,9 @@
 >>>>>>> Rayen_Majdoub
         "symfony/framework-bundle": "5.4.*",
         "symfony/google-mailer": "5.4.*",
+=======
+        "symfony/framework-bundle": "5.4.*",
+>>>>>>> 23a1a9b (walaa new commit)
         "symfony/http-client": "5.4.*",
         "symfony/intl": "5.4.*",
         "symfony/mailer": "5.4.*",
@@ -64,20 +75,27 @@
         "symfony/translation": "5.4.*",
         "symfony/twig-bundle": "5.4.*",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "symfony/twilio-notifier": "5.4.*",
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
         "symfony/ux-turbo": "^2.15",
         "symfony/validator": "5.4.*",
         "symfony/web-link": "5.4.*",
         "symfony/yaml": "5.4.*",
         "twig/extra-bundle": "^2.12|^3.0",
+<<<<<<< HEAD
         "twig/twig": "^2.12|^3.0",
 <<<<<<< HEAD
 =======
         "twilio/sdk": "*",
 >>>>>>> Rayen_Majdoub
         "victor-prdh/recaptcha-bundle": "^1.8"
+=======
+        "twig/twig": "^2.12|^3.0"
+>>>>>>> 23a1a9b (walaa new commit)
     },
     "config": {
         "allow-plugins": {

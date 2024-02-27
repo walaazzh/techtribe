@@ -5,17 +5,24 @@ namespace App\Controller;
 use App\Entity\BloodTransaction;
 use App\Form\BloodTransactionType;
 use App\Repository\BloodTransactionRepository;
+<<<<<<< HEAD
 use App\Repository\HospitalRepository; // Add this line
+=======
+>>>>>>> 23a1a9b (walaa new commit)
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+<<<<<<< HEAD
 use App\Service\TransactionAvailabilityService; // Add this line
+=======
+>>>>>>> 23a1a9b (walaa new commit)
 
 #[Route('/blood/transaction')]
 class BloodTransactionController extends AbstractController
 {
+<<<<<<< HEAD
     private $hospitalRepository; // Declare hospitalRepository property
     private $transactionAvailabilityService; // Declare transactionAvailabilityService property
 
@@ -26,6 +33,8 @@ class BloodTransactionController extends AbstractController
         $this->transactionAvailabilityService = $transactionAvailabilityService;
     }
 
+=======
+>>>>>>> 23a1a9b (walaa new commit)
     #[Route('/', name: 'app_blood_transaction_index', methods: ['GET'])]
     public function index(BloodTransactionRepository $bloodTransactionRepository): Response
     {
@@ -42,6 +51,7 @@ class BloodTransactionController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+<<<<<<< HEAD
             // Check availability of the requested quantity
             $requestedQuantity = $bloodTransaction->getQuantityDonated();
             if (!$this->transactionAvailabilityService->checkAvailability($requestedQuantity)) {
@@ -55,6 +65,8 @@ class BloodTransactionController extends AbstractController
             $bloodTransaction->setHospital($hospital);
 
             // Persist and flush the blood transaction
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             $entityManager->persist($bloodTransaction);
             $entityManager->flush();
 

@@ -9,11 +9,20 @@
             <p class="section-subtitle">User Details</p>
          {{ user.firstName }}
             <div class="user-details">
+<<<<<<< HEAD
+=======
+                <strong>ID:</strong> {{ user.id }}<br>
+>>>>>>> 23a1a9b (walaa new commit)
                 <strong>Email:</strong> {{ user.email }}<br>
                 <strong>First Name:</strong> {{ user.firstName }}<br>
                 <strong>Last Name:</strong> {{ user.lastName }}<br>
             </div>
                 <a href="{{ path('user_edit', {'id': user.id}) }}" class="btn">Edit</a>
+<<<<<<< HEAD
+=======
+                <br>
+                <a href="{{ path('app_home') }}" class="btn">Back to Home</a>
+>>>>>>> 23a1a9b (walaa new commit)
         
     </div>
 </section>

@@ -7,6 +7,7 @@
     <div class="container">
         <div class="form-container">
             <div class="form-title">Register</div>
+<<<<<<< HEAD
             {{ form_start(userForm, {'attr': {'onsubmit': 'return validateForm()'}}) }}
             <!-- User Information -->
             <div class="form-section">
@@ -43,6 +44,53 @@
             <button type="submit" class="btn">Register</button>
             {{ form_end(userForm) }}
 
+=======
+            {{ form_start(registrationForm) }}
+            <!-- Login Information -->
+            <div class="form-section">
+    <div class="form-field">
+        {{ form_label(registrationForm.first_name) }}
+        {{ form_widget(registrationForm.first_name) }}
+        {{ form_errors(registrationForm.first_name) }}
+    </div>
+    <br>
+    <div class="form-field">
+        {{ form_label(registrationForm.last_name) }}
+        {{ form_widget(registrationForm.last_name) }}
+        {{ form_errors(registrationForm.last_name) }}
+    </div>
+        <br>
+
+    <div class="form-field">
+        {{ form_label(registrationForm.email) }}
+        {{ form_widget(registrationForm.email) }}
+        {{ form_errors(registrationForm.email) }}
+    </div>
+        <br>
+
+    <div class="form-field">
+        {{ form_label(registrationForm.plainPassword) }}
+        {{ form_widget(registrationForm.plainPassword) }}
+        {{ form_errors(registrationForm.plainPassword) }}
+    </div>
+        <br>
+
+    <div class="form-field">
+        {{ form_label(registrationForm.agreeTerms) }}
+        {{ form_widget(registrationForm.agreeTerms) }}
+        {{ form_errors(registrationForm.agreeTerms) }}
+    </div>
+        <br>
+
+</div>
+
+            <!-- Additional Fields -->
+            <div class="form-section">
+                <!-- Include additional fields as needed -->
+            </div>
+            <button type="submit" class="btn">Register</button>
+            {{ form_end(registrationForm) }}
+>>>>>>> 23a1a9b (walaa new commit)
             <div class="form-title">Already Registered? <u><a href="{{ path('app_login') }}" style="display: inline; color: #216aca;" onmouseover="this.style.color='#03d9ff'" onmouseout="this.style.color='#216aca'">Login Here</a></u></div>
         </div>
         <figure class="hero-banner">
@@ -51,6 +99,7 @@
         </figure>
     </div>
 </section>
+<<<<<<< HEAD
 
 <script>
     function validateForm() {
@@ -62,4 +111,6 @@
         return true;
     }
 </script>
+=======
+>>>>>>> 23a1a9b (walaa new commit)
 {% endblock %}

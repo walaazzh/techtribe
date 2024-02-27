@@ -6,7 +6,10 @@ use App\Entity\Rendezvous;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+<<<<<<< HEAD
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+=======
+>>>>>>> 23a1a9b (walaa new commit)
 
 class RendezvousType extends AbstractType
 {

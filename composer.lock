@@ -6,6 +6,7 @@
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "163c15d5dc955c0d23e1f02c5a0a947b",
     "packages": [
         {
@@ -193,6 +194,11 @@
         },
         {
 >>>>>>> Rayen_Majdoub
+=======
+    "content-hash": "52f9fe0f1ba60a0bd1194209a487760e",
+    "packages": [
+        {
+>>>>>>> 23a1a9b (walaa new commit)
             "name": "doctrine/annotations",
             "version": "2.0.1",
             "source": {
@@ -365,8 +371,11 @@
             "name": "doctrine/collections",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "2.1.4",
             "source": {
                 "type": "git",
@@ -377,6 +386,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/collections/zipball/72328a11443a0de79967104ad36ba7b30bded134",
                 "reference": "72328a11443a0de79967104ad36ba7b30bded134",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "2.2.0",
@@ -392,6 +402,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -405,6 +417,7 @@
                 "phpstan/phpstan-phpunit": "^1.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "phpunit/phpunit": "^9.5",
 =======
                 "phpunit/phpunit": "^10.5",
@@ -412,6 +425,9 @@
 =======
                 "phpunit/phpunit": "^9.5",
 >>>>>>> Rayen_Majdoub
+=======
+                "phpunit/phpunit": "^9.5",
+>>>>>>> 23a1a9b (walaa new commit)
                 "vimeo/psalm": "^5.11"
             },
             "type": "library",
@@ -458,6 +474,7 @@
                 "issues": "https://github.com/doctrine/collections/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/collections/tree/2.1.4"
 =======
                 "source": "https://github.com/doctrine/collections/tree/2.2.0"
@@ -465,6 +482,9 @@
 =======
                 "source": "https://github.com/doctrine/collections/tree/2.1.4"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/doctrine/collections/tree/2.1.4"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -482,8 +502,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2023-10-03T09:22:33+00:00"
         },
         {
@@ -498,6 +521,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/dbal/zipball/a19a1d05ca211f41089dffcc387733a6875196cb",
                 "reference": "a19a1d05ca211f41089dffcc387733a6875196cb",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "time": "2024-02-25T22:55:36+00:00"
@@ -517,6 +541,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -534,6 +560,7 @@
                 "jetbrains/phpstorm-stubs": "2023.1",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "phpstan/phpstan": "1.10.57",
 =======
                 "phpstan/phpstan": "1.10.58",
@@ -541,10 +568,14 @@
 =======
                 "phpstan/phpstan": "1.10.57",
 >>>>>>> Rayen_Majdoub
+=======
+                "phpstan/phpstan": "1.10.57",
+>>>>>>> 23a1a9b (walaa new commit)
                 "phpstan/phpstan-strict-rules": "^1.5",
                 "phpunit/phpunit": "9.6.16",
                 "psalm/plugin-phpunit": "0.18.4",
                 "slevomat/coding-standard": "8.13.1",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 "squizlabs/php_codesniffer": "3.8.1",
@@ -554,6 +585,9 @@
 =======
                 "squizlabs/php_codesniffer": "3.8.1",
 >>>>>>> Rayen_Majdoub
+=======
+                "squizlabs/php_codesniffer": "3.8.1",
+>>>>>>> 23a1a9b (walaa new commit)
                 "symfony/cache": "^5.4|^6.0|^7.0",
                 "symfony/console": "^4.4|^5.4|^6.0|^7.0",
                 "vimeo/psalm": "4.30.0"
@@ -618,6 +652,7 @@
                 "issues": "https://github.com/doctrine/dbal/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/dbal/tree/3.8.2"
 =======
                 "source": "https://github.com/doctrine/dbal/tree/3.8.3"
@@ -625,6 +660,9 @@
 =======
                 "source": "https://github.com/doctrine/dbal/tree/3.8.2"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/doctrine/dbal/tree/3.8.2"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -642,6 +680,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-02-12T18:36:36+00:00"
 =======
             "time": "2024-03-03T15:55:06+00:00"
@@ -649,6 +688,9 @@
 =======
             "time": "2024-02-12T18:36:36+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2024-02-12T18:36:36+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "doctrine/deprecations",
@@ -1241,8 +1283,11 @@
             "name": "doctrine/migrations",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "3.7.2",
             "source": {
                 "type": "git",
@@ -1253,6 +1298,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/migrations/zipball/47af29eef49f29ebee545947e8b2a4b3be318c8a",
                 "reference": "47af29eef49f29ebee545947e8b2a4b3be318c8a",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "3.7.3",
@@ -1268,6 +1314,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -1342,6 +1390,7 @@
                 "issues": "https://github.com/doctrine/migrations/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/migrations/tree/3.7.2"
 =======
                 "source": "https://github.com/doctrine/migrations/tree/3.7.3"
@@ -1349,6 +1398,9 @@
 =======
                 "source": "https://github.com/doctrine/migrations/tree/3.7.2"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/doctrine/migrations/tree/3.7.2"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -1366,8 +1418,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2023-12-05T11:35:05+00:00"
         },
         {
@@ -1382,6 +1437,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/orm/zipball/2a250b5814de192a23438c0a43e15da7e77890a7",
                 "reference": "2a250b5814de192a23438c0a43e15da7e77890a7",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "time": "2024-03-01T12:07:17+00:00"
@@ -1401,10 +1457,13 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 "doctrine/collections": "^2.1",
@@ -1414,12 +1473,16 @@
 =======
                 "doctrine/collections": "^2.1",
 >>>>>>> Rayen_Majdoub
+=======
+                "doctrine/collections": "^2.1",
+>>>>>>> 23a1a9b (walaa new commit)
                 "doctrine/dbal": "^3.8.2 || ^4",
                 "doctrine/deprecations": "^0.5.3 || ^1",
                 "doctrine/event-manager": "^1.2 || ^2",
                 "doctrine/inflector": "^1.4 || ^2.0",
                 "doctrine/instantiator": "^1.3 || ^2",
                 "doctrine/lexer": "^3",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 "doctrine/persistence": "^3.1.1",
@@ -1429,6 +1492,9 @@
 =======
                 "doctrine/persistence": "^3.1.1",
 >>>>>>> Rayen_Majdoub
+=======
+                "doctrine/persistence": "^3.1.1",
+>>>>>>> 23a1a9b (walaa new commit)
                 "ext-ctype": "*",
                 "php": "^8.1",
                 "psr/cache": "^1 || ^2 || ^3",
@@ -1440,6 +1506,7 @@
                 "phpbench/phpbench": "^1.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "phpstan/phpstan": "1.10.35",
 =======
                 "phpstan/phpstan": "1.10.59",
@@ -1447,10 +1514,14 @@
 =======
                 "phpstan/phpstan": "1.10.35",
 >>>>>>> Rayen_Majdoub
+=======
+                "phpstan/phpstan": "1.10.35",
+>>>>>>> 23a1a9b (walaa new commit)
                 "phpunit/phpunit": "^10.4.0",
                 "psr/log": "^1 || ^2 || ^3",
                 "squizlabs/php_codesniffer": "3.7.2",
                 "symfony/cache": "^5.4 || ^6.2 || ^7.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 "vimeo/psalm": "5.16.0"
@@ -1460,6 +1531,9 @@
 =======
                 "vimeo/psalm": "5.16.0"
 >>>>>>> Rayen_Majdoub
+=======
+                "vimeo/psalm": "5.16.0"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "suggest": {
                 "ext-dom": "Provides support for XSD validation for XML mapping files",
@@ -1507,8 +1581,11 @@
                 "issues": "https://github.com/doctrine/orm/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "source": "https://github.com/doctrine/orm/tree/3.0.1"
             },
             "time": "2024-02-22T12:23:53+00:00"
@@ -1525,6 +1602,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/persistence/zipball/63fee8c33bef740db6730eb2a750cd3da6495603",
                 "reference": "63fee8c33bef740db6730eb2a750cd3da6495603",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 "source": "https://github.com/doctrine/orm/tree/3.1.0"
@@ -1546,6 +1624,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -1616,6 +1696,7 @@
                 "issues": "https://github.com/doctrine/persistence/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/persistence/tree/3.2.0"
 =======
                 "source": "https://github.com/doctrine/persistence/tree/3.3.1"
@@ -1623,6 +1704,9 @@
 =======
                 "source": "https://github.com/doctrine/persistence/tree/3.2.0"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/doctrine/persistence/tree/3.2.0"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -1640,6 +1724,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-05-17T18:32:04+00:00"
 =======
             "time": "2024-03-01T19:53:13+00:00"
@@ -1647,6 +1732,9 @@
 =======
             "time": "2023-05-17T18:32:04+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2023-05-17T18:32:04+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "doctrine/sql-formatter",
@@ -1768,6 +1856,7 @@
             "time": "2023-10-06T06:47:41+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "google/recaptcha",
             "version": "1.3.0",
             "source": {
@@ -2251,6 +2340,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "name": "monolog/monolog",
             "version": "2.9.2",
             "source": {
@@ -2353,6 +2444,7 @@
             "time": "2023-10-27T15:25:26+00:00"
         },
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2466,6 +2558,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "name": "phpdocumentor/reflection-common",
             "version": "2.2.0",
             "source": {
@@ -2987,6 +3081,7 @@
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "name": "psr/simple-cache",
             "version": "3.0.0",
@@ -3042,6 +3137,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "name": "sensio/framework-extra-bundle",
             "version": "v6.2.10",
             "source": {
@@ -3123,8 +3220,11 @@
             "name": "symfony/amqp-messenger",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v5.4.35",
             "source": {
                 "type": "git",
@@ -3135,6 +3235,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/amqp-messenger/zipball/41d9dadbfd9edd0906c9a8d6b614f2fab274408f",
                 "reference": "41d9dadbfd9edd0906c9a8d6b614f2fab274408f",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v5.4.36",
@@ -3150,6 +3251,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -3191,6 +3294,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/amqp-messenger/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/amqp-messenger/tree/v5.4.36"
@@ -3198,6 +3302,9 @@
 =======
                 "source": "https://github.com/symfony/amqp-messenger/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/amqp-messenger/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -3215,6 +3322,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-01-23T13:51:25+00:00"
 =======
             "time": "2024-02-14T16:15:37+00:00"
@@ -3222,6 +3330,9 @@
 =======
             "time": "2024-01-23T13:51:25+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2024-01-23T13:51:25+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "symfony/asset",
@@ -4015,8 +4126,11 @@
             "name": "symfony/doctrine-bridge",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v5.4.35",
             "source": {
                 "type": "git",
@@ -4027,6 +4141,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/doctrine-bridge/zipball/f1c8d1f75ede8ba6810498666159c50ca05beec0",
                 "reference": "f1c8d1f75ede8ba6810498666159c50ca05beec0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v5.4.37",
@@ -4042,6 +4157,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -4130,6 +4247,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/doctrine-bridge/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/doctrine-bridge/tree/v5.4.37"
@@ -4137,6 +4255,9 @@
 =======
                 "source": "https://github.com/symfony/doctrine-bridge/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/doctrine-bridge/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -4154,8 +4275,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2024-01-23T13:51:25+00:00"
         },
         {
@@ -4170,6 +4294,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/doctrine-messenger/zipball/21351af73e7dbe9db64f4b6bb15af6f55c78bf6e",
                 "reference": "21351af73e7dbe9db64f4b6bb15af6f55c78bf6e",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "time": "2024-02-27T10:07:57+00:00"
@@ -4189,6 +4314,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -4234,6 +4361,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/doctrine-messenger/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/doctrine-messenger/tree/v5.4.36"
@@ -4241,6 +4369,9 @@
 =======
                 "source": "https://github.com/symfony/doctrine-messenger/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/doctrine-messenger/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -4258,6 +4389,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-01-23T13:51:25+00:00"
 =======
             "time": "2024-02-15T21:03:16+00:00"
@@ -4265,6 +4397,9 @@
 =======
             "time": "2024-01-23T13:51:25+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2024-01-23T13:51:25+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "symfony/dotenv",
@@ -4903,6 +5038,7 @@
                 "url": "https://api.github.com/repos/symfony/form/zipball/c827d421caccf467ef1a969e7412a8755fa88093",
                 "reference": "c827d421caccf467ef1a969e7412a8755fa88093",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "time": "2024-03-02T08:16:47+00:00"
         },
@@ -4921,6 +5057,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -4995,6 +5133,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/form/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/form/tree/v5.4.36"
@@ -5002,6 +5141,9 @@
 =======
                 "source": "https://github.com/symfony/form/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/form/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -5019,8 +5161,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2024-01-23T14:28:09+00:00"
         },
         {
@@ -5407,6 +5552,175 @@
 =======
             "time": "2024-01-29T14:02:34+00:00"
 >>>>>>> Rayen_Majdoub
+        },
+        {
+            "name": "symfony/http-client-contracts",
+            "version": "v2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client-contracts.git",
+                "reference": "ba6a9f0e8f3edd190520ee3b9a958596b6ca2e70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/ba6a9f0e8f3edd190520ee3b9a958596b6ca2e70",
+                "reference": "ba6a9f0e8f3edd190520ee3b9a958596b6ca2e70",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5"
+            },
+            "suggest": {
+                "symfony/http-client-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.5-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\HttpClient\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to HTTP clients",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/http-client-contracts/tree/v2.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-04-12T15:48:08+00:00"
+        },
+        {
+            "name": "symfony/http-client",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client.git",
+                "reference": "53e4cc088a5f3466dc77c9f121f17e8e02ecc9c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/53e4cc088a5f3466dc77c9f121f17e8e02ecc9c3",
+                "reference": "53e4cc088a5f3466dc77c9f121f17e8e02ecc9c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "psr/log": "^1|^2|^3",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/http-client-contracts": "^2.4",
+                "symfony/polyfill-php73": "^1.11",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/service-contracts": "^1.0|^2|^3"
+            },
+            "provide": {
+                "php-http/async-client-implementation": "*",
+                "php-http/client-implementation": "*",
+                "psr/http-client-implementation": "1.0",
+                "symfony/http-client-implementation": "2.4"
+            },
+            "require-dev": {
+                "amphp/amp": "^2.5",
+                "amphp/http-client": "^4.2.1",
+                "amphp/http-tunnel": "^1.0",
+                "amphp/socket": "^1.1",
+                "guzzlehttp/promises": "^1.4",
+                "nyholm/psr7": "^1.0",
+                "php-http/httplug": "^1.0|^2.0",
+                "php-http/message-factory": "^1.0",
+                "psr/http-client": "^1.0",
+                "symfony/dependency-injection": "^4.4|^5.0|^6.0",
+                "symfony/http-kernel": "^4.4.13|^5.1.5|^6.0",
+                "symfony/process": "^4.4|^5.0|^6.0",
+                "symfony/stopwatch": "^4.4|^5.0|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpClient\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides powerful methods to fetch HTTP resources synchronously or asynchronously",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "http"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/http-client/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-29T14:02:34+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -6522,6 +6836,748 @@
 >>>>>>> Rayen_Majdoub
         },
         {
+            "name": "symfony/intl",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/intl.git",
+                "reference": "2fb503f81cd8032a624c55764d1fbaf893aa3cf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/intl/zipball/2fb503f81cd8032a624c55764d1fbaf893aa3cf4",
+                "reference": "2fb503f81cd8032a624c55764d1fbaf893aa3cf4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "require-dev": {
+                "symfony/filesystem": "^4.4|^5.0|^6.0",
+                "symfony/var-exporter": "^5.4|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/functions.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\Intl\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ],
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                },
+                {
+                    "name": "Eriksen Costa",
+                    "email": "eriksen.costa@infranology.com.br"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a PHP replacement layer for the C intl extension that includes additional data from the ICU library",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "i18n",
+                "icu",
+                "internationalization",
+                "intl",
+                "l10n",
+                "localization"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/intl/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-23T13:51:25+00:00"
+        },
+        {
+            "name": "symfony/mailer",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mailer.git",
+                "reference": "664724b0fb4646dee30859d0ed9131a2d7633320"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/664724b0fb4646dee30859d0ed9131a2d7633320",
+                "reference": "664724b0fb4646dee30859d0ed9131a2d7633320",
+                "shasum": ""
+            },
+            "require": {
+                "egulias/email-validator": "^2.1.10|^3|^4",
+                "php": ">=7.2.5",
+                "psr/event-dispatcher": "^1",
+                "psr/log": "^1|^2|^3",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/event-dispatcher": "^4.4|^5.0|^6.0",
+                "symfony/mime": "^5.2.6|^6.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/service-contracts": "^1.1|^2|^3"
+            },
+            "conflict": {
+                "symfony/http-kernel": "<4.4"
+            },
+            "require-dev": {
+                "symfony/http-client": "^4.4|^5.0|^6.0",
+                "symfony/messenger": "^4.4|^5.0|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mailer\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Helps sending emails",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/mailer/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-29T07:33:37+00:00"
+        },
+        {
+            "name": "symfony/messenger",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/messenger.git",
+                "reference": "3c1eda00d7e9879558397fe8c8cfaea24b0de4e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/messenger/zipball/3c1eda00d7e9879558397fe8c8cfaea24b0de4e0",
+                "reference": "3c1eda00d7e9879558397fe8c8cfaea24b0de4e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "psr/log": "^1|^2|^3",
+                "symfony/amqp-messenger": "^5.1|^6.0",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/doctrine-messenger": "^5.1|^6.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/redis-messenger": "^5.1|^6.0"
+            },
+            "conflict": {
+                "symfony/event-dispatcher": "<4.4",
+                "symfony/framework-bundle": "<4.4",
+                "symfony/http-kernel": "<4.4",
+                "symfony/serializer": "<5.0"
+            },
+            "require-dev": {
+                "psr/cache": "^1.0|^2.0|^3.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.3|^6.0",
+                "symfony/event-dispatcher": "^4.4|^5.0|^6.0",
+                "symfony/http-kernel": "^4.4|^5.0|^6.0",
+                "symfony/process": "^4.4|^5.0|^6.0",
+                "symfony/property-access": "^4.4|^5.0|^6.0",
+                "symfony/routing": "^4.4|^5.0|^6.0",
+                "symfony/serializer": "^5.0|^6.0",
+                "symfony/service-contracts": "^1.1|^2|^3",
+                "symfony/stopwatch": "^4.4|^5.0|^6.0",
+                "symfony/validator": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "enqueue/messenger-adapter": "For using the php-enqueue library as a transport."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Messenger\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Roze",
+                    "email": "samuel.roze@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Helps applications send and receive messages to/from other applications or via message queues",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/messenger/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-30T11:13:29+00:00"
+        },
+        {
+            "name": "symfony/mime",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mime.git",
+                "reference": "ee94d9b538f93abbbc1ee4ccff374593117b04a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/ee94d9b538f93abbbc1ee4ccff374593117b04a9",
+                "reference": "ee94d9b538f93abbbc1ee4ccff374593117b04a9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "egulias/email-validator": "~3.0.0",
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/mailer": "<4.4",
+                "symfony/serializer": "<5.4.35|>=6,<6.3.12|>=6.4,<6.4.3"
+            },
+            "require-dev": {
+                "egulias/email-validator": "^2.1.10|^3.1|^4",
+                "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
+                "symfony/dependency-injection": "^4.4|^5.0|^6.0",
+                "symfony/property-access": "^4.4|^5.1|^6.0",
+                "symfony/property-info": "^4.4|^5.1|^6.0",
+                "symfony/serializer": "^5.4.35|~6.3.12|^6.4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mime\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Allows manipulating MIME messages",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "mime",
+                "mime-type"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/mime/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-30T08:00:51+00:00"
+        },
+        {
+            "name": "symfony/monolog-bridge",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/monolog-bridge.git",
+                "reference": "83e7438fd2ead9af4fd2fac7bb9b6fc0e8823387"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/monolog-bridge/zipball/83e7438fd2ead9af4fd2fac7bb9b6fc0e8823387",
+                "reference": "83e7438fd2ead9af4fd2fac7bb9b6fc0e8823387",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "^1.25.1|^2",
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/http-kernel": "^5.3|^6.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/service-contracts": "^1.1|^2|^3"
+            },
+            "conflict": {
+                "symfony/console": "<4.4",
+                "symfony/http-foundation": "<5.3"
+            },
+            "require-dev": {
+                "symfony/console": "^4.4|^5.0|^6.0",
+                "symfony/http-client": "^4.4|^5.0|^6.0",
+                "symfony/mailer": "^4.4|^5.0|^6.0",
+                "symfony/messenger": "^4.4|^5.0|^6.0",
+                "symfony/mime": "^4.4|^5.0|^6.0",
+                "symfony/security-core": "^4.4|^5.0|^6.0",
+                "symfony/var-dumper": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "symfony/console": "For the possibility to show log messages in console commands depending on verbosity settings.",
+                "symfony/http-kernel": "For using the debugging handlers together with the response life cycle of the HTTP kernel.",
+                "symfony/var-dumper": "For using the debugging handlers like the console handler or the log server handler."
+            },
+            "type": "symfony-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bridge\\Monolog\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides integration for Monolog with various Symfony components",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/monolog-bridge/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-23T13:51:25+00:00"
+        },
+        {
+            "name": "symfony/monolog-bundle",
+            "version": "v3.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/monolog-bundle.git",
+                "reference": "414f951743f4aa1fd0f5bf6a0e9c16af3fe7f181"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/414f951743f4aa1fd0f5bf6a0e9c16af3fe7f181",
+                "reference": "414f951743f4aa1fd0f5bf6a0e9c16af3fe7f181",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "^1.25.1 || ^2.0 || ^3.0",
+                "php": ">=7.2.5",
+                "symfony/config": "^5.4 || ^6.0 || ^7.0",
+                "symfony/dependency-injection": "^5.4 || ^6.0 || ^7.0",
+                "symfony/http-kernel": "^5.4 || ^6.0 || ^7.0",
+                "symfony/monolog-bridge": "^5.4 || ^6.0 || ^7.0"
+            },
+            "require-dev": {
+                "symfony/console": "^5.4 || ^6.0 || ^7.0",
+                "symfony/phpunit-bridge": "^6.3 || ^7.0",
+                "symfony/yaml": "^5.4 || ^6.0 || ^7.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\MonologBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony MonologBundle",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "log",
+                "logging"
+            ],
+            "support": {
+                "issues": "https://github.com/symfony/monolog-bundle/issues",
+                "source": "https://github.com/symfony/monolog-bundle/tree/v3.10.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-06T17:08:13+00:00"
+        },
+        {
+            "name": "symfony/notifier",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/notifier.git",
+                "reference": "96c5ff38efab8031d3396d4cd4743a1776f31c69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/notifier/zipball/96c5ff38efab8031d3396d4cd4743a1776f31c69",
+                "reference": "96c5ff38efab8031d3396d4cd4743a1776f31c69",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "psr/log": "^1|^2|^3",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "conflict": {
+                "symfony/discord-notifier": "<5.3",
+                "symfony/esendex-notifier": "<5.3",
+                "symfony/firebase-notifier": "<5.3",
+                "symfony/free-mobile-notifier": "<5.3",
+                "symfony/google-chat-notifier": "<5.3",
+                "symfony/http-kernel": "<4.4",
+                "symfony/infobip-notifier": "<5.3",
+                "symfony/linked-in-notifier": "<5.3",
+                "symfony/mattermost-notifier": "<5.3",
+                "symfony/mobyt-notifier": "<5.3",
+                "symfony/nexmo-notifier": "<5.3",
+                "symfony/ovh-cloud-notifier": "<5.3",
+                "symfony/rocket-chat-notifier": "<5.3",
+                "symfony/sendinblue-notifier": "<5.3",
+                "symfony/sinch-notifier": "<5.3",
+                "symfony/slack-notifier": "<5.3",
+                "symfony/sms77-notifier": "<5.3",
+                "symfony/smsapi-notifier": "<5.3",
+                "symfony/telegram-notifier": "<5.3",
+                "symfony/twilio-notifier": "<5.3",
+                "symfony/zulip-notifier": "<5.3"
+            },
+            "require-dev": {
+                "symfony/event-dispatcher-contracts": "^2|^3",
+                "symfony/http-client-contracts": "^2|^3",
+                "symfony/messenger": "^4.4|^5.0|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Notifier\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Sends notifications via one or more channels (email, SMS, ...)",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "notification",
+                "notifier"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/notifier/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-23T13:51:25+00:00"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "v5.4.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "4fe5cf6ede71096839f0e4b4444d65dd3a7c1eb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/4fe5cf6ede71096839f0e4b4444d65dd3a7c1eb9",
+                "reference": "4fe5cf6ede71096839f0e4b4444d65dd3a7c1eb9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/polyfill-php73": "~1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides an improved replacement for the array_replace PHP function",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/options-resolver/tree/v5.4.21"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-02-14T08:03:56+00:00"
+        },
+        {
+            "name": "symfony/password-hasher",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/password-hasher.git",
+                "reference": "23b9782de5d06a7e61101558d3e887100fbf8f93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/password-hasher/zipball/23b9782de5d06a7e61101558d3e887100fbf8f93",
+                "reference": "23b9782de5d06a7e61101558d3e887100fbf8f93",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "conflict": {
+                "symfony/security-core": "<5.3"
+            },
+            "require-dev": {
+                "symfony/console": "^5.3|^6.0",
+                "symfony/security-core": "^5.3|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\PasswordHasher\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin Chalas",
+                    "email": "robin.chalas@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides password hashing utilities",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "hashing",
+                "password"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/password-hasher/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-23T13:51:25+00:00"
+        },
+        {
             "name": "symfony/polyfill-intl-grapheme",
             "version": "v1.29.0",
             "source": {
@@ -7164,8 +8220,11 @@
             "name": "symfony/process",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v5.4.35",
             "source": {
                 "type": "git",
@@ -7176,6 +8235,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/process/zipball/cbc28e34015ad50166fc2f9c8962d28d0fe861eb",
                 "reference": "cbc28e34015ad50166fc2f9c8962d28d0fe861eb",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v5.4.36",
@@ -7191,6 +8251,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -7225,6 +8287,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/process/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/process/tree/v5.4.36"
@@ -7232,6 +8295,9 @@
 =======
                 "source": "https://github.com/symfony/process/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/process/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -7249,6 +8315,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-01-23T13:51:25+00:00"
 =======
             "time": "2024-02-12T15:49:53+00:00"
@@ -7256,6 +8323,9 @@
 =======
             "time": "2024-01-23T13:51:25+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2024-01-23T13:51:25+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "symfony/property-access",
@@ -7433,8 +8503,11 @@
             "name": "symfony/redis-messenger",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v5.4.35",
             "source": {
                 "type": "git",
@@ -7445,6 +8518,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/redis-messenger/zipball/d00f1bbaefe83468c0afb3f6773258cefca13bb8",
                 "reference": "d00f1bbaefe83468c0afb3f6773258cefca13bb8",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v5.4.36",
@@ -7460,6 +8534,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -7499,6 +8575,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/redis-messenger/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/redis-messenger/tree/v5.4.36"
@@ -7506,6 +8583,9 @@
 =======
                 "source": "https://github.com/symfony/redis-messenger/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/redis-messenger/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -7523,8 +8603,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2024-01-23T13:51:25+00:00"
         },
         {
@@ -7736,8 +8819,11 @@
             "name": "symfony/security-bundle",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v5.4.35",
             "source": {
                 "type": "git",
@@ -7748,6 +8834,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/security-bundle/zipball/ed194715515a87d0f9c80b8696baf37ae18beb81",
                 "reference": "ed194715515a87d0f9c80b8696baf37ae18beb81",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v5.4.37",
@@ -7763,6 +8850,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -7838,6 +8927,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/security-bundle/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/security-bundle/tree/v5.4.37"
@@ -7845,6 +8935,9 @@
 =======
                 "source": "https://github.com/symfony/security-bundle/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/security-bundle/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -7862,6 +8955,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-01-23T13:51:25+00:00"
 =======
             "time": "2024-03-01T19:35:15+00:00"
@@ -7869,6 +8963,9 @@
 =======
             "time": "2024-01-23T13:51:25+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2024-01-23T13:51:25+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "symfony/security-core",
@@ -8109,8 +9206,11 @@
             "name": "symfony/security-http",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v5.4.35",
             "source": {
                 "type": "git",
@@ -8121,6 +9221,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/security-http/zipball/274a6aef49a0e1707bcb57217251885be749b6d8",
                 "reference": "274a6aef49a0e1707bcb57217251885be749b6d8",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v5.4.36",
@@ -8136,6 +9237,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -8194,6 +9297,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/security-http/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/security-http/tree/v5.4.36"
@@ -8201,6 +9305,9 @@
 =======
                 "source": "https://github.com/symfony/security-http/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/security-http/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -8218,8 +9325,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2024-01-23T13:51:25+00:00"
         },
         {
@@ -8234,6 +9344,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/serializer/zipball/02acd86290077dab2f12ae91b3e9f141c079d84c",
                 "reference": "02acd86290077dab2f12ae91b3e9f141c079d84c",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "time": "2024-02-23T16:13:23+00:00"
@@ -8253,6 +9364,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -8328,6 +9441,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/serializer/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/serializer/tree/v5.4.36"
@@ -8335,6 +9449,9 @@
 =======
                 "source": "https://github.com/symfony/serializer/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/serializer/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -8352,6 +9469,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-01-30T08:00:51+00:00"
 =======
             "time": "2024-02-22T18:40:43+00:00"
@@ -8359,6 +9477,9 @@
 =======
             "time": "2024-01-30T08:00:51+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2024-01-30T08:00:51+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "symfony/service-contracts",
@@ -8447,8 +9568,11 @@
             "name": "symfony/stimulus-bundle",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v2.15.0",
             "source": {
                 "type": "git",
@@ -8459,6 +9583,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/c113ab8e92c6b14659f6be4e9bef5c1f4c4a000e",
                 "reference": "c113ab8e92c6b14659f6be4e9bef5c1f4c4a000e",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v2.16.0",
@@ -8474,6 +9599,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -8515,6 +9642,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/stimulus-bundle/tree/v2.15.0"
 =======
                 "source": "https://github.com/symfony/stimulus-bundle/tree/v2.16.0"
@@ -8522,6 +9650,9 @@
 =======
                 "source": "https://github.com/symfony/stimulus-bundle/tree/v2.15.0"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.15.0"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -8539,6 +9670,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-02-14T16:26:57+00:00"
 =======
             "time": "2024-02-29T16:20:46+00:00"
@@ -8546,6 +9678,9 @@
 =======
             "time": "2024-02-14T16:26:57+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2024-02-14T16:26:57+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "symfony/stopwatch",
@@ -8828,6 +9963,106 @@
             "time": "2024-01-23T13:51:25+00:00"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "symfony/translation",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "77d7d1e46f52827585e65e6cd6f52a2542e59c72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/77d7d1e46f52827585e65e6cd6f52a2542e59c72",
+                "reference": "77d7d1e46f52827585e65e6cd6f52a2542e59c72",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/translation-contracts": "^2.3"
+            },
+            "conflict": {
+                "symfony/config": "<4.4",
+                "symfony/console": "<5.3",
+                "symfony/dependency-injection": "<5.0",
+                "symfony/http-kernel": "<5.0",
+                "symfony/twig-bundle": "<5.0",
+                "symfony/yaml": "<4.4"
+            },
+            "provide": {
+                "symfony/translation-implementation": "2.3"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3",
+                "symfony/config": "^4.4|^5.0|^6.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.0|^6.0",
+                "symfony/finder": "^4.4|^5.0|^6.0",
+                "symfony/http-client-contracts": "^1.1|^2.0|^3.0",
+                "symfony/http-kernel": "^5.0|^6.0",
+                "symfony/intl": "^4.4|^5.0|^6.0",
+                "symfony/polyfill-intl-icu": "^1.21",
+                "symfony/service-contracts": "^1.1.2|^2|^3",
+                "symfony/yaml": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "psr/log-implementation": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/functions.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides tools to internationalize your application",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/translation/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-23T13:51:25+00:00"
+        },
+        {
+>>>>>>> 23a1a9b (walaa new commit)
             "name": "symfony/translation-contracts",
             "version": "v2.5.2",
             "source": {
@@ -8909,8 +10144,11 @@
             "name": "symfony/twig-bridge",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v5.4.35",
             "source": {
                 "type": "git",
@@ -8921,6 +10159,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/e6ae362b7c4f1d6e99f61f59b0c93b9f027b4c73",
                 "reference": "e6ae362b7c4f1d6e99f61f59b0c93b9f027b4c73",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v5.4.36",
@@ -8936,6 +10175,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -9029,6 +10270,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/twig-bridge/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/twig-bridge/tree/v5.4.36"
@@ -9036,6 +10278,9 @@
 =======
                 "source": "https://github.com/symfony/twig-bridge/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/twig-bridge/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -9053,8 +10298,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2024-01-30T08:00:51+00:00"
         },
         {
@@ -9069,6 +10317,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/f59b91e23c7c790e71a187c3fa4aefdc5391d682",
                 "reference": "f59b91e23c7c790e71a187c3fa4aefdc5391d682",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "time": "2024-02-15T11:19:14+00:00"
@@ -9088,6 +10337,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -9148,6 +10399,7 @@
             "description": "Provides a tight integration of Twig into the Symfony full-stack framework",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/twig-bundle/tree/v5.4.35"
@@ -9286,6 +10538,9 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/twilio-notifier/tree/v5.4.35"
+=======
+                "source": "https://github.com/symfony/twig-bundle/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -9306,7 +10561,10 @@
         {
             "name": "symfony/ux-turbo",
             "version": "v2.15.0",
+<<<<<<< HEAD
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ux-turbo.git",
@@ -9384,6 +10642,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/ux-turbo/tree/v2.15.0"
 =======
                 "source": "https://github.com/symfony/ux-turbo/tree/v2.16.0"
@@ -9391,6 +10650,9 @@
 =======
                 "source": "https://github.com/symfony/ux-turbo/tree/v2.15.0"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/ux-turbo/tree/v2.15.0"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -9412,8 +10674,11 @@
             "name": "symfony/validator",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v5.4.35",
             "source": {
                 "type": "git",
@@ -9424,6 +10689,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/validator/zipball/4993e9b5b17e23e7ad9dc2e3b31412f5c4679385",
                 "reference": "4993e9b5b17e23e7ad9dc2e3b31412f5c4679385",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v5.4.36",
@@ -9439,6 +10705,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -9523,6 +10791,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/validator/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/validator/tree/v5.4.36"
@@ -9530,6 +10799,9 @@
 =======
                 "source": "https://github.com/symfony/validator/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/validator/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -9547,8 +10819,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2024-01-25T22:32:56+00:00"
         },
         {
@@ -9869,6 +11144,93 @@
             "time": "2024-01-23T13:51:25+00:00"
         },
         {
+            "name": "symfony/web-link",
+            "version": "v5.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/web-link.git",
+                "reference": "5eb4930dd8bdf233d32e4e3c2dfa8241051b6320"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/web-link/zipball/5eb4930dd8bdf233d32e4e3c2dfa8241051b6320",
+                "reference": "5eb4930dd8bdf233d32e4e3c2dfa8241051b6320",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "psr/link": "^1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "symfony/http-kernel": "<5.3"
+            },
+            "provide": {
+                "psr/link-implementation": "1.0"
+            },
+            "require-dev": {
+                "symfony/http-kernel": "^5.3|^6.0"
+            },
+            "suggest": {
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\WebLink\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kévin Dunglas",
+                    "email": "dunglas@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Manages links between resources",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dns-prefetch",
+                "http",
+                "http2",
+                "link",
+                "performance",
+                "prefetch",
+                "preload",
+                "prerender",
+                "psr13",
+                "push"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/web-link/tree/v5.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-01-23T13:51:25+00:00"
+        },
+        {
             "name": "symfony/yaml",
             "version": "v5.4.35",
             "source": {
@@ -10091,6 +11453,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "name": "twilio/sdk",
             "version": "7.16.0",
@@ -10273,6 +11636,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -10451,8 +11816,11 @@
             "name": "phar-io/manifest",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "2.0.3",
             "source": {
                 "type": "git",
@@ -10463,6 +11831,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phar-io/manifest/zipball/97803eca37d319dfa7826cc2437fc020857acb53",
                 "reference": "97803eca37d319dfa7826cc2437fc020857acb53",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "2.0.4",
@@ -10478,10 +11847,13 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -10489,6 +11861,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "ext-phar": "*",
                 "ext-xmlwriter": "*",
                 "phar-io/version": "^3.0.1",
@@ -10531,6 +11905,7 @@
                 "issues": "https://github.com/phar-io/manifest/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/phar-io/manifest/tree/2.0.3"
             },
             "time": "2021-07-20T11:28:43+00:00"
@@ -10550,6 +11925,11 @@
             },
             "time": "2021-07-20T11:28:43+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/phar-io/manifest/tree/2.0.3"
+            },
+            "time": "2021-07-20T11:28:43+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "phar-io/version",
@@ -10606,8 +11986,11 @@
             "name": "phpunit/php-code-coverage",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "9.2.30",
             "source": {
                 "type": "git",
@@ -10618,6 +12001,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ca2bd87d2f9215904682a9cb9bb37dda98e76089",
                 "reference": "ca2bd87d2f9215904682a9cb9bb37dda98e76089",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "9.2.31",
@@ -10633,6 +12017,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -10691,6 +12077,7 @@
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.30"
 =======
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.31"
@@ -10698,6 +12085,9 @@
 =======
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.30"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.30"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -10707,6 +12097,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-12-22T06:47:57+00:00"
 =======
             "time": "2024-03-02T06:37:42+00:00"
@@ -10714,6 +12105,9 @@
 =======
             "time": "2023-12-22T06:47:57+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2023-12-22T06:47:57+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -11063,8 +12457,11 @@
             "name": "sebastian/cli-parser",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "1.0.1",
             "source": {
                 "type": "git",
@@ -11075,6 +12472,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/cli-parser/zipball/442e7c7e687e42adc03470c7b668bc4b2402c0b2",
                 "reference": "442e7c7e687e42adc03470c7b668bc4b2402c0b2",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "1.0.2",
@@ -11090,6 +12488,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -11126,6 +12526,7 @@
                 "issues": "https://github.com/sebastianbergmann/cli-parser/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/cli-parser/tree/1.0.1"
 =======
                 "source": "https://github.com/sebastianbergmann/cli-parser/tree/1.0.2"
@@ -11133,6 +12534,9 @@
 =======
                 "source": "https://github.com/sebastianbergmann/cli-parser/tree/1.0.1"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/sebastianbergmann/cli-parser/tree/1.0.1"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -11142,6 +12546,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2020-09-28T06:08:49+00:00"
 =======
             "time": "2024-03-02T06:27:43+00:00"
@@ -11149,6 +12554,9 @@
 =======
             "time": "2020-09-28T06:08:49+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2020-09-28T06:08:49+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "sebastian/code-unit",
@@ -11396,8 +12804,11 @@
             "name": "sebastian/diff",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "4.0.5",
             "source": {
                 "type": "git",
@@ -11408,6 +12819,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/74be17022044ebaaecfdf0c5cd504fc9cd5a7131",
                 "reference": "74be17022044ebaaecfdf0c5cd504fc9cd5a7131",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "4.0.6",
@@ -11423,6 +12835,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -11469,6 +12883,7 @@
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/diff/tree/4.0.5"
 =======
                 "source": "https://github.com/sebastianbergmann/diff/tree/4.0.6"
@@ -11476,6 +12891,9 @@
 =======
                 "source": "https://github.com/sebastianbergmann/diff/tree/4.0.5"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/sebastianbergmann/diff/tree/4.0.5"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -11485,6 +12903,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-05-07T05:35:17+00:00"
 =======
             "time": "2024-03-02T06:30:58+00:00"
@@ -11492,6 +12911,9 @@
 =======
             "time": "2023-05-07T05:35:17+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2023-05-07T05:35:17+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "sebastian/environment",
@@ -11560,8 +12982,11 @@
             "name": "sebastian/exporter",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "4.0.5",
             "source": {
                 "type": "git",
@@ -11572,6 +12997,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/ac230ed27f0f98f597c8a2b6eb7ac563af5e5b9d",
                 "reference": "ac230ed27f0f98f597c8a2b6eb7ac563af5e5b9d",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "4.0.6",
@@ -11587,6 +13013,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -11644,6 +13072,7 @@
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.5"
 =======
                 "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.6"
@@ -11651,6 +13080,9 @@
 =======
                 "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.5"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.5"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -11660,8 +13092,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2022-09-14T06:03:37+00:00"
         },
         {
@@ -11676,6 +13111,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/bde739e7565280bda77be70044ac1047bc007e34",
                 "reference": "bde739e7565280bda77be70044ac1047bc007e34",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "time": "2024-03-02T06:33:00+00:00"
@@ -11695,6 +13131,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -11739,6 +13177,7 @@
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.6"
 =======
                 "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.7"
@@ -11746,6 +13185,9 @@
 =======
                 "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.6"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.6"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -11755,6 +13197,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-08-02T09:26:13+00:00"
 =======
             "time": "2024-03-02T06:35:11+00:00"
@@ -11762,6 +13205,9 @@
 =======
             "time": "2023-08-02T09:26:13+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2023-08-02T09:26:13+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         },
         {
             "name": "sebastian/lines-of-code",
@@ -12549,8 +13995,11 @@
             "name": "symfony/phpunit-bridge",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "version": "v7.0.3",
             "source": {
                 "type": "git",
@@ -12561,6 +14010,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/0a2eeb0d9e68bf01660e3e903f8113508bb46132",
                 "reference": "0a2eeb0d9e68bf01660e3e903f8113508bb46132",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "version": "v7.0.4",
@@ -12576,6 +14026,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -12629,6 +14081,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/phpunit-bridge/tree/v7.0.3"
 =======
                 "source": "https://github.com/symfony/phpunit-bridge/tree/v7.0.4"
@@ -12636,6 +14089,9 @@
 =======
                 "source": "https://github.com/symfony/phpunit-bridge/tree/v7.0.3"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v7.0.3"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -12653,8 +14109,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2024-01-23T15:02:46+00:00"
         },
         {
@@ -12669,6 +14128,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/d71d64739a77ba23e7797d5ed3226796751df058",
                 "reference": "d71d64739a77ba23e7797d5ed3226796751df058",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "time": "2024-02-08T19:22:56+00:00"
@@ -12688,6 +14148,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -12740,6 +14202,7 @@
             "support": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/web-profiler-bundle/tree/v5.4.35"
 =======
                 "source": "https://github.com/symfony/web-profiler-bundle/tree/v5.4.36"
@@ -12747,6 +14210,9 @@
 =======
                 "source": "https://github.com/symfony/web-profiler-bundle/tree/v5.4.35"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/symfony/web-profiler-bundle/tree/v5.4.35"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -12764,8 +14230,11 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
             "time": "2024-01-23T15:43:50+00:00"
         },
         {
@@ -12780,6 +14249,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/theseer/tokenizer/zipball/b2ad5003ca10d4ee50a12da31de12a5774ba6b96",
                 "reference": "b2ad5003ca10d4ee50a12da31de12a5774ba6b96",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "time": "2024-02-20T07:10:08+00:00"
@@ -12799,6 +14269,8 @@
 >>>>>>> chiheb+walaa
 =======
 >>>>>>> Rayen_Majdoub
+=======
+>>>>>>> 23a1a9b (walaa new commit)
                 "shasum": ""
             },
             "require": {
@@ -12829,6 +14301,7 @@
                 "issues": "https://github.com/theseer/tokenizer/issues",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/theseer/tokenizer/tree/1.2.2"
 =======
                 "source": "https://github.com/theseer/tokenizer/tree/1.2.3"
@@ -12836,6 +14309,9 @@
 =======
                 "source": "https://github.com/theseer/tokenizer/tree/1.2.2"
 >>>>>>> Rayen_Majdoub
+=======
+                "source": "https://github.com/theseer/tokenizer/tree/1.2.2"
+>>>>>>> 23a1a9b (walaa new commit)
             },
             "funding": [
                 {
@@ -12845,6 +14321,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-11-20T00:12:19+00:00"
 =======
             "time": "2024-03-03T12:36:25+00:00"
@@ -12852,6 +14329,9 @@
 =======
             "time": "2023-11-20T00:12:19+00:00"
 >>>>>>> Rayen_Majdoub
+=======
+            "time": "2023-11-20T00:12:19+00:00"
+>>>>>>> 23a1a9b (walaa new commit)
         }
     ],
     "aliases": [],

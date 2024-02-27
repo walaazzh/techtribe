@@ -1,4 +1,7 @@
 framework:
     mailer:
         dsn: '%env(MAILER_DSN)%'
+<<<<<<< HEAD
         message_bus: false  
+=======
+>>>>>>> 23a1a9b (walaa new commit)

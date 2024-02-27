@@ -35,12 +35,19 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      * @var string The hashed password
      */
     #[ORM\Column]
+<<<<<<< HEAD
     #[Assert\NotBlank]
     private ?string $password = null;
     
     #[ORM\Column(type: 'string', length: 100, nullable: true)]
     private $resetToken;
 
+=======
+    #[Assert\PasswordStrength([
+        'minScore' => PasswordStrength::STRENGTH_VERY_STRONG, // Very strong password required
+    ])]
+    private ?string $password = null;
+>>>>>>> 23a1a9b (walaa new commit)
 
     public function getId(): ?int
     {
@@ -151,6 +158,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->last_name = $last_name;
         return $this;
     }
+<<<<<<< HEAD
     public function getResetToken(): ?string
     {
         return $this->resetToken;
@@ -162,4 +170,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+=======
+>>>>>>> 23a1a9b (walaa new commit)
 }
