@@ -9,6 +9,8 @@ use App\Repository\UserRepository;
 use App\Entity\User;
 use App\Form\UserType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+
 
 class UserController extends AbstractController
 {
@@ -46,13 +48,17 @@ public function edit(Request $request, User $user): Response
     ]);
 }
 #[Route('/admin/add', name: 'user_add')]
-public function add(Request $request): Response
+public function add(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
 {
     $user = new User();
     $form = $this->createForm(UserType::class, $user);
     $form->handleRequest($request);
 
     if ($form->isSubmitted() && $form->isValid()) {
+        // Encode the password using the password encoder
+        $encodedPassword = $passwordEncoder->encodePassword($user, $user->getPassword());
+        $user->setPassword($encodedPassword);
+
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($user);
         $entityManager->flush();
@@ -64,7 +70,6 @@ public function add(Request $request): Response
         'form' => $form->createView(),
     ]);
 }
-
 #[Route('/admin/{id}', name: 'user_admin_show')]
 public function adminShow(User $user): Response
 {
@@ -89,5 +94,16 @@ public function adminEdit(Request $request, User $user): Response
         'user' => $user,
         'form' => $form->createView(),
     ]);
+}
+#[Route('/admin/user/{id}/delete', name: 'user_delete')]
+    public function delete(User $user): RedirectResponse
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->remove($user);
+        $entityManager->flush();
+
+
+
+        return $this->redirectToRoute('user_index');
 }
 }
