@@ -9,8 +9,10 @@
 
 {{ form_start(form) }}
     {{ form_widget(form) }}
-    <button class="btn">Save</button>
+    <button class="btn btn-primary">Save</button>
+    <br>
 {{ form_end(form) }}
+    <br>
 
     <button href="{{ path('user_show', {'id': user.id}) }}" class="btn btn-primary">Back to view</button>
 {% endblock %}

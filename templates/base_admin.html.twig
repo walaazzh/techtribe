@@ -171,6 +171,8 @@
         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
             <a href="{{ path('user_admin_show', {'id': app.user.id}) }}" class="dropdown-item">View Profile</a>
             <a href="{{ path('app_logout') }}" class="dropdown-item">Logout</a>
+            <a href="{{ path('app_home') }}" > Home</a>
+
         </div>
     {% else %}
         <a href="{{ path('app_register') }}" class="nav-link">Login / Register</a>

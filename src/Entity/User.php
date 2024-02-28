@@ -35,9 +35,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      * @var string The hashed password
      */
     #[ORM\Column]
-    #[Assert\PasswordStrength([
-        'minScore' => PasswordStrength::STRENGTH_VERY_STRONG, // Very strong password required
-    ])]
+    #[Assert\NotBlank]
     private ?string $password = null;
 
     public function getId(): ?int

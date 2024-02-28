@@ -79,12 +79,16 @@
           </ul>
         </nav>
         {% if app.user %}
-    <a href="{{ path('app_logout') }}" class="btn">Logout</a>
- <a href="{{ path('user_show', {'id': app.user.id}) }}" class="btn">View Profile</a>
- {# <a href="{{ path('user_edit', {'id': app.user.id}) }}" class="btn">Edit Profile</a> #}
- {% else %}
-    <a href="{{ path('app_register') }}" class="btn">Login / Register</a>
+        {% if 'ROLE_ADMIN' in app.user.roles %}
+            <li><a class="navbar-link" href="{{ path('user_index') }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        {% endif %}
+        <li><a class="navbar-link" href="{{ path('user_show', {'id': app.user.id}) }}"><i class="fas fa-user"></i> My Profile</a></li>
+        <li><a class="navbar-link" href="{{ path('app_logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+    </ul>
+{% else %}
+    <a href="{{ path('app_register') }}" class="btn btn-primary">Login / Register</a>
 {% endif %}
+
         <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
           <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
           <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
