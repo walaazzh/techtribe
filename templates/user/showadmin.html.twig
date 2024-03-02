@@ -1,0 +1,30 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}User Details{% endblock %}
+
+{% block body %}
+<div class="bg-secondary rounded h-100 p-4">
+    <h6 class="mb-4">User Details</h6>
+    <table class="table table-borderless">
+        <tbody>
+            <tr>
+                <th scope="row">ID:</th>
+                <td>{{ user.id }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Email:</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th scope="row">First Name:</th>
+                <td>{{ user.firstName }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Last Name:</th>
+                <td>{{ user.lastName }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="{{ path('user_index') }}" class="btn btn-primary">Back to the list</a>
+</div>
+{% endblock %}

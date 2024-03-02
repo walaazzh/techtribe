@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bloodify - connect the donors{% endblock %}</title>
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!--css-->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/styleevent.css') }}">
+     
+
+
+    <!-- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet"
+    
+    {% block scripts %}
+    
+    {% endblock %}
+    {% block header %}
+    <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="bloodify@gmail.com" class="contact-link">bloodify@gmail.com</a>
+          </li>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+917558951351" class="contact-link">+91-7558-951-351</a>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/andro.pool.54?mibextid=ZbWKwL" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_vladimir_putin.___/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Annabel07785340" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/Af0gk_kiGac" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-bottom" data-header>
+      <div class="container">
+        <a href="#" class="logo">Bloodify</a>
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="{{ path('app_home') }}" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li>
+              <a href="{{ path('app_about') }}" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+            <li>
+              <a href="{{ path('app_events') }}" class="navbar-link" data-nav-link>Events</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+        {% if app.user %}
+        {% if 'ROLE_ADMIN' in app.user.roles %}
+            <li><a class="navbar-link" href="{{ path('user_index') }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        {% endif %}
+        <li><a class="navbar-link" href="{{ path('user_show', {'id': app.user.id}) }}"><i class="fas fa-user"></i> My Profile</a></li>
+        <li><a class="navbar-link" href="{{ path('app_logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+    </ul>
+{% else %}
+    <a href="{{ path('app_register') }}" class="btn btn-primary">Login / Register</a>
+{% endif %}
+
+        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+          <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </header>
+</head>
+
+{% endblock %}
+<body>
+    {% block body %}
+    
+    
+    
+    
+    {% endblock %}
+    </body>
+</div>
+{% block footer %}
+    <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">Bloodify</a>
+          <p class="footer-text">
+            We are passionate about connecting blood donors with recipients and bridging the gap in the healthcare industry. 
+            We strive to create a community that fosters empathy, support, and solidarity among individuals who are committed to making a difference.
+          </p>
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <span class="span">
+              24 X 7:<br>
+              365 Days
+            </span>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Other Links</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">About us</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Blog</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="login.php" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Login / Register</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <a href="https://goo.gl/maps/BYA5MxQUg5B8ZFLcA">
+            <address class="item-text">
+              Near Thaluk Headquarters,<br>
+              Vaikom, Kottayam, Kerala IN
+            </address>
+          </a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+917052101786" class="footer-link">+91-7558-951-351</a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="mailto:help@example.com" class="footer-link">redstream001@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 All Rights Reserved by Bloodify
+        </p>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/andro.pool.54?mibextid=ZbWKwL" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_vladimir_putin.___/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Annabel07785340" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
+</html>
