@@ -169,10 +169,14 @@ public function adminEdit(Request $request, User $user): Response
             // do anything else you need here, like send an email
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $this->redirectToRoute('app_login');
 =======
             return $this->redirectToRoute('app_home');
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+            return $this->redirectToRoute('app_login');
+>>>>>>> 7caf93a (walaa+bundles+final)
         }
 
         return $this->render('registration/register.html.twig', [

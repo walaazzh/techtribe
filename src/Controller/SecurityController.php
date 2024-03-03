@@ -93,10 +93,14 @@ class SecurityController extends AbstractController
                 $context = compact('url', 'user');
                 $email = (new TemplatedEmail())
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->from('bloodifyesprit@gmail.com')
 =======
                 ->from('walaazhani6@gmail.com')
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+                ->from('bloodifyesprit@gmail.com')
+>>>>>>> 7caf93a (walaa+bundles+final)
                 ->to($email)
                 ->subject('Reset Password !')
                 ->text($emailBody);
