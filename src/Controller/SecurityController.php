@@ -71,7 +71,7 @@ class SecurityController extends AbstractController
 
                 $context = compact('url', 'user');
                 $email = (new TemplatedEmail())
-                ->from('walaazhani6@gmail.com')
+                ->from('bloodifyesprit@gmail.com')
                 ->to($email)
                 ->subject('Reset Password !')
                 ->text($emailBody);
