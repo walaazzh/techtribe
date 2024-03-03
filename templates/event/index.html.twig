@@ -27,7 +27,7 @@
             <tr>
                 <td>{{ event.id }}</td>
                 <td>{{ event.name }}</td>
-                <td>{{ event.description }}</td>
+                <td class="description-cell">{{ event.description }}</td>
                 <td>{{ event.dateDebut ? event.dateDebut|date('Y-m-d') : '' }}</td>
                 <td>{{ event.dateFin ? event.dateFin|date('Y-m-d') : '' }}</td>
                 <td>{{ event.organisateur }}</td>
@@ -36,7 +36,7 @@
                 <td>{{ event.statut }}</td>
                  <td>
                     {% if event.imageName %}
-                        <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Event Image">
+                        <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Event Image" style="width: 100px; height: auto;">
                     {% endif %}
                 </td>
                  <td>{{ event.eventCategory.name }}</td>

@@ -57,6 +57,24 @@
                 </tr>
         </tbody>
     </table>
+    {# Affichage du nombre de participants et liste des participants #}
+   <dl>
+    <dt>Participants:</dt>
+    <dd>
+        {% set participations = event.getParticipations() %}
+        {{ participations|length }} participant(s)
+        <ul>
+            {% for participation in participations %}
+                <li>{{ participation.getUser().getUsername() }}</li>
+            {% else %}
+                <li>Aucun participant pour le moment.</li>
+            {% endfor %}
+        </ul>
+    </dd>
+</dl>
+
+
+    
 
     <a href="{{ path('app_event_index') }}">back to list</a>
 

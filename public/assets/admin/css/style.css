@@ -13,7 +13,10 @@
     bottom: 45px;
     z-index: 99;
 }
-
+.description-cell {
+    max-height: 100px; 
+    overflow: auto; 
+}
 
 /*** Spinner ***/
 #spinner {

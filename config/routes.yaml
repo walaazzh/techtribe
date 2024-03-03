@@ -4,3 +4,7 @@
 app_home:
     path: /
     controller: App\Controller\HomeController::index
+
+event_participate:
+    path: /event/{id}/participate
+    controller: 'App\Controller\EventController::participate'     

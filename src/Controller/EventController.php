@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Event;
 use App\Form\EventType;
 use App\Repository\EventRepository;
+use App\Entity\Participation;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -107,4 +108,42 @@ public function new(Request $request, EntityManagerInterface $entityManager): Re
 
         return $this->redirectToRoute('app_event_index', [], Response::HTTP_SEE_OTHER);
     }
+
+    
+    #[Route('/event/{id}/participate', name: 'event_participate')]
+    public function participate(Event $event, EntityManagerInterface $entityManager): Response
+{
+    // Vérifiez si l'utilisateur est connecté
+    $user = $this->getUser();
+    if (!$user) {
+        // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+        return $this->redirectToRoute('app_login');
+    }
+    // Vérifiez s'il y a des places disponibles
+    if ($event->getMaxParticipant() <= 0) {
+        $this->addFlash('warning', 'Sorry, no more places available for this event.');
+        return $this->redirectToRoute('event_details', ['id' => $event->getId()]);
+    }
+    // Créer une nouvelle instance de Participation
+    $participation = new Participation();
+    $participation->setUser($user);
+    $participation->setEvent($event);
+
+    // Enregistrer la participation dans la base de données
+    $entityManager->persist($participation);
+    $entityManager->flush();
+
+    // Décrémentez le nombre maximal de participants
+     $event->setMaxParticipant($event->getMaxParticipant() - 1);
+     $entityManager->flush();
+
+    // Rediriger vers la page de l'événement avec un message de confirmation
+    $this->addFlash('success', 'You have successfully participated in the event!');
+    return $this->redirectToRoute('event_details', ['id' => $event->getId()]);
+}
+
+
+
+
+
 }
