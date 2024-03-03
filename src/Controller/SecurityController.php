@@ -2,15 +2,22 @@
 
 namespace App\Controller;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 =======
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
+>>>>>>> 6f2e479 (walaa+bundles)
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
 use App\Form\ResetPasswordRequestFormType;
 use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,8 +28,11 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use App\Form\ResetPasswordFormType;
+<<<<<<< HEAD
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
 
 class SecurityController extends AbstractController
 {
@@ -47,6 +57,9 @@ class SecurityController extends AbstractController
         throw new \LogicException('This method can be blank - it will be intercepted by the logout key on your firewall.');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
 
 
     #[Route('/forgotten', name: 'forgotten_password')]
@@ -79,7 +92,11 @@ class SecurityController extends AbstractController
 
                 $context = compact('url', 'user');
                 $email = (new TemplatedEmail())
+<<<<<<< HEAD
                 ->from('bloodifyesprit@gmail.com')
+=======
+                ->from('walaazhani6@gmail.com')
+>>>>>>> 6f2e479 (walaa+bundles)
                 ->to($email)
                 ->subject('Reset Password !')
                 ->text($emailBody);
@@ -196,6 +213,9 @@ class SecurityController extends AbstractController
 //             'requestPassForm' => $form->createView()
 //         ]);
 //     }
+<<<<<<< HEAD
 =======
 }
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> 6f2e479 (walaa+bundles)

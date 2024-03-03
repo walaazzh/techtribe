@@ -54,6 +54,9 @@ class HomeController extends AbstractController
         ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
     #[Route('/userbook', name: 'userbook')]
     public function rendezvous(): Response
     {
@@ -61,6 +64,7 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+<<<<<<< HEAD
 =======
     #[Route('/events', name: 'app_events')]
     public function events(ManagerRegistry $registry): Response
@@ -83,5 +87,7 @@ class HomeController extends AbstractController
     }
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
 }
 

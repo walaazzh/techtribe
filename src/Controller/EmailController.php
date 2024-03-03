@@ -12,7 +12,11 @@ class EmailController extends AbstractController
     public function sendEmail(MailerInterface $mailer): Response
     {
         $email = (new Email())
+<<<<<<< HEAD
             ->from('bloodifyesprit@gmail.com')
+=======
+            ->from('walaazhani6@gmail.com')
+>>>>>>> 6f2e479 (walaa+bundles)
             ->to('walaazhani808@gmail.com')
             ->subject('Test Email')
             ->text('Th from Symfony.');

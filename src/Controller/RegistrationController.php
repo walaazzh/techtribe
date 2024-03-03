@@ -17,12 +17,16 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 class RegistrationController extends AbstractController
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
     // #[Route('/register', name: 'app_register')]
     // public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, UserAuthenticatorInterface $userAuthenticator, LoginFormAuthenticator $authenticator, EntityManagerInterface $entityManager): Response
     // {
     //     $user = new User();
     //     $form = $this->createForm(RegistrationFormType::class, $user);
     //     $form->handleRequest($request);
+<<<<<<< HEAD
 
     //     if ($form->isSubmitted() && $form->isValid()) {
     //         // encode the plain password
@@ -51,26 +55,35 @@ class RegistrationController extends AbstractController
         $user = new User();
         $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            // encode the plain password
-            $user->setPassword(
-                $userPasswordHasher->hashPassword(
-                    $user,
-                    $form->get('plainPassword')->getData()
-                )
-            );
+    //     if ($form->isSubmitted() && $form->isValid()) {
+    //         // encode the plain password
+    //         $user->setPassword(
+    //             $userPasswordHasher->hashPassword(
+    //                 $user,
+    //                 $form->get('plainPassword')->getData()
+    //             )
+    //         );
 
-            $entityManager->persist($user);
-            $entityManager->flush();
-            // do anything else you need here, like send an email
+    //         $entityManager->persist($user);
+    //         $entityManager->flush();
+    //         // do anything else you need here, like send an email
 
-            return $this->redirectToRoute('app_home');
-        }
+    //         return $this->redirectToRoute('app_home');
+    //     }
 
+<<<<<<< HEAD
         return $this->render('registration/register.html.twig', [
             'registrationForm' => $form->createView(),
         ]);
     }
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+    //     return $this->render('registration/register.html.twig', [
+    //         'registrationForm' => $form->createView(),
+    //     ]);
+    // }
+>>>>>>> 6f2e479 (walaa+bundles)
 }

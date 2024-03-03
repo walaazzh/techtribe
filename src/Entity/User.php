@@ -43,10 +43,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[Assert\NotBlank]
     private ?string $password = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
     
     #[ORM\Column(type: 'string', length: 100, nullable: true)]
     private $resetToken;
 
+<<<<<<< HEAD
 =======
 
     #[ORM\OneToMany(targetEntity: Participation::class, mappedBy: 'User')]
@@ -61,6 +65,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->tickets = new ArrayCollection();
     }
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
 
     public function getId(): ?int
     {
@@ -172,6 +178,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
     public function getResetToken(): ?string
     {
         return $this->resetToken;
@@ -180,6 +189,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setResetToken(?string $resetToken): self
     {
         $this->resetToken = $resetToken;
+<<<<<<< HEAD
 =======
 
     /**
@@ -243,6 +253,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
             }
         }
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> 6f2e479 (walaa+bundles)
 
         return $this;
     }

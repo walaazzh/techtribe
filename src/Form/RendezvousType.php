@@ -7,9 +7,13 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+>>>>>>> 6f2e479 (walaa+bundles)
 
 class RendezvousType extends AbstractType
 {

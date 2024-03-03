@@ -5,6 +5,7 @@ app_home:
     path: /
     controller: App\Controller\HomeController::index
 <<<<<<< HEAD
+<<<<<<< HEAD
 send_email:
     path: /send-email
     controller: App\Controller\EmailController::sendEmail
@@ -14,3 +15,8 @@ event_participate:
     path: /event/{id}/participate
     controller: 'App\Controller\EventController::participate'     
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+send_email:
+    path: /send-email
+    controller: App\Controller\EmailController::sendEmail
+>>>>>>> 6f2e479 (walaa+bundles)
