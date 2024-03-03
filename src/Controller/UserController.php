@@ -10,7 +10,11 @@ use App\Entity\User;
 use App\Form\UserType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
-
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+use App\Security\LoginFormAuthenticator;
+use Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface;
+use Doctrine\ORM\EntityManagerInterface;
+use App\Form\RegistrationFormType;
 
 class UserController extends AbstractController
 {
@@ -48,16 +52,20 @@ public function edit(Request $request, User $user): Response
     ]);
 }
 #[Route('/admin/add', name: 'user_add')]
-public function add(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
+public function add(Request $request,  UserPasswordHasherInterface  $passwordEncoder): Response
 {
     $user = new User();
     $form = $this->createForm(UserType::class, $user);
     $form->handleRequest($request);
 
     if ($form->isSubmitted() && $form->isValid()) {
-        // Encode the password using the password encoder
-        $encodedPassword = $passwordEncoder->encodePassword($user, $user->getPassword());
-        $user->setPassword($encodedPassword);
+        // encode the plain password
+        $user->setPassword(
+            $passwordEncoder->hashPassword(
+                $user,
+                $form->get('password')->getData()
+            )
+        );
 
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($user);
@@ -106,4 +114,32 @@ public function adminEdit(Request $request, User $user): Response
 
         return $this->redirectToRoute('user_index');
 }
+    #[Route('/register', name: 'app_register')]
+    public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, UserAuthenticatorInterface $userAuthenticator, LoginFormAuthenticator $authenticator, EntityManagerInterface $entityManager): Response
+    {
+        $user = new User();
+        $form = $this->createForm(RegistrationFormType::class, $user);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // encode the plain password
+            $user->setPassword(
+                $userPasswordHasher->hashPassword(
+                    $user,
+                    $form->get('password')->getData()
+                )
+            );
+
+            $entityManager->persist($user);
+            $entityManager->flush();
+            // do anything else you need here, like send an email
+
+            return $this->redirectToRoute('app_home');
+        }
+
+        return $this->render('registration/register.html.twig', [
+            'userForm' => $form->createView(),
+        ]);
+    }
+
 }

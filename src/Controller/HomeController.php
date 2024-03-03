@@ -47,5 +47,12 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+    #[Route('/userbook', name: 'userbook')]
+    public function rendezvous(): Response
+    {
+        return $this->render('home/book.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }
 

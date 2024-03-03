@@ -4,3 +4,6 @@
 app_home:
     path: /
     controller: App\Controller\HomeController::index
+send_email:
+    path: /send-email
+    controller: App\Controller\EmailController::sendEmail
