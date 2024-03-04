@@ -12,9 +12,15 @@ class BloodTransactionType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+<<<<<<< HEAD
             ->add('quantity_donated')
             ->add('donation_date')
             ->add('transaction_type')
+=======
+            ->add('quantity_donated',null,['attr'=>['class'=>'form-control'],])
+            ->add('donation_date')
+            ->add('transaction_type',null,['attr'=>['class'=>'form-control'],])
+>>>>>>> 8b6d46d (Rayen)
         ;
     }
 

@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
 {% block body %}
@@ -53,14 +54,19 @@
         <div class="form-container">
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8b6d46d (Rayen)
 {% block title %}Reclamation Index{% endblock %}
 
 {% block body %}
     <h1 class="mt-4 mb-4">Reclamation Index</h1>
 
+<<<<<<< HEAD
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -87,6 +93,7 @@
                             {% if reclamation.etat == "Done" %}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <a href="{{ path('app_reponse_show', {'id': reclamation.reponse.id}) }}" class="btn-voir-tous">Voir Reponse</a>
 =======
                              <a href="{{ path('app_reclamation_show', {'id': reclamation.id}) }}" class="btn btn-info btn-sm">Details</a>
@@ -94,6 +101,9 @@
 =======
                             <a href="{{ path('app_reponse_show', {'id': reclamation.reponse.id}) }}" class="btn-voir-tous">Voir Reponse</a>
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+                             <a href="{{ path('app_reclamation_show', {'id': reclamation.id}) }}" class="btn btn-info btn-sm">Details</a>
+>>>>>>> 8b6d46d (Rayen)
                              {% endif %}
                         </td>
                     </tr>
@@ -105,6 +115,7 @@
             </tbody>
         </table>
     </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -125,4 +136,8 @@
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+
+    <a href="{{ path('app_reclamation_new') }}" class="btn btn-success">Create New</a>
+>>>>>>> 8b6d46d (Rayen)
 {% endblock %}

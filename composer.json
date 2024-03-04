@@ -9,11 +9,16 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+<<<<<<< HEAD
         "doctrine/annotations": "^2.0",
+=======
+        "doctrine/annotations": "*",
+>>>>>>> 8b6d46d (Rayen)
         "doctrine/dbal": "^3",
         "doctrine/doctrine-bundle": "^2.11",
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^3.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -31,6 +36,9 @@
         "consoletvs/profanity": "^3.2",
         "google/recaptcha": "*",
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+        "google/recaptcha": "*",
+>>>>>>> 8b6d46d (Rayen)
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.26",
         "sensio/framework-extra-bundle": "^6.2",
@@ -42,6 +50,7 @@
         "symfony/expression-language": "5.4.*",
         "symfony/flex": "^1.17|^2",
         "symfony/form": "5.4.*",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         "knplabs/knp-paginator-bundle": "^5.9",
@@ -58,6 +67,10 @@
         "symfony/framework-bundle": "5.4.*",
         "symfony/google-mailer": "5.4.*",
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+        "symfony/framework-bundle": "5.4.*",
+        "symfony/google-mailer": "5.4.*",
+>>>>>>> 8b6d46d (Rayen)
         "symfony/http-client": "5.4.*",
         "symfony/intl": "5.4.*",
         "symfony/mailer": "5.4.*",
@@ -83,6 +96,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "victor-prdh/recaptcha-bundle": "^1.8"
 =======
         "vich/uploader-bundle": "^2.3"
@@ -93,6 +107,9 @@
 =======
         "victor-prdh/recaptcha-bundle": "^1.8"
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+        "victor-prdh/recaptcha-bundle": "^1.8"
+>>>>>>> 8b6d46d (Rayen)
     },
     "config": {
         "allow-plugins": {

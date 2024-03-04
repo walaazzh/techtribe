@@ -6,18 +6,22 @@ use App\Entity\Ticket;
 use App\Form\TicketType;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\Entity\User;
 use App\Entity\Event;
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 use App\Repository\TicketRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -27,6 +31,8 @@ use Dompdf\Options;
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
 #[Route('/ticket')]
 class TicketController extends AbstractController
@@ -41,6 +47,7 @@ class TicketController extends AbstractController
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Route('/new', name: 'app_ticket_new', methods: ['GET', 'POST'])]
 =======
    /* #[Route('/new', name: 'app_ticket_new', methods: ['GET', 'POST'])]
@@ -48,6 +55,9 @@ class TicketController extends AbstractController
 =======
     #[Route('/new', name: 'app_ticket_new', methods: ['GET', 'POST'])]
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+    #[Route('/new', name: 'app_ticket_new', methods: ['GET', 'POST'])]
+>>>>>>> 8b6d46d (Rayen)
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $ticket = new Ticket();
@@ -68,6 +78,7 @@ class TicketController extends AbstractController
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     */
 
@@ -75,6 +86,8 @@ class TicketController extends AbstractController
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
     #[Route('/{id}', name: 'app_ticket_show', methods: ['GET'])]
     public function show(Ticket $ticket): Response
@@ -112,6 +125,7 @@ class TicketController extends AbstractController
 
         return $this->redirectToRoute('app_ticket_index', [], Response::HTTP_SEE_OTHER);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -195,4 +209,6 @@ public function myTickets(TicketRepository $ticketRepository, Security $security
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 }

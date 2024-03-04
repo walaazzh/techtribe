@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {% extends 'base_admin.html.twig' %}
 =======
 {% extends 'base.html.twig' %}
@@ -7,10 +8,14 @@
 =======
 {% extends 'base_admin.html.twig' %}
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+{% extends 'base_admin.html.twig' %}
+>>>>>>> 8b6d46d (Rayen)
 
 {% block title %}Ticket index{% endblock %}
 
 {% block body %}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -19,6 +24,8 @@
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     <h1>Tickets Table</h1>
 
     <table class="table">
@@ -26,6 +33,7 @@
             <tr>
                 <th>Id</th>
                 <th>Type</th>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <th>Quantite_dispo</th>
@@ -38,6 +46,10 @@
                 <th>Quantite_dispo</th>
                 <th>Date_creation</th>
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+                <th>Quantite_dispo</th>
+                <th>Date_creation</th>
+>>>>>>> 8b6d46d (Rayen)
                 <th>actions</th>
             </tr>
         </thead>
@@ -45,16 +57,20 @@
         {% for ticket in tickets %}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
             <tr>
                 <td>{{ ticket.id }}</td>
                 <td>{{ ticket.type }}</td>
                 <td>{{ ticket.quantiteDispo }}</td>
                 <td>{{ ticket.dateCreation ? ticket.dateCreation|date('Y-m-d') : '' }}</td>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <td>
@@ -71,6 +87,11 @@
                     <a href="{{ path('app_ticket_show', {'id': ticket.id}) }}">show</a>
                     <a href="{{ path('app_ticket_edit', {'id': ticket.id}) }}">edit</a>
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+                <td>
+                    <a href="{{ path('app_ticket_show', {'id': ticket.id}) }}">show</a>
+                    <a href="{{ path('app_ticket_edit', {'id': ticket.id}) }}">edit</a>
+>>>>>>> 8b6d46d (Rayen)
                 </td>
             </tr>
         {% else %}
@@ -80,6 +101,7 @@
         {% endfor %}
         </tbody>
     </table>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -93,4 +115,8 @@
 
     <a href="{{ path('app_ticket_new') }}">Create new</a>
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+
+    <a href="{{ path('app_ticket_new') }}">Create new</a>
+>>>>>>> 8b6d46d (Rayen)
 {% endblock %}

@@ -12,6 +12,7 @@ use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\Validator\Constraints\NotNull;
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
@@ -21,6 +22,9 @@ use Symfony\Component\Validator\Constraints\NotNull;
 =======
 use Symfony\Component\Validator\Constraints\NotNull;
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+use Symfony\Component\Validator\Constraints\NotNull;
+>>>>>>> 8b6d46d (Rayen)
 
 class ResetPasswordFormType extends AbstractType
 {
@@ -34,10 +38,13 @@ class ResetPasswordFormType extends AbstractType
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7caf93a (walaa+bundles+final)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
             'first_options' => [
                 'label' => 'Password',
                 'attr' => [
@@ -52,6 +59,7 @@ class ResetPasswordFormType extends AbstractType
                     'style' => 'width: 100%; height: 40px; border-radius: 5px; border: 1px solid #ccc;'
                 ]
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'constraints' => [
@@ -69,6 +77,10 @@ class ResetPasswordFormType extends AbstractType
             'constraints' => [
                 new NotNull(), 
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+            'constraints' => [
+                new NotNull(), 
+>>>>>>> 8b6d46d (Rayen)
                 new Length([
                     'min' => 8,
                     'minMessage' => 'Your password should be at least {{ limit }} characters',
@@ -83,6 +95,7 @@ class ResetPasswordFormType extends AbstractType
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'options' => ['attr' => ['class' => 'form-control']],
             
@@ -91,6 +104,8 @@ class ResetPasswordFormType extends AbstractType
 >>>>>>> 7caf93a (walaa+bundles+final)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
         ]);
     }
 

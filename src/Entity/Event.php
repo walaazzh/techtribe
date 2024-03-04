@@ -3,14 +3,18 @@
 namespace App\Entity;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
 use App\Repository\EventRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: EventRepository::class)]
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use App\Entity\User;
@@ -28,6 +32,8 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 class Event
 {
     #[ORM\Id]
@@ -36,6 +42,7 @@ class Event
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     private ?string $name = null;
@@ -59,6 +66,11 @@ class Event
 
     #[ORM\Column(length: 255)]
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+    private ?string $name = null;
+
+    #[ORM\Column(length: 255)]
+>>>>>>> 8b6d46d (Rayen)
     private ?string $description = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE)]
@@ -69,8 +81,11 @@ class Event
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     #[ORM\Column(length: 255)]
     private ?string $organisateur = null;
 
@@ -83,6 +98,7 @@ class Event
     #[ORM\Column(length: 255)]
     private ?string $statut = null;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     #[Assert\IsTrue(message: "The start date must be before the end date.")]
@@ -136,6 +152,8 @@ class Event
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     public function getId(): ?int
     {
         return $this->id;
@@ -236,6 +254,7 @@ class Event
 
         return $this;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -363,4 +382,6 @@ class Event
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 }

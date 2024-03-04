@@ -4,8 +4,11 @@ namespace App\Form;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
 use App\Entity\User;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
@@ -21,6 +24,7 @@ use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints as Assert;
 // use EWZ\Bundle\RecaptchaBundle\Form\Type\RecaptchaType;
 use App\Form\Type\ReCAPTCHAType;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 // src/Form/RegistrationFormType.php
@@ -51,6 +55,8 @@ use App\Form\Type\ReCAPTCHAType;
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 class RegistrationFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
@@ -59,8 +65,11 @@ class RegistrationFormType extends AbstractType
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
         ->add('first_name', TextType::class, [
             'label' => 'First Name',
             'required' => false, // Set required to false
@@ -103,6 +112,7 @@ class RegistrationFormType extends AbstractType
             'options' => ['attr' => ['class' => 'form-control']],
             
         ])
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -156,6 +166,8 @@ class RegistrationFormType extends AbstractType
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
         ;
     }
 

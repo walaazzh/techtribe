@@ -25,6 +25,7 @@ class Ticket
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[ORM\ManyToOne(inversedBy: 'tickets')]
     private ?Event $Event = null;
@@ -35,6 +36,8 @@ class Ticket
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     public function getId(): ?int
     {
         return $this->id;
@@ -71,6 +74,7 @@ class Ticket
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function setDateCreation(\DateTimeInterface $date_creation): static
 =======
     public function setDateCreation(\DateTimeInterface $date_creation): self
@@ -78,11 +82,15 @@ class Ticket
 =======
     public function setDateCreation(\DateTimeInterface $date_creation): static
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+    public function setDateCreation(\DateTimeInterface $date_creation): static
+>>>>>>> 8b6d46d (Rayen)
     {
         $this->date_creation = $date_creation;
 
         return $this;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -121,4 +129,6 @@ class Ticket
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 }

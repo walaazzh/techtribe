@@ -7,11 +7,14 @@ use App\Form\EventType;
 use App\Repository\EventRepository;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\Entity\Participation;
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -31,6 +34,7 @@ class EventController extends AbstractController
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Route('/new', name: 'app_event_new', methods: ['GET', 'POST'])]
 =======
    /* #[Route('/new', name: 'app_event_new', methods: ['GET', 'POST'])]
@@ -38,6 +42,9 @@ class EventController extends AbstractController
 =======
     #[Route('/new', name: 'app_event_new', methods: ['GET', 'POST'])]
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+    #[Route('/new', name: 'app_event_new', methods: ['GET', 'POST'])]
+>>>>>>> 8b6d46d (Rayen)
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $event = new Event();
@@ -56,6 +63,7 @@ class EventController extends AbstractController
             'form' => $form,
         ]);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -94,6 +102,9 @@ public function new(Request $request, EntityManagerInterface $entityManager): Re
 =======
 
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+
+>>>>>>> 8b6d46d (Rayen)
     #[Route('/{id}', name: 'app_event_show', methods: ['GET'])]
     public function show(Event $event): Response
     {
@@ -130,6 +141,7 @@ public function new(Request $request, EntityManagerInterface $entityManager): Re
 
         return $this->redirectToRoute('app_event_index', [], Response::HTTP_SEE_OTHER);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -180,4 +192,6 @@ public function new(Request $request, EntityManagerInterface $entityManager): Re
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 }

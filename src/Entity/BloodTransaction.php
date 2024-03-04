@@ -1,7 +1,11 @@
 <?php
 
 namespace App\Entity;
+<<<<<<< HEAD
 
+=======
+use Symfony\Component\Validator\Constraints as Assert;
+>>>>>>> 8b6d46d (Rayen)
 use App\Repository\BloodTransactionRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
@@ -15,12 +19,29 @@ class BloodTransaction
     private ?int $id = null;
 
     #[ORM\Column]
+<<<<<<< HEAD
     private ?float $quantity_donated = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTimeInterface $donation_date = null;
 
     #[ORM\Column(length: 255)]
+=======
+    #[Assert\NotBlank(message: 'Please add the quantity')]
+    #[Assert\GreaterThan(value:0,message:"The quantity must be a strictly positive number")]
+    
+    private ?float $quantity_donated = null;
+
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    #[Assert\NotBlank(message: 'Please add the date')]
+    #[Assert\GreaterThanOrEqual(value:"today",message:"The due date must be in the future")]
+    private ?\DateTimeInterface $donation_date = null;
+
+    #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: 'Please add the transaction type')]
+    #[Assert\Length(min:4,max: 30,minMessage:'The transaction type must be at least 4 characters long ', maxMessage: 'The transaction type cannot exceed 30 characters')]
+    #[Assert\Regex(pattern:'/^[a-zA-Z\-]+$/',message:"The transaction type must contain only letters and hyphens")]
+>>>>>>> 8b6d46d (Rayen)
     private ?string $transaction_type = null;
 
     public function getId(): ?int

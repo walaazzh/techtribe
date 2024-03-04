@@ -8,12 +8,15 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
 class TicketType extends AbstractType
 {
@@ -24,6 +27,7 @@ class TicketType extends AbstractType
                 'attr' => ['class' => 'inline-field'] // Add a class to the type field
             ])
             ->add('quantite_dispo')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             ->add('date_creation', null, [
@@ -45,6 +49,11 @@ class TicketType extends AbstractType
                 'attr' => ['class' => 'inline-field'] // Add a class to the date_creation field
             ]);
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+            ->add('date_creation', null, [
+                'attr' => ['class' => 'inline-field'] // Add a class to the date_creation field
+            ]);
+>>>>>>> 8b6d46d (Rayen)
     }
 
     public function configureOptions(OptionsResolver $resolver): void

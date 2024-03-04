@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Event;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -23,6 +24,11 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
+>>>>>>> 8b6d46d (Rayen)
 
 class EventType extends AbstractType
 {
@@ -36,6 +42,7 @@ class EventType extends AbstractType
             ->add('organisateur')
             ->add('contact')
             ->add('max_participant')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             ->add('statut')
@@ -61,6 +68,9 @@ class EventType extends AbstractType
 =======
             ->add('statut')
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+            ->add('statut')
+>>>>>>> 8b6d46d (Rayen)
         ;
     }
 

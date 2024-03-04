@@ -33,6 +33,7 @@ class ReclamationRepository extends ServiceEntityRepository
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
     public function countRecentReclamations(int $iduser, int $days)
@@ -60,6 +61,8 @@ public function search($value): array
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
 //    public function findOneBySomeField($value): ?Reclamation
 //    {

@@ -3,12 +3,15 @@
 namespace App\Entity;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 use Symfony\Component\Validator\Constraints as Assert;
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
@@ -48,14 +51,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     
     #[ORM\Column(type: 'string', length: 100, nullable: true)]
     private $resetToken;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -76,6 +83,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
     public function getId(): ?int
     {
@@ -189,10 +198,13 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     public function getResetToken(): ?string
     {
         return $this->resetToken;
@@ -201,6 +213,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setResetToken(?string $resetToken): self
     {
         $this->resetToken = $resetToken;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -270,6 +283,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
         return $this;
     }

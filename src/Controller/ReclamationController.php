@@ -14,16 +14,20 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Knp\Component\Pager\PaginatorInterface;
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 use Knp\Component\Pager\PaginatorInterface;
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
 #[Route('/reclamation')]
 class ReclamationController extends AbstractController
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -41,6 +45,8 @@ class ReclamationController extends AbstractController
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     #[Route('/', name: 'app_reclamation_index', methods: ['GET'])]
     public function index(ReclamationRepository $reclamationRepository): Response
     {
@@ -49,6 +55,7 @@ class ReclamationController extends AbstractController
         ]);
     }
     #[Route('/Front', name: 'app_reclamation_index_front', methods: ['GET'])]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -66,17 +73,23 @@ class ReclamationController extends AbstractController
             'reclamations' => $pagination,
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8b6d46d (Rayen)
     public function indexFront(ReclamationRepository $reclamationRepository): Response
     {
         return $this->render('reclamation/indexFront.html.twig', [
             'reclamations' => $reclamationRepository->findByIdUser(1),
+<<<<<<< HEAD
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
         ]);
     }
 
     #[Route('/new', name: 'app_reclamation_new', methods: ['GET', 'POST'])]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function new(Request $request,PaginatorInterface $paginator, EntityManagerInterface $entityManager,ReclamationRepository $reclamationRepository): Response
@@ -86,12 +99,16 @@ class ReclamationController extends AbstractController
 =======
     public function new(Request $request,PaginatorInterface $paginator, EntityManagerInterface $entityManager,ReclamationRepository $reclamationRepository): Response
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
+>>>>>>> 8b6d46d (Rayen)
     {
         $reclamation = new Reclamation();
         $form = $this->createForm(ReclamationType::class, $reclamation);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -119,13 +136,18 @@ class ReclamationController extends AbstractController
             $reclamation->setDescription($cleaned);
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8b6d46d (Rayen)
             $reclamation->setEtat("Not Treated");
             $d=new \DateTimeImmutable();
             $reclamation->setCreatedAt($d);
             $reclamation->setIdUser(1);
+<<<<<<< HEAD
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
             $entityManager->persist($reclamation);
             $entityManager->flush();
 

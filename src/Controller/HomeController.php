@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Doctrine\Persistence\ManagerRegistry;
 use App\Entity\EventCategory;
@@ -14,6 +15,8 @@ use App\Entity\Event;
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 
 class HomeController extends AbstractController
 {
@@ -59,10 +62,13 @@ class HomeController extends AbstractController
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     #[Route('/userbook', name: 'userbook')]
     public function rendezvous(): Response
     {
@@ -70,6 +76,7 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -98,5 +105,7 @@ class HomeController extends AbstractController
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 }
 

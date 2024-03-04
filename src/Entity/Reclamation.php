@@ -29,12 +29,15 @@ class Reclamation
     #[ORM\Column(length: 500)]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Assert\NotBlank(message : "This field should not be blank.")]
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
     #[Assert\NotBlank(message : "This field should not be blank.")]
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
     private ?string $description = null;
 
     #[ORM\Column(length: 255)]

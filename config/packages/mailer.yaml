@@ -4,6 +4,7 @@ framework:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         message_bus: false  
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
@@ -13,3 +14,6 @@ framework:
 =======
         message_bus: false  
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+        message_bus: false  
+>>>>>>> 8b6d46d (Rayen)

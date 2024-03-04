@@ -9,6 +9,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
@@ -18,6 +19,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 =======
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+>>>>>>> 8b6d46d (Rayen)
 
 class RendezvousType extends AbstractType
 {

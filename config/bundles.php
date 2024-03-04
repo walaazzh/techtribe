@@ -16,6 +16,7 @@ return [
     Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
 =======
     Vich\UploaderBundle\VichUploaderBundle::class => ['all' => true],
@@ -28,4 +29,6 @@ return [
 =======
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+>>>>>>> 8b6d46d (Rayen)
 ];
