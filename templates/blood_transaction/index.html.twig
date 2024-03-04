@@ -1,0 +1,39 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}BloodTransaction index{% endblock %}
+
+{% block body %}
+    <h1>Blood Transactions Table</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Quantity_donated</th>
+                <th>Donation_date</th>
+                <th>Transaction_type</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for blood_transaction in blood_transactions %}
+            <tr>
+                <td>{{ blood_transaction.id }}</td>
+                <td>{{ blood_transaction.quantityDonated }}</td>
+                <td>{{ blood_transaction.donationDate ? blood_transaction.donationDate|date('Y-m-d') : '' }}</td>
+                <td>{{ blood_transaction.transactionType }}</td>
+                <td>
+                    <a href="{{ path('app_blood_transaction_show', {'id': blood_transaction.id}) }}">show</a>
+                    <a href="{{ path('app_blood_transaction_edit', {'id': blood_transaction.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_blood_transaction_new') }}">Create new</a>
+{% endblock %}

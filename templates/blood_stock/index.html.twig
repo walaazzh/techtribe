@@ -1,0 +1,41 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}BloodStock Table {% endblock %}
+
+{% block body %}
+    <h1>BloodStock Table</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Quantity_available</th>
+                <th>Expiry_date</th>
+                <th>Bloodtype</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for blood_stock in blood_stocks %}
+            <tr>
+                <td>{{ blood_stock.id }}</td>
+                <td>{{ blood_stock.name }}</td>
+                <td>{{ blood_stock.quantityAvailable }}</td>
+                <td>{{ blood_stock.expiryDate ? blood_stock.expiryDate|date('Y-m-d') : '' }}</td>
+                <td>{{ blood_stock.bloodtype }}</td>
+                <td>
+                    <a href="{{ path('app_blood_stock_show', {'id': blood_stock.id}) }}">show</a>
+                    <a href="{{ path('app_blood_stock_edit', {'id': blood_stock.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_blood_stock_new') }}">Create new</a>
+{% endblock %}

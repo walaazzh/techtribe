@@ -1,0 +1,19 @@
+{# templates/user/edit.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit User{% endblock %}
+
+{% block body %}
+<div class="container1">
+<section class="section hero" id="home">
+        <div class="hero-content">
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn">Save</button>
+{{ form_end(form) }}
+
+<a href="{{ path('user_show', {'id': user.id}) }}">Back to view</a>
+    </div>
+</section>
+{% endblock %}

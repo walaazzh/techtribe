@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Centredecollect{% endblock %}
+
+{% block body %}
+    <h1>Edit Centredecollect</h1>
+
+    {{ include('centrecollect/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_centrecollect_index') }}">back to list</a>
+
+    {{ include('centrecollect/_delete_form.html.twig') }}
+{% endblock %}
