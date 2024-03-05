@@ -4,23 +4,17 @@ namespace App\Form;
 
 use App\Entity\BloodTransaction;
 use Symfony\Component\Form\AbstractType;
-<<<<<<< HEAD
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use App\Entity\Hospital;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
-=======
-use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
->>>>>>> 23a1a9b (walaa new commit)
 
 class BloodTransactionType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-<<<<<<< HEAD
             // Add form fields for the BloodTransaction entity
             ->add('quantity_donated', null, [
                 'attr' => [
@@ -50,24 +44,13 @@ class BloodTransactionType extends AbstractType
                     'class' => 'form-control', // Add CSS class for styling
                 ],
             ]);
-=======
-            ->add('quantity_donated')
-            ->add('donation_date')
-            ->add('transaction_type')
-        ;
->>>>>>> 23a1a9b (walaa new commit)
     }
 
     public function configureOptions(OptionsResolver $resolver): void
     {
-<<<<<<< HEAD
         // Configure the default options for the form
         $resolver->setDefaults([
             'data_class' => BloodTransaction::class, // Set the data class to BloodTransaction entity
-=======
-        $resolver->setDefaults([
-            'data_class' => BloodTransaction::class,
->>>>>>> 23a1a9b (walaa new commit)
         ]);
     }
 }

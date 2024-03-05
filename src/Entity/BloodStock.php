@@ -2,10 +2,7 @@
 
 namespace App\Entity;
 
-<<<<<<< HEAD
 use Symfony\Component\Validator\Constraints as Assert;
-=======
->>>>>>> 23a1a9b (walaa new commit)
 use App\Repository\BloodStockRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
@@ -19,7 +16,6 @@ class BloodStock
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-<<<<<<< HEAD
     #[Assert\NotBlank(message: 'Please add the product name')]
     #[Assert\Length(
         min: 4,
@@ -48,17 +44,6 @@ class BloodStock
         choices: ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-", "a+", "a-", "b+", "b-", "ab+", "ab-", "o+", "o-"],
         message: "Blood type must be valid"
     )]
-=======
-    private ?string $name = null;
-
-    #[ORM\Column]
-    private ?float $quantity_available = null;
-
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $expiry_date = null;
-
-    #[ORM\Column(length: 255)]
->>>>>>> 23a1a9b (walaa new commit)
     private ?string $bloodtype = null;
 
     public function getId(): ?int
@@ -71,16 +56,9 @@ class BloodStock
         return $this->name;
     }
 
-<<<<<<< HEAD
     public function setName(string $name): self
     {
         $this->name = $name;
-=======
-    public function setName(string $name): static
-    {
-        $this->name = $name;
-
->>>>>>> 23a1a9b (walaa new commit)
         return $this;
     }
 
@@ -89,16 +67,9 @@ class BloodStock
         return $this->quantity_available;
     }
 
-<<<<<<< HEAD
     public function setQuantityAvailable(float $quantity_available): self
     {
         $this->quantity_available = $quantity_available;
-=======
-    public function setQuantityAvailable(float $quantity_available): static
-    {
-        $this->quantity_available = $quantity_available;
-
->>>>>>> 23a1a9b (walaa new commit)
         return $this;
     }
 
@@ -107,16 +78,9 @@ class BloodStock
         return $this->expiry_date;
     }
 
-<<<<<<< HEAD
     public function setExpiryDate(\DateTimeInterface $expiry_date): self
     {
         $this->expiry_date = $expiry_date;
-=======
-    public function setExpiryDate(\DateTimeInterface $expiry_date): static
-    {
-        $this->expiry_date = $expiry_date;
-
->>>>>>> 23a1a9b (walaa new commit)
         return $this;
     }
 
@@ -125,16 +89,9 @@ class BloodStock
         return $this->bloodtype;
     }
 
-<<<<<<< HEAD
     public function setBloodtype(string $bloodtype): self
     {
         $this->bloodtype = $bloodtype;
-=======
-    public function setBloodtype(string $bloodtype): static
-    {
-        $this->bloodtype = $bloodtype;
-
->>>>>>> 23a1a9b (walaa new commit)
         return $this;
     }
 }

@@ -15,7 +15,6 @@ class Reclamation
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-<<<<<<< HEAD
     #[Assert\NotBlank(message: "This field should not be blank.")]
     #[Assert\Length(
         min: 7,
@@ -29,20 +28,6 @@ class Reclamation
 
     #[ORM\Column(length: 500)]
     #[Assert\NotBlank(message: "This field should not be blank.")]
-=======
-    #[Assert\NotBlank(message : "This field should not be blank.")]
-    #[Assert\Length(
-       min : 7,
-       minMessage : "The field should be at least {{ limit }} characters long."
-  )]
-  #[Assert\Regex(
-       pattern : "/^[a-zA-Z]+$/",
-       message : "Only letters are allowed in this field."
-  )]
-    private ?string $titre = null;
-
-    #[ORM\Column(length: 500)]
->>>>>>> 23a1a9b (walaa new commit)
     private ?string $description = null;
 
     #[ORM\Column(length: 255)]
@@ -51,11 +36,7 @@ class Reclamation
     #[ORM\Column(length: 255)]
     private ?string $etat = null;
 
-<<<<<<< HEAD
     #[ORM\Column(type: 'datetime_immutable')]
-=======
-    #[ORM\Column]
->>>>>>> 23a1a9b (walaa new commit)
     private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\OneToOne(mappedBy: 'id_rec', cascade: ['persist', 'remove'])]
@@ -74,11 +55,7 @@ class Reclamation
         return $this->titre;
     }
 
-<<<<<<< HEAD
     public function setTitre(string $titre): self
-=======
-    public function setTitre(string $titre): static
->>>>>>> 23a1a9b (walaa new commit)
     {
         $this->titre = $titre;
 
@@ -90,11 +67,7 @@ class Reclamation
         return $this->description;
     }
 
-<<<<<<< HEAD
     public function setDescription(string $description): self
-=======
-    public function setDescription(string $description): static
->>>>>>> 23a1a9b (walaa new commit)
     {
         $this->description = $description;
 
@@ -106,11 +79,7 @@ class Reclamation
         return $this->type;
     }
 
-<<<<<<< HEAD
     public function setType(string $type): self
-=======
-    public function setType(string $type): static
->>>>>>> 23a1a9b (walaa new commit)
     {
         $this->type = $type;
 
@@ -122,11 +91,7 @@ class Reclamation
         return $this->etat;
     }
 
-<<<<<<< HEAD
     public function setEtat(string $etat): self
-=======
-    public function setEtat(string $etat): static
->>>>>>> 23a1a9b (walaa new commit)
     {
         $this->etat = $etat;
 
@@ -138,11 +103,7 @@ class Reclamation
         return $this->createdAt;
     }
 
-<<<<<<< HEAD
     public function setCreatedAt(\DateTimeImmutable $createdAt): self
-=======
-    public function setCreatedAt(\DateTimeImmutable $createdAt): static
->>>>>>> 23a1a9b (walaa new commit)
     {
         $this->createdAt = $createdAt;
 
@@ -154,11 +115,7 @@ class Reclamation
         return $this->reponse;
     }
 
-<<<<<<< HEAD
     public function setReponse(Reponse $reponse): self
-=======
-    public function setReponse(Reponse $reponse): static
->>>>>>> 23a1a9b (walaa new commit)
     {
         // set the owning side of the relation if necessary
         if ($reponse->getIdRec() !== $this) {
@@ -175,11 +132,7 @@ class Reclamation
         return $this->id_user;
     }
 
-<<<<<<< HEAD
     public function setIdUser(int $id_user): self
-=======
-    public function setIdUser(int $id_user): static
->>>>>>> 23a1a9b (walaa new commit)
     {
         $this->id_user = $id_user;
 

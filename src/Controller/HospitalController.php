@@ -2,11 +2,8 @@
 
 namespace App\Controller;
 
-<<<<<<< HEAD
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use App\Entity\User;
-=======
->>>>>>> 23a1a9b (walaa new commit)
 use App\Entity\Hospital;
 use App\Form\HospitalType;
 use App\Repository\HospitalRepository;
@@ -28,18 +25,13 @@ class HospitalController extends AbstractController
     }
 
     #[Route('/new', name: 'app_hospital_new', methods: ['GET', 'POST'])]
-<<<<<<< HEAD
     public function new(Request $request, EntityManagerInterface $entityManager, UserPasswordEncoderInterface $passwordEncoder): Response
-=======
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
->>>>>>> 23a1a9b (walaa new commit)
     {
         $hospital = new Hospital();
         $form = $this->createForm(HospitalType::class, $hospital);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-<<<<<<< HEAD
             // Create a new user account
             $user = new User();
             $user->setEmail($hospital->getEmail());
@@ -54,12 +46,6 @@ class HospitalController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_hospital_index');
-=======
-            $entityManager->persist($hospital);
-            $entityManager->flush();
-
-            return $this->redirectToRoute('app_hospital_index', [], Response::HTTP_SEE_OTHER);
->>>>>>> 23a1a9b (walaa new commit)
         }
 
         return $this->renderForm('hospital/new.html.twig', [
@@ -68,44 +54,5 @@ class HospitalController extends AbstractController
         ]);
     }
 
-<<<<<<< HEAD
     // Other actions (show, edit, delete) remain unchanged...
-=======
-    #[Route('/{id}', name: 'app_hospital_show', methods: ['GET'])]
-    public function show(Hospital $hospital): Response
-    {
-        return $this->render('hospital/show.html.twig', [
-            'hospital' => $hospital,
-        ]);
-    }
-
-    #[Route('/{id}/edit', name: 'app_hospital_edit', methods: ['GET', 'POST'])]
-    public function edit(Request $request, Hospital $hospital, EntityManagerInterface $entityManager): Response
-    {
-        $form = $this->createForm(HospitalType::class, $hospital);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->flush();
-
-            return $this->redirectToRoute('app_hospital_index', [], Response::HTTP_SEE_OTHER);
-        }
-
-        return $this->renderForm('hospital/edit.html.twig', [
-            'hospital' => $hospital,
-            'form' => $form,
-        ]);
-    }
-
-    #[Route('/{id}', name: 'app_hospital_delete', methods: ['POST'])]
-    public function delete(Request $request, Hospital $hospital, EntityManagerInterface $entityManager): Response
-    {
-        if ($this->isCsrfTokenValid('delete'.$hospital->getId(), $request->request->get('_token'))) {
-            $entityManager->remove($hospital);
-            $entityManager->flush();
-        }
-
-        return $this->redirectToRoute('app_hospital_index', [], Response::HTTP_SEE_OTHER);
-    }
->>>>>>> 23a1a9b (walaa new commit)
 }

@@ -6,22 +6,14 @@
 
 {% block body %}
 <div class="container1">
-<<<<<<< HEAD
 <section class="section hero" id="home">
         <div class="hero-content">
-=======
-<h2>Edit User</h2>
-
->>>>>>> 23a1a9b (walaa new commit)
 {{ form_start(form) }}
     {{ form_widget(form) }}
     <button class="btn">Save</button>
 {{ form_end(form) }}
 
 <a href="{{ path('user_show', {'id': user.id}) }}">Back to view</a>
-<<<<<<< HEAD
     </div>
 </section>
-=======
->>>>>>> 23a1a9b (walaa new commit)
 {% endblock %}

@@ -3,9 +3,17 @@
 {% block title %}New BloodTransaction{% endblock %}
 
 {% block body %}
+<section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png'); margin: 0%;" aria-label="hero">
+    <div class="container">
+        <div class="form-container">
     <h1>Create new BloodTransaction</h1>
 
     {{ include('blood_transaction/_form.html.twig') }}
 
     <a href="{{ path('app_blood_transaction_index') }}">back to list</a>
+    </div>
+        </div>
+
+    </section>
+
 {% endblock %}

@@ -5,15 +5,10 @@ namespace App\Entity;
 use App\Repository\HospitalRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 use App\Entity\BloodTransaction;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
->>>>>>> Rayen_Majdoub
-=======
->>>>>>> 23a1a9b (walaa new commit)
 
 
 #[ORM\Entity(repositoryClass: HospitalRepository::class)]
@@ -127,10 +122,6 @@ class Hospital
 
         return $this;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-=======
     // ...
 
     #[ORM\OneToMany(targetEntity: BloodTransaction::class, mappedBy: 'hospital')]
@@ -171,8 +162,3 @@ class Hospital
         return $this;
     }
 }
-
->>>>>>> Rayen_Majdoub
-=======
-}
->>>>>>> 23a1a9b (walaa new commit)

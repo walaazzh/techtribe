@@ -3,15 +3,10 @@
 namespace App\Entity;
 
 use App\Repository\BloodTransactionRepository;
-<<<<<<< HEAD
 use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use App\Entity\Hospital;
-=======
-use Doctrine\DBAL\Types\Types;
-use Doctrine\ORM\Mapping as ORM;
->>>>>>> 23a1a9b (walaa new commit)
 
 #[ORM\Entity(repositoryClass: BloodTransactionRepository::class)]
 class BloodTransaction
@@ -22,7 +17,6 @@ class BloodTransaction
     private ?int $id = null;
 
     #[ORM\Column]
-<<<<<<< HEAD
     #[Assert\NotBlank(message: 'Please add the quantity')]
     #[Assert\GreaterThan(value: 0, message: "The quantity must be a strictly positive number")]
     private ?float $quantity_donated = null;
@@ -50,16 +44,6 @@ class BloodTransaction
     #[ORM\JoinColumn(name: 'hospital_id', referencedColumnName: 'id')]
     private ?Hospital $hospital = null;
 
-=======
-    private ?float $quantity_donated = null;
-
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $donation_date = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $transaction_type = null;
-
->>>>>>> 23a1a9b (walaa new commit)
     public function getId(): ?int
     {
         return $this->id;
@@ -70,16 +54,9 @@ class BloodTransaction
         return $this->quantity_donated;
     }
 
-<<<<<<< HEAD
     public function setQuantityDonated(float $quantity_donated): self
     {
         $this->quantity_donated = $quantity_donated;
-=======
-    public function setQuantityDonated(float $quantity_donated): static
-    {
-        $this->quantity_donated = $quantity_donated;
-
->>>>>>> 23a1a9b (walaa new commit)
         return $this;
     }
 
@@ -88,16 +65,9 @@ class BloodTransaction
         return $this->donation_date;
     }
 
-<<<<<<< HEAD
     public function setDonationDate(\DateTimeInterface $donation_date): self
     {
         $this->donation_date = $donation_date;
-=======
-    public function setDonationDate(\DateTimeInterface $donation_date): static
-    {
-        $this->donation_date = $donation_date;
-
->>>>>>> 23a1a9b (walaa new commit)
         return $this;
     }
 
@@ -106,7 +76,6 @@ class BloodTransaction
         return $this->transaction_type;
     }
 
-<<<<<<< HEAD
     public function setTransactionType(string $transaction_type): self
     {
         $this->transaction_type = $transaction_type;
@@ -121,12 +90,6 @@ class BloodTransaction
     public function setHospital(?Hospital $hospital): self
     {
         $this->hospital = $hospital;
-=======
-    public function setTransactionType(string $transaction_type): static
-    {
-        $this->transaction_type = $transaction_type;
-
->>>>>>> 23a1a9b (walaa new commit)
         return $this;
     }
 }

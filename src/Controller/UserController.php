@@ -1,11 +1,7 @@
 <?php
 
 namespace App\Controller;
-<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\RedirectResponse;
-=======
-
->>>>>>> 23a1a9b (walaa new commit)
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,15 +9,12 @@ use App\Repository\UserRepository;
 use App\Entity\User;
 use App\Form\UserType;
 use Symfony\Component\HttpFoundation\Request;
-<<<<<<< HEAD
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use App\Security\LoginFormAuthenticator;
 use Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Form\RegistrationFormType;
-=======
->>>>>>> 23a1a9b (walaa new commit)
 
 class UserController extends AbstractController
 {
@@ -59,18 +52,13 @@ public function edit(Request $request, User $user): Response
     ]);
 }
 #[Route('/admin/add', name: 'user_add')]
-<<<<<<< HEAD
 public function add(Request $request,  UserPasswordHasherInterface  $passwordEncoder): Response
-=======
-public function add(Request $request): Response
->>>>>>> 23a1a9b (walaa new commit)
 {
     $user = new User();
     $form = $this->createForm(UserType::class, $user);
     $form->handleRequest($request);
 
     if ($form->isSubmitted() && $form->isValid()) {
-<<<<<<< HEAD
         // encode the plain password
         $user->setPassword(
             $passwordEncoder->hashPassword(
@@ -79,8 +67,6 @@ public function add(Request $request): Response
             )
         );
 
-=======
->>>>>>> 23a1a9b (walaa new commit)
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($user);
         $entityManager->flush();
@@ -92,10 +78,6 @@ public function add(Request $request): Response
         'form' => $form->createView(),
     ]);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 23a1a9b (walaa new commit)
 #[Route('/admin/{id}', name: 'user_admin_show')]
 public function adminShow(User $user): Response
 {
@@ -121,7 +103,6 @@ public function adminEdit(Request $request, User $user): Response
         'form' => $form->createView(),
     ]);
 }
-<<<<<<< HEAD
 #[Route('/admin/user/{id}/delete', name: 'user_delete')]
     public function delete(User $user): RedirectResponse
     {
@@ -161,6 +142,4 @@ public function adminEdit(Request $request, User $user): Response
         ]);
     }
 
-=======
->>>>>>> 23a1a9b (walaa new commit)
 }
