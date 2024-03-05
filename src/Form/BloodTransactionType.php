@@ -7,6 +7,8 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use App\Entity\Hospital;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
 class BloodTransactionType extends AbstractType
 {
@@ -29,7 +31,17 @@ class BloodTransactionType extends AbstractType
                 ],
             ])
             ->add('transaction_type',null,['attr'=>['class'=>'form-control'],])
+<<<<<<< HEAD
 >>>>>>> 8b6d46d (Rayen)
+=======
+            ->add('hospital', EntityType::class, [
+                'class' => Hospital::class,
+                'choice_label' => function (Hospital $hospital) {
+                    return $hospital->getName();
+                }, // ou un autre champ approprié pour l'étiquette
+                'attr' => ['class' => 'form-control'],
+            ])
+>>>>>>> 8a7e9b4 (Rayen_Majdoub)
         ;
     }
 
