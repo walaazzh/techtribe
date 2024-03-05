@@ -5,6 +5,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use App\Repository\BloodTransactionRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use App\Entity\Hospital;
 
 #[ORM\Entity(repositoryClass: BloodTransactionRepository::class)]
 class BloodTransaction
@@ -68,6 +69,23 @@ class BloodTransaction
     public function setTransactionType(string $transaction_type): static
     {
         $this->transaction_type = $transaction_type;
+
+        return $this;
+    }
+    #[ORM\ManyToOne(targetEntity: Hospital::class)]
+    #[ORM\JoinColumn(name: 'hospital_id', referencedColumnName: 'id')]
+    private $hospital;
+
+    // ...
+
+    public function getHospital(): ?Hospital
+    {
+        return $this->hospital;
+    }
+
+    public function setHospital(?Hospital $hospital): self
+    {
+        $this->hospital = $hospital;
 
         return $this;
     }

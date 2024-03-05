@@ -5,6 +5,9 @@ namespace App\Entity;
 use App\Repository\HospitalRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use App\Entity\BloodTransaction;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 
 
 #[ORM\Entity(repositoryClass: HospitalRepository::class)]
@@ -118,4 +121,44 @@ class Hospital
 
         return $this;
     }
+    // ...
+
+    #[ORM\OneToMany(targetEntity: BloodTransaction::class, mappedBy: 'hospital')]
+    private $bloodTransactions;
+
+    public function __construct()
+    {
+        $this->bloodTransactions = new ArrayCollection();
+    }
+
+    /**
+     * @return Collection|BloodTransaction[]
+     */
+    public function getBloodTransactions(): Collection
+    {
+        return $this->bloodTransactions;
+    }
+
+    public function addBloodTransaction(BloodTransaction $bloodTransaction): self
+    {
+        if (!$this->bloodTransactions->contains($bloodTransaction)) {
+            $this->bloodTransactions[] = $bloodTransaction;
+            $bloodTransaction->setHospital($this);
+        }
+
+        return $this;
+    }
+
+    public function removeBloodTransaction(BloodTransaction $bloodTransaction): self
+    {
+        if ($this->bloodTransactions->removeElement($bloodTransaction)) {
+            // set the owning side to null (unless already changed)
+            if ($bloodTransaction->getHospital() === $this) {
+                $bloodTransaction->setHospital(null);
+            }
+        }
+
+        return $this;
+    }
 }
+

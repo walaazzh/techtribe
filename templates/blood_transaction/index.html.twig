@@ -12,6 +12,7 @@
                 <th>Quantity_donated</th>
                 <th>Donation_date</th>
                 <th>Transaction_type</th>
+                <th>Hospital</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -22,6 +23,7 @@
                 <td>{{ blood_transaction.quantityDonated }}</td>
                 <td>{{ blood_transaction.donationDate ? blood_transaction.donationDate|date('Y-m-d') : '' }}</td>
                 <td>{{ blood_transaction.transactionType }}</td>
+                <td>{{ blood_transaction.hospital.name }}</td> {# Assuming 'hospital' is the property that represents the association with the Hospital entity #}
                 <td>
                     <a href="{{ path('app_blood_transaction_show', {'id': blood_transaction.id}) }}">show</a>
                     <a href="{{ path('app_blood_transaction_edit', {'id': blood_transaction.id}) }}">edit</a>
@@ -29,7 +31,7 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="5">no records found</td>
+                <td colspan="6">no records found</td>
             </tr>
         {% endfor %}
         </tbody>

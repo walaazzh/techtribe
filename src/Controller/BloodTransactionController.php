@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\BloodTransaction;
 use App\Form\BloodTransactionType;
 use App\Repository\BloodTransactionRepository;
+use App\Repository\HospitalRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -78,4 +79,5 @@ class BloodTransactionController extends AbstractController
 
         return $this->redirectToRoute('app_blood_transaction_index', [], Response::HTTP_SEE_OTHER);
     }
+    public function __construct(private HospitalRepository $hospitalRepository) {}
 }
