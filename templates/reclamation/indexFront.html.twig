@@ -1,6 +1,9 @@
 {% extends 'base.html.twig' %}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 {% block body %}
 <style>
 .pagination-container {
@@ -48,6 +51,7 @@
         <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png'); margin: 0%;" aria-label="hero">
     <div class="container1">
         <div class="form-container">
+<<<<<<< HEAD
 =======
 {% block title %}Reclamation Index{% endblock %}
 
@@ -55,6 +59,8 @@
     <h1 class="mt-4 mb-4">Reclamation Index</h1>
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -80,10 +86,14 @@
                             {{ include('reclamation/_delete_form.html.twig') }}
                             {% if reclamation.etat == "Done" %}
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <a href="{{ path('app_reponse_show', {'id': reclamation.reponse.id}) }}" class="btn-voir-tous">Voir Reponse</a>
 =======
                              <a href="{{ path('app_reclamation_show', {'id': reclamation.id}) }}" class="btn btn-info btn-sm">Details</a>
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+                            <a href="{{ path('app_reponse_show', {'id': reclamation.reponse.id}) }}" class="btn-voir-tous">Voir Reponse</a>
+>>>>>>> c98b2fa (walaa+chiheb integration)
                              {% endif %}
                         </td>
                     </tr>
@@ -96,6 +106,9 @@
         </table>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     <nav class="pagination-container">
 				{{ knp_pagination_render(reclamations) }}
 			</nav>
@@ -105,8 +118,11 @@
 
         </div>
 </section>
+<<<<<<< HEAD
 =======
 
     <a href="{{ path('app_reclamation_new') }}" class="btn btn-success">Create New</a>
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 {% endblock %}

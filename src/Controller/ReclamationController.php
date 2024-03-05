@@ -13,14 +13,21 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Knp\Component\Pager\PaginatorInterface;
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+use Knp\Component\Pager\PaginatorInterface;
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 #[Route('/reclamation')]
 class ReclamationController extends AbstractController
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     #[Route('/search', name: 'app_search', methods: ['GET','POST'])]
     public function search(Request $request,ReclamationRepository $reclamationRepository): Response
     {
@@ -29,8 +36,11 @@ class ReclamationController extends AbstractController
             'reclamations' => $reclamationRepository->search($search),
         ]);
     }
+<<<<<<< HEAD
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     #[Route('/', name: 'app_reclamation_index', methods: ['GET'])]
     public function index(ReclamationRepository $reclamationRepository): Response
     {
@@ -40,6 +50,9 @@ class ReclamationController extends AbstractController
     }
     #[Route('/Front', name: 'app_reclamation_index_front', methods: ['GET'])]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     public function indexFront(PaginatorInterface $paginator,ReclamationRepository $reclamationRepository, EntityManagerInterface $entityManager,Request $request): Response
     {
         $reclamations=$reclamationRepository->findByidUser($this->getUser()->getId());
@@ -51,21 +64,28 @@ class ReclamationController extends AbstractController
         );
         return $this->render('reclamation/indexFront.html.twig', [
             'reclamations' => $pagination,
+<<<<<<< HEAD
 =======
     public function indexFront(ReclamationRepository $reclamationRepository): Response
     {
         return $this->render('reclamation/indexFront.html.twig', [
             'reclamations' => $reclamationRepository->findByIdUser(1),
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         ]);
     }
 
     #[Route('/new', name: 'app_reclamation_new', methods: ['GET', 'POST'])]
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function new(Request $request,PaginatorInterface $paginator, EntityManagerInterface $entityManager,ReclamationRepository $reclamationRepository): Response
 =======
     public function new(Request $request, EntityManagerInterface $entityManager): Response
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+    public function new(Request $request,PaginatorInterface $paginator, EntityManagerInterface $entityManager,ReclamationRepository $reclamationRepository): Response
+>>>>>>> c98b2fa (walaa+chiheb integration)
     {
         $reclamation = new Reclamation();
         $form = $this->createForm(ReclamationType::class, $reclamation);
@@ -73,6 +93,9 @@ class ReclamationController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             $count = $reclamationRepository->countRecentReclamations($this->getUser()->getId(), 3);
             if ($count >= 3) {
                 // Redirect the user back to the new reclamation page with an error message
@@ -94,12 +117,15 @@ class ReclamationController extends AbstractController
             $reclamation->setIdUser($this->getUser()->getId());
             $cleaned=\ConsoleTVs\Profanity\Builder::blocker($reclamation->getDescription())->filter();
             $reclamation->setDescription($cleaned);
+<<<<<<< HEAD
 =======
             $reclamation->setEtat("Not Treated");
             $d=new \DateTimeImmutable();
             $reclamation->setCreatedAt($d);
             $reclamation->setIdUser(1);
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             $entityManager->persist($reclamation);
             $entityManager->flush();
 

@@ -18,10 +18,13 @@
                 <th>Max_participant</th>
                 <th>Statut</th>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 <th>image</th>
                 <th>Category</th>
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 <th>actions</th>
             </tr>
         </thead>
@@ -31,16 +34,21 @@
                 <td>{{ event.id }}</td>
                 <td>{{ event.name }}</td>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <td>{{ event.description }}</td>
 =======
                 <td class="description-cell">{{ event.description }}</td>
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+                <td>{{ event.description }}</td>
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 <td>{{ event.dateDebut ? event.dateDebut|date('Y-m-d') : '' }}</td>
                 <td>{{ event.dateFin ? event.dateFin|date('Y-m-d') : '' }}</td>
                 <td>{{ event.organisateur }}</td>
                 <td>{{ event.contact }}</td>
                 <td>{{ event.maxParticipant }}</td>
                 <td>{{ event.statut }}</td>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                  <td>
@@ -50,6 +58,8 @@
                 </td>
                  <td>{{ event.eventCategory.name }}</td>
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 <td>
                     <a href="{{ path('app_event_show', {'id': event.id}) }}">show</a>
                     <a href="{{ path('app_event_edit', {'id': event.id}) }}">edit</a>
@@ -65,7 +75,10 @@
 
     <a href="{{ path('app_event_new') }}">Create new</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 {% endblock %}

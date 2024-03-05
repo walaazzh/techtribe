@@ -15,6 +15,7 @@ return [
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
 <<<<<<< HEAD
+<<<<<<< HEAD
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
 =======
     Vich\UploaderBundle\VichUploaderBundle::class => ['all' => true],
@@ -24,4 +25,7 @@ return [
    
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+    Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
+>>>>>>> c98b2fa (walaa+chiheb integration)
 ];

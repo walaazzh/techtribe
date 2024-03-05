@@ -11,12 +11,16 @@ use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\Validator\Constraints\NotNull;
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 use Symfony\Component\Validator\Constraints\NotNull;
 >>>>>>> 7caf93a (walaa+bundles+final)
+=======
+use Symfony\Component\Validator\Constraints\NotNull;
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 class ResetPasswordFormType extends AbstractType
 {
@@ -29,8 +33,11 @@ class ResetPasswordFormType extends AbstractType
             'required' => false, // Set required to false
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7caf93a (walaa+bundles+final)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             'first_options' => [
                 'label' => 'Password',
                 'attr' => [
@@ -46,6 +53,7 @@ class ResetPasswordFormType extends AbstractType
                 ]
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'constraints' => [
                 new NotNull(), 
 =======
@@ -57,6 +65,10 @@ class ResetPasswordFormType extends AbstractType
             'constraints' => [
                 new NotNull(), 
 >>>>>>> 7caf93a (walaa+bundles+final)
+=======
+            'constraints' => [
+                new NotNull(), 
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 new Length([
                     'min' => 8,
                     'minMessage' => 'Your password should be at least {{ limit }} characters',
@@ -70,12 +82,15 @@ class ResetPasswordFormType extends AbstractType
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'options' => ['attr' => ['class' => 'form-control']],
             
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> 7caf93a (walaa+bundles+final)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         ]);
     }
 

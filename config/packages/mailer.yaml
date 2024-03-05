@@ -3,9 +3,13 @@ framework:
         dsn: '%env(MAILER_DSN)%'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         message_bus: false  
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
         message_bus: false  
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+        message_bus: false  
+>>>>>>> c98b2fa (walaa+chiheb integration)

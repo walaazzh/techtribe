@@ -12,19 +12,25 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use App\Security\LoginFormAuthenticator;
 use Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Form\RegistrationFormType;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 class UserController extends AbstractController
 {
@@ -64,6 +70,7 @@ public function edit(Request $request, User $user): Response
 #[Route('/admin/add', name: 'user_add')]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function add(Request $request,  UserPasswordHasherInterface  $passwordEncoder): Response
 =======
 public function add(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
@@ -71,6 +78,9 @@ public function add(Request $request, UserPasswordEncoderInterface $passwordEnco
 =======
 public function add(Request $request,  UserPasswordHasherInterface  $passwordEncoder): Response
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+public function add(Request $request,  UserPasswordHasherInterface  $passwordEncoder): Response
+>>>>>>> c98b2fa (walaa+chiheb integration)
 {
     $user = new User();
     $form = $this->createForm(UserType::class, $user);
@@ -79,8 +89,11 @@ public function add(Request $request,  UserPasswordHasherInterface  $passwordEnc
     if ($form->isSubmitted() && $form->isValid()) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         // encode the plain password
         $user->setPassword(
             $passwordEncoder->hashPassword(
@@ -89,6 +102,7 @@ public function add(Request $request,  UserPasswordHasherInterface  $passwordEnc
             )
         );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Encode the password using the password encoder
         $encodedPassword = $passwordEncoder->encodePassword($user, $user->getPassword());
@@ -96,6 +110,8 @@ public function add(Request $request,  UserPasswordHasherInterface  $passwordEnc
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($user);
@@ -146,8 +162,11 @@ public function adminEdit(Request $request, User $user): Response
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     #[Route('/register', name: 'app_register')]
     public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, UserAuthenticatorInterface $userAuthenticator, LoginFormAuthenticator $authenticator, EntityManagerInterface $entityManager): Response
     {
@@ -170,6 +189,7 @@ public function adminEdit(Request $request, User $user): Response
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $this->redirectToRoute('app_login');
 =======
             return $this->redirectToRoute('app_home');
@@ -177,6 +197,9 @@ public function adminEdit(Request $request, User $user): Response
 =======
             return $this->redirectToRoute('app_login');
 >>>>>>> 7caf93a (walaa+bundles+final)
+=======
+            return $this->redirectToRoute('app_login');
+>>>>>>> c98b2fa (walaa+chiheb integration)
         }
 
         return $this->render('registration/register.html.twig', [
@@ -185,8 +208,11 @@ public function adminEdit(Request $request, User $user): Response
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 }

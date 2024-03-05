@@ -3,6 +3,7 @@
 namespace App\Controller;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 =======
 
@@ -10,14 +11,20 @@ use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 =======
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
+>>>>>>> c98b2fa (walaa+chiheb integration)
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 use App\Form\ResetPasswordRequestFormType;
 use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\Request;
@@ -29,10 +36,13 @@ use Symfony\Component\Mime\Email;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use App\Form\ResetPasswordFormType;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 class SecurityController extends AbstractController
 {
@@ -58,8 +68,11 @@ class SecurityController extends AbstractController
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 
     #[Route('/forgotten', name: 'forgotten_password')]
@@ -94,6 +107,7 @@ class SecurityController extends AbstractController
                 $email = (new TemplatedEmail())
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->from('bloodifyesprit@gmail.com')
 =======
                 ->from('walaazhani6@gmail.com')
@@ -101,6 +115,9 @@ class SecurityController extends AbstractController
 =======
                 ->from('bloodifyesprit@gmail.com')
 >>>>>>> 7caf93a (walaa+bundles+final)
+=======
+                ->from('bloodifyesprit@gmail.com')
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 ->to($email)
                 ->subject('Reset Password !')
                 ->text($emailBody);
@@ -218,8 +235,11 @@ class SecurityController extends AbstractController
 //         ]);
 //     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 }
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)

@@ -11,21 +11,28 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Knp\Component\Pager\PaginatorInterface;
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 #[Route('/event/category')]
 class EventCategoryController extends AbstractController
 {
     #[Route('/', name: 'app_event_category_index', methods: ['GET'])]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     public function index(EventCategoryRepository $eventCategoryRepository): Response
     {
         return $this->render('event_category/index.html.twig', [
             'event_categories' => $eventCategoryRepository->findAll(),
         ]);
     }
+<<<<<<< HEAD
 =======
     public function index(EventCategoryRepository $eventCategoryRepository,PaginatorInterface $paginator, Request $request): Response
     {
@@ -47,6 +54,8 @@ class EventCategoryController extends AbstractController
         ]);
     */
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
     #[Route('/new', name: 'app_event_category_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response

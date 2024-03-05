@@ -6,6 +6,7 @@ app_home:
     controller: App\Controller\HomeController::index
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 send_email:
     path: /send-email
     controller: App\Controller\EmailController::sendEmail
@@ -20,3 +21,8 @@ send_email:
     path: /send-email
     controller: App\Controller\EmailController::sendEmail
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+send_email:
+    path: /send-email
+    controller: App\Controller\EmailController::sendEmail
+>>>>>>> c98b2fa (walaa+chiheb integration)

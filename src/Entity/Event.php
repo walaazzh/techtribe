@@ -2,12 +2,16 @@
 
 namespace App\Entity;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 use App\Repository\EventRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: EventRepository::class)]
+<<<<<<< HEAD
 =======
 use App\Entity\User;
 use App\Repository\EventRepository;
@@ -22,6 +26,8 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 #[ORM\Entity(repositoryClass: EventRepository::class)]
 #[Vich\Uploadable]
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 class Event
 {
     #[ORM\Id]
@@ -30,6 +36,7 @@ class Event
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+<<<<<<< HEAD
 <<<<<<< HEAD
     private ?string $name = null;
 
@@ -47,6 +54,11 @@ class Event
     #[ORM\Column(length: 255)]
     #[Assert\NotBlank(message: 'This value should not be blank.')]
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+    private ?string $name = null;
+
+    #[ORM\Column(length: 255)]
+>>>>>>> c98b2fa (walaa+chiheb integration)
     private ?string $description = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE)]
@@ -56,6 +68,9 @@ class Event
     private ?\DateTimeInterface $date_fin = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     #[ORM\Column(length: 255)]
     private ?string $organisateur = null;
 
@@ -68,6 +83,7 @@ class Event
     #[ORM\Column(length: 255)]
     private ?string $statut = null;
 
+<<<<<<< HEAD
 =======
     #[Assert\IsTrue(message: "The start date must be before the end date.")]
     public function isDateDebutBeforeDateFin(): bool
@@ -118,6 +134,8 @@ class Event
     }
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     public function getId(): ?int
     {
         return $this->id;
@@ -218,6 +236,7 @@ class Event
 
         return $this;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -342,4 +361,6 @@ class Event
     }
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 }

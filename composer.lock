@@ -6,10 +6,14 @@
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "f25d0fc40f9971805443227e8b848f2f",
 =======
     "content-hash": "163c15d5dc955c0d23e1f02c5a0a947b",
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+    "content-hash": "f25d0fc40f9971805443227e8b848f2f",
+>>>>>>> c98b2fa (walaa+chiheb integration)
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -35,6 +39,7 @@
                 "doctrine/dbal": "^3.7.0",
                 "nesbot/carbon": "^2.71.0 || ^3.0.0",
                 "phpunit/phpunit": "^10.3"
+<<<<<<< HEAD
 =======
     "content-hash": "82b2926549ae8a509a3c98f266cd5ee5",
     "packages": [
@@ -66,20 +71,29 @@
             "suggest": {
                 "ext-imagick": "to generate QR code images"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "Carbon\\Doctrine\\": "src/Carbon/Doctrine/"
 =======
                     "BaconQrCode\\": "src/"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+                    "Carbon\\Doctrine\\": "src/Carbon/Doctrine/"
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 "MIT"
             ],
             "authors": [
@@ -147,6 +161,7 @@
             "autoload": {
                 "psr-4": {
                     "ConsoleTVs\\Profanity\\": "."
+<<<<<<< HEAD
 =======
                 "BSD-2-Clause"
             ],
@@ -192,11 +207,16 @@
                 "psr-4": {
                     "DASPRiD\\Enum\\": "src/"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 "MIT"
             ],
             "authors": [
@@ -211,6 +231,7 @@
                 "source": "https://github.com/ConsoleTVs/Profanity/tree/3.3.0"
             },
             "time": "2023-03-16T20:56:33+00:00"
+<<<<<<< HEAD
 =======
                 "BSD-2-Clause"
             ],
@@ -233,6 +254,8 @@
             },
             "time": "2023-08-25T16:18:39+00:00"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         },
         {
             "name": "doctrine/annotations",
@@ -1531,6 +1554,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "name": "dompdf/dompdf",
             "version": "v2.0.4",
@@ -1595,6 +1619,8 @@
         },
         {
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "egulias/email-validator",
             "version": "4.0.2",
             "source": {
@@ -1664,8 +1690,11 @@
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "google/recaptcha",
             "version": "1.3.0",
             "source": {
@@ -1719,6 +1748,9 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "illuminate/collections",
             "version": "v10.46.0",
             "source": {
@@ -1753,6 +1785,7 @@
                 ],
                 "psr-4": {
                     "Illuminate\\Support\\": ""
+<<<<<<< HEAD
 =======
             "name": "endroid/installer",
             "version": "1.4.5",
@@ -1789,6 +1822,8 @@
                 "psr-4": {
                     "Endroid\\Installer\\": "src"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1798,6 +1833,9 @@
             "authors": [
                 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                     "name": "Taylor Otwell",
                     "email": "taylor@laravel.com"
                 }
@@ -1988,6 +2026,7 @@
                 "symfony/uid": "Required to use Str::ulid() (^6.2).",
                 "symfony/var-dumper": "Required to use the dd function (^6.2).",
                 "vlucas/phpdotenv": "Required to use the Env class and env helper (^5.4.1)."
+<<<<<<< HEAD
 =======
                     "name": "Jeroen van den Enden",
                     "email": "info@endroid.nl"
@@ -2039,11 +2078,16 @@
                 "roave/security-advisories": "Makes sure package versions with known security issues are not installed",
                 "setasign/fpdf": "Enables you to use the PDF writer"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                     "dev-master": "10.x-dev"
                 }
             },
@@ -2053,6 +2097,7 @@
                 ],
                 "psr-4": {
                     "Illuminate\\Support\\": ""
+<<<<<<< HEAD
 =======
                     "dev-main": "5.x-dev"
                 }
@@ -2061,6 +2106,8 @@
                 "psr-4": {
                     "Endroid\\QrCode\\": "src/"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2070,6 +2117,9 @@
             "authors": [
                 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                     "name": "Taylor Otwell",
                     "email": "taylor@laravel.com"
                 }
@@ -2081,6 +2131,7 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2024-02-26T22:20:06+00:00"
+<<<<<<< HEAD
 =======
                     "name": "Jeroen van den Enden",
                     "email": "info@endroid.nl"
@@ -2242,6 +2293,8 @@
             },
             "time": "2023-02-15T13:44:18+00:00"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         },
         {
             "name": "knplabs/knp-components",
@@ -2404,6 +2457,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "name": "masterminds/html5",
             "version": "2.8.1",
@@ -2475,6 +2529,8 @@
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "monolog/monolog",
             "version": "2.9.2",
             "source": {
@@ -2578,6 +2634,9 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "nesbot/carbon",
             "version": "2.72.3",
             "source": {
@@ -2639,6 +2698,7 @@
             "autoload": {
                 "psr-4": {
                     "Carbon\\": "src/Carbon/"
+<<<<<<< HEAD
 =======
             "name": "phenx/php-font-lib",
             "version": "0.5.6",
@@ -2664,11 +2724,16 @@
                 "psr-4": {
                     "FontLib\\": "src/FontLib"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 "MIT"
             ],
             "authors": [
@@ -2709,6 +2774,7 @@
                 }
             ],
             "time": "2024-01-25T10:35:09+00:00"
+<<<<<<< HEAD
 =======
                 "LGPL-2.1-or-later"
             ],
@@ -2772,6 +2838,8 @@
             },
             "time": "2024-02-07T12:49:40+00:00"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3039,6 +3107,9 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "psr/clock",
             "version": "1.0.0",
             "source": {
@@ -3087,8 +3158,11 @@
             "time": "2022-11-25T14:36:26+00:00"
         },
         {
+<<<<<<< HEAD
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "psr/container",
             "version": "1.1.2",
             "source": {
@@ -3291,6 +3365,9 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "psr/simple-cache",
             "version": "3.0.0",
             "source": {
@@ -3306,6 +3383,7 @@
             },
             "require": {
                 "php": ">=8.0.0"
+<<<<<<< HEAD
 =======
             "name": "sabberworm/php-css-parser",
             "version": "v8.5.1",
@@ -3330,24 +3408,34 @@
             "suggest": {
                 "ext-mbstring": "for parsing UTF-8 CSS"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "3.0.x-dev"
 =======
                     "dev-main": "9.0.x-dev"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+                    "dev-master": "3.0.x-dev"
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "autoload": {
                 "psr-4": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "Psr\\SimpleCache\\": "src/"
 =======
                     "Sabberworm\\CSS\\": "src/"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+                    "Psr\\SimpleCache\\": "src/"
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3357,6 +3445,9 @@
             "authors": [
                 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                     "name": "PHP-FIG",
                     "homepage": "https://www.php-fig.org/"
                 }
@@ -3373,6 +3464,7 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
             },
             "time": "2021-10-29T13:26:27+00:00"
+<<<<<<< HEAD
 =======
                     "name": "Raphael Schweikert"
                 },
@@ -3398,6 +3490,8 @@
             },
             "time": "2024-02-15T16:41:13+00:00"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -5204,8 +5298,11 @@
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "symfony/google-mailer",
 =======
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "symfony/google-mailer",
             "version": "v5.4.35",
             "source": {
@@ -5273,6 +5370,7 @@
         },
         {
             "name": "symfony/http-client",
+<<<<<<< HEAD
 >>>>>>> 6f2e479 (walaa+bundles)
             "version": "v5.4.35",
             "source": {
@@ -5342,6 +5440,8 @@
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
             "name": "symfony/http-client",
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "version": "v5.4.37",
             "source": {
                 "type": "git",
@@ -8765,8 +8865,11 @@
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "symfony/twig-pack",
             "version": "v1.0.1",
             "source": {
@@ -8813,10 +8916,13 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "symfony/ux-turbo",
             "version": "v2.16.0",
             "source": {
@@ -9499,8 +9605,11 @@
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "victor-prdh/recaptcha-bundle",
             "version": "1.8.0",
             "source": {
@@ -9527,6 +9636,7 @@
             "extra": {
                 "symfony": {
                     "allow-contrib": "true"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "name": "vich/uploader-bundle",
@@ -9611,10 +9721,13 @@
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "autoload": {
                 "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                     "VictorPrdh\\RecaptchaBundle\\": "src/"
@@ -9624,6 +9737,9 @@
 =======
                     "VictorPrdh\\RecaptchaBundle\\": "src/"
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+                    "VictorPrdh\\RecaptchaBundle\\": "src/"
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -9634,8 +9750,11 @@
                 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
                     "name": "Victor Prudhomme",
                     "email": "contact@victor-prdh.com"
                 }
@@ -9649,6 +9768,9 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "voku/portable-ascii",
             "version": "2.0.1",
             "source": {
@@ -9721,6 +9843,7 @@
                 }
             ],
             "time": "2022-03-08T17:03:00+00:00"
+<<<<<<< HEAD
 =======
                     "name": "Dustin Dobervich",
                     "email": "ddobervich@gmail.com"
@@ -9742,6 +9865,10 @@
         {
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+        },
+        {
+>>>>>>> c98b2fa (walaa+chiheb integration)
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -12030,8 +12157,12 @@
     },
     "platform-dev": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "plugin-api-version": "2.3.0"
 =======
     "plugin-api-version": "2.6.0"
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+    "plugin-api-version": "2.3.0"
+>>>>>>> c98b2fa (walaa+chiheb integration)
 }

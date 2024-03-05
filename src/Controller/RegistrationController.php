@@ -18,8 +18,11 @@ class RegistrationController extends AbstractController
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     // #[Route('/register', name: 'app_register')]
     // public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, UserAuthenticatorInterface $userAuthenticator, LoginFormAuthenticator $authenticator, EntityManagerInterface $entityManager): Response
     // {
@@ -27,6 +30,9 @@ class RegistrationController extends AbstractController
     //     $form = $this->createForm(RegistrationFormType::class, $user);
     //     $form->handleRequest($request);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
     //     if ($form->isSubmitted() && $form->isValid()) {
     //         // encode the plain password
@@ -48,6 +54,7 @@ class RegistrationController extends AbstractController
     //         'registrationForm' => $form->createView(),
     //     ]);
     // }
+<<<<<<< HEAD
 =======
     #[Route('/register', name: 'app_register')]
     public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, UserAuthenticatorInterface $userAuthenticator, LoginFormAuthenticator $authenticator, EntityManagerInterface $entityManager): Response
@@ -86,4 +93,6 @@ class RegistrationController extends AbstractController
     //     ]);
     // }
 >>>>>>> 6f2e479 (walaa+bundles)
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 }

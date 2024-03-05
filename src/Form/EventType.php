@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Event;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -17,6 +18,11 @@ use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 class EventType extends AbstractType
 {
@@ -30,6 +36,7 @@ class EventType extends AbstractType
             ->add('organisateur')
             ->add('contact')
             ->add('max_participant')
+<<<<<<< HEAD
 <<<<<<< HEAD
             ->add('statut')
 =======
@@ -51,6 +58,9 @@ class EventType extends AbstractType
                
             ])
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+            ->add('statut')
+>>>>>>> c98b2fa (walaa+chiheb integration)
         ;
     }
 

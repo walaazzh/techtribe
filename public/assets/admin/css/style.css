@@ -14,6 +14,7 @@
     z-index: 99;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 .description-cell {
@@ -21,6 +22,9 @@
     overflow: auto; 
 }
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 /*** Spinner ***/
 #spinner {
@@ -294,6 +298,7 @@
     background: var(--dark);
     border-color: var(--primary);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /* Pagination container */
 .pagination-container {
@@ -336,4 +341,6 @@ dialog {
             animation: fadeIn 1s ease both;
   }
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 }

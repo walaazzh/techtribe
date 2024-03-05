@@ -11,11 +11,17 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use App\Repository\RatingRepository;
 use App\Entity\Rating;
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use App\Repository\RatingRepository;
+use App\Entity\Rating;
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 #[Route('/reponse')]
 class ReponseController extends AbstractController
@@ -54,9 +60,13 @@ class ReponseController extends AbstractController
 
         return $this->renderForm('reponse/new.html.twig', [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'id'=>$reclamation,
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+            'id'=>$reclamation,
+>>>>>>> c98b2fa (walaa+chiheb integration)
             'reclamation'=>$reclamation,
             'reponse' => $reponse,
             'form' => $form,
@@ -64,6 +74,9 @@ class ReponseController extends AbstractController
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     #[Route('/{id}', name: 'app_reponse_show', methods: ['GET','POST'])]
     public function show(Reponse $reponse,RatingRepository $ratingrepo,Request $request): Response
     {
@@ -122,6 +135,7 @@ class ReponseController extends AbstractController
             'reponse' => $reponse,
             
             'rating_form' => $form->createView(),
+<<<<<<< HEAD
 =======
     #[Route('/{id}', name: 'app_reponse_show', methods: ['GET'])]
     public function show(Reponse $reponse): Response
@@ -129,6 +143,8 @@ class ReponseController extends AbstractController
         return $this->render('reponse/show.html.twig', [
             'reponse' => $reponse,
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         ]);
     }
 
@@ -138,6 +154,9 @@ class ReponseController extends AbstractController
         $form = $this->createForm(ReponseType::class, $reponse);
         $form->handleRequest($request);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
         $reclamation=$reponse->getIdRec();
         $date=$reponse->getCreatedAt();
        
@@ -155,6 +174,7 @@ class ReponseController extends AbstractController
         return $this->renderForm('reponse/edit.html.twig', [
             'id'=>$reclamation->getId(),
             'reclamation'=>$reclamation,
+<<<<<<< HEAD
 =======
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -165,16 +185,22 @@ class ReponseController extends AbstractController
 
         return $this->renderForm('reponse/edit.html.twig', [
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             'reponse' => $reponse,
             'form' => $form,
         ]);
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Route('/Delete/{id}', name: 'app_reponse_delete', methods: ['POST'])]
 =======
     #[Route('/{id}', name: 'app_reponse_delete', methods: ['POST'])]
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+    #[Route('/Delete/{id}', name: 'app_reponse_delete', methods: ['POST'])]
+>>>>>>> c98b2fa (walaa+chiheb integration)
     public function delete(Request $request, Reponse $reponse, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$reponse->getId(), $request->request->get('_token'))) {
@@ -183,9 +209,13 @@ class ReponseController extends AbstractController
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->redirectToRoute('app_reclamation_index', [], Response::HTTP_SEE_OTHER);
 =======
         return $this->redirectToRoute('app_reponse_index', [], Response::HTTP_SEE_OTHER);
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+        return $this->redirectToRoute('app_reclamation_index', [], Response::HTTP_SEE_OTHER);
+>>>>>>> c98b2fa (walaa+chiheb integration)
     }
 }

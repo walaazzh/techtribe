@@ -4,10 +4,13 @@ namespace App\Entity;
 
 use App\Repository\EventCategoryRepository;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: EventCategoryRepository::class)]
@@ -25,6 +28,7 @@ class EventCategory
     private ?string $description = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[ORM\OneToMany(targetEntity: Event::class, mappedBy: 'EventCategory')]
     private Collection $events;
@@ -35,6 +39,8 @@ class EventCategory
     }
 
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     public function getId(): ?int
     {
         return $this->id;
@@ -63,6 +69,7 @@ class EventCategory
 
         return $this;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -96,4 +103,6 @@ class EventCategory
         return $this;
     }
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
 }

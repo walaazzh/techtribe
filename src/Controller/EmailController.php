@@ -14,6 +14,7 @@ class EmailController extends AbstractController
         $email = (new Email())
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->from('bloodifyesprit@gmail.com')
 =======
             ->from('walaazhani6@gmail.com')
@@ -21,6 +22,9 @@ class EmailController extends AbstractController
 =======
             ->from('bloodifyesprit@gmail.com')
 >>>>>>> 7caf93a (walaa+bundles+final)
+=======
+            ->from('bloodifyesprit@gmail.com')
+>>>>>>> c98b2fa (walaa+chiheb integration)
             ->to('walaazhani808@gmail.com')
             ->subject('Test Email')
             ->text('Th from Symfony.');

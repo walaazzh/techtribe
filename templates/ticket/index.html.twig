@@ -1,17 +1,24 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {% extends 'base_admin.html.twig' %}
 =======
 {% extends 'base.html.twig' %}
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+{% extends 'base_admin.html.twig' %}
+>>>>>>> c98b2fa (walaa+chiheb integration)
 
 {% block title %}Ticket index{% endblock %}
 
 {% block body %}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
  <div class="containerticket" style=" margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;margin-top: 100px;margin-bottom: 100px">
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
     <h1>Tickets Table</h1>
 
     <table class="table">
@@ -20,26 +27,35 @@
                 <th>Id</th>
                 <th>Type</th>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <th>Quantite_dispo</th>
                 <th>Date_creation</th>
 =======
                 <th>Quantite_Disponible</th>
                 <th>creation Date</th>
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+                <th>Quantite_dispo</th>
+                <th>Date_creation</th>
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for ticket in tickets %}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+>>>>>>> c98b2fa (walaa+chiheb integration)
             <tr>
                 <td>{{ ticket.id }}</td>
                 <td>{{ ticket.type }}</td>
                 <td>{{ ticket.quantiteDispo }}</td>
                 <td>{{ ticket.dateCreation ? ticket.dateCreation|date('Y-m-d') : '' }}</td>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <td>
                     <a href="{{ path('app_ticket_show', {'id': ticket.id}) }}">show</a>
@@ -50,6 +66,11 @@
                 <td>
                   <a href="{{ path('print_ticket', {'id': ticket.id}) }}" style="text-align: center;">Imprimer Ticket</a>
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+                <td>
+                    <a href="{{ path('app_ticket_show', {'id': ticket.id}) }}">show</a>
+                    <a href="{{ path('app_ticket_edit', {'id': ticket.id}) }}">edit</a>
+>>>>>>> c98b2fa (walaa+chiheb integration)
                 </td>
             </tr>
         {% else %}
@@ -60,6 +81,7 @@
         </tbody>
     </table>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <a href="{{ path('app_ticket_new') }}">Create new</a>
 =======
@@ -67,4 +89,8 @@
 
    
 >>>>>>> chiheb+walaa/syrinecopie_branch
+=======
+
+    <a href="{{ path('app_ticket_new') }}">Create new</a>
+>>>>>>> c98b2fa (walaa+chiheb integration)
 {% endblock %}
