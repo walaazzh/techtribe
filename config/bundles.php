@@ -17,6 +17,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
 =======
     Vich\UploaderBundle\VichUploaderBundle::class => ['all' => true],
@@ -31,4 +32,7 @@ return [
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+
+>>>>>>> 175bd6f (changes)
 ];

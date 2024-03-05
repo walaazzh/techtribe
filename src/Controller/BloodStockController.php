@@ -22,6 +22,7 @@ class BloodStockController extends AbstractController
         ]);
     }
 
+<<<<<<< HEAD
     #[Route('/new', name: 'app_blood_transaction_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -48,11 +49,32 @@ class BloodStockController extends AbstractController
 
         return $this->renderForm('blood_transaction/new.html.twig', [
             'blood_transaction' => $bloodTransaction,
+=======
+    #[Route('/new', name: 'app_blood_stock_new', methods: ['GET', 'POST'])]
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    {
+        $bloodStock = new BloodStock();
+        $form = $this->createForm(BloodStockType::class, $bloodStock);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager->persist($bloodStock);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('app_blood_stock_index', [], Response::HTTP_SEE_OTHER);
+        }
+
+        return $this->renderForm('blood_stock/new.html.twig', [
+            'blood_stock' => $bloodStock,
+>>>>>>> 175bd6f (changes)
             'form' => $form,
         ]);
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 175bd6f (changes)
     #[Route('/{id}', name: 'app_blood_stock_show', methods: ['GET'])]
     public function show(BloodStock $bloodStock): Response
     {

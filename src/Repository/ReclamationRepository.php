@@ -34,8 +34,12 @@ class ReclamationRepository extends ServiceEntityRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
+=======
+
+>>>>>>> 175bd6f (changes)
     public function countRecentReclamations(int $iduser, int $days)
 {
     $qb = $this->createQueryBuilder('r')
@@ -57,12 +61,15 @@ public function search($value): array
         ->getResult();
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+>>>>>>> 175bd6f (changes)
 
 //    public function findOneBySomeField($value): ?Reclamation
 //    {

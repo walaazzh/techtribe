@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controller;
+
 use App\Entity\Reclamation;
 use App\Entity\Reponse;
 use App\Form\ReponseType;
@@ -13,6 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use App\Repository\RatingRepository;
 use App\Entity\Rating;
@@ -25,6 +27,8 @@ use App\Entity\Rating;
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+>>>>>>> 175bd6f (changes)
 
 #[Route('/reponse')]
 class ReponseController extends AbstractController
@@ -32,36 +36,51 @@ class ReponseController extends AbstractController
     #[Route('/', name: 'app_reponse_index', methods: ['GET'])]
     public function index(ReponseRepository $reponseRepository): Response
     {
+        // Fetch all responses from the database
+        $reponses = $reponseRepository->findAll();
+
+        // Render the responses in the index template
         return $this->render('reponse/index.html.twig', [
-            'reponses' => $reponseRepository->findAll(),
+            'reponses' => $reponses,
         ]);
     }
 
     #[Route('/{id}/new', name: 'app_reponse_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager,Reclamation $reclamation): Response
+    public function new(Request $request, EntityManagerInterface $entityManager, Reclamation $reclamation): Response
     {
-
+        // Create a new response instance
         $reponse = new Reponse();
+
+        // Update the state of the associated reclamation to "Waiting"
         $reclamation->setEtat("Waiting");
         $entityManager->flush();
+
+        // Create a form for adding a new response
         $form = $this->createForm(ReponseType::class, $reponse);
         $form->handleRequest($request);
 
+        // Handle form submission
         if ($form->isSubmitted() && $form->isValid()) {
+            // Set the associated reclamation and user for the response
             $reponse->setIdRec($reclamation);
-            $date= new \DateTimeImmutable();
-            $reponse->setCreatedAt($date);
-            $reponse->SetIdUser(1);
-            
+            $reponse->SetIdUser(1); // Assuming user ID 1 for demonstration purposes
+            $reponse->setCreatedAt(new \DateTimeImmutable());
+
+            // Persist the response
             $entityManager->persist($reponse);
             $entityManager->flush();
+
+            // Update the state of the associated reclamation to "Done"
             $reclamation->setEtat("Done");
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_reclamation_index', [], Response::HTTP_SEE_OTHER);
+            // Redirect to the reclamation index page
+            return $this->redirectToRoute('app_reclamation_index');
         }
 
+        // Render the form for adding a new response
         return $this->renderForm('reponse/new.html.twig', [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,11 +93,15 @@ class ReponseController extends AbstractController
 =======
 >>>>>>> 8b6d46d (Rayen)
             'reclamation'=>$reclamation,
+=======
+            'reclamation' => $reclamation,
+>>>>>>> 175bd6f (changes)
             'reponse' => $reponse,
             'form' => $form,
         ]);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -157,14 +180,24 @@ class ReponseController extends AbstractController
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+    #[Route('/{id}', name: 'app_reponse_show', methods: ['GET'])]
+    public function show(Reponse $reponse): Response
+    {
+        // Render the response details in the show template
+        return $this->render('reponse/show.html.twig', [
+            'reponse' => $reponse,
+>>>>>>> 175bd6f (changes)
         ]);
     }
 
     #[Route('/{id}/edit', name: 'app_reponse_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Reponse $reponse, EntityManagerInterface $entityManager): Response
     {
+        // Create a form for editing the response
         $form = $this->createForm(ReponseType::class, $reponse);
         $form->handleRequest($request);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -205,6 +238,20 @@ class ReponseController extends AbstractController
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+
+        // Handle form submission
+        if ($form->isSubmitted() && $form->isValid()) {
+            // Update the response in the database
+            $entityManager->flush();
+
+            // Redirect to the response index page
+            return $this->redirectToRoute('app_reponse_index');
+        }
+
+        // Render the form for editing the response
+        return $this->renderForm('reponse/edit.html.twig', [
+>>>>>>> 175bd6f (changes)
             'reponse' => $reponse,
             'form' => $form,
         ]);
@@ -213,6 +260,7 @@ class ReponseController extends AbstractController
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Route('/Delete/{id}', name: 'app_reponse_delete', methods: ['POST'])]
 =======
     #[Route('/{id}', name: 'app_reponse_delete', methods: ['POST'])]
@@ -223,9 +271,14 @@ class ReponseController extends AbstractController
 =======
     #[Route('/{id}', name: 'app_reponse_delete', methods: ['POST'])]
 >>>>>>> 8b6d46d (Rayen)
+=======
+    #[Route('/{id}', name: 'app_reponse_delete', methods: ['POST'])]
+>>>>>>> 175bd6f (changes)
     public function delete(Request $request, Reponse $reponse, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$reponse->getId(), $request->request->get('_token'))) {
+        // Check if the CSRF token is valid
+        if ($this->isCsrfTokenValid('delete' . $reponse->getId(), $request->request->get('_token'))) {
+            // Remove the response from the database
             $entityManager->remove($reponse);
             $entityManager->flush();
         }
@@ -233,6 +286,7 @@ class ReponseController extends AbstractController
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->redirectToRoute('app_reclamation_index', [], Response::HTTP_SEE_OTHER);
 =======
         return $this->redirectToRoute('app_reponse_index', [], Response::HTTP_SEE_OTHER);
@@ -243,5 +297,9 @@ class ReponseController extends AbstractController
 =======
         return $this->redirectToRoute('app_reponse_index', [], Response::HTTP_SEE_OTHER);
 >>>>>>> 8b6d46d (Rayen)
+=======
+        // Redirect to the response index page
+        return $this->redirectToRoute('app_reponse_index');
+>>>>>>> 175bd6f (changes)
     }
 }

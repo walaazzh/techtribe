@@ -15,18 +15,19 @@ class Reclamation
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[Assert\NotBlank(message : "This field should not be blank.")]
+    #[Assert\NotBlank(message: "This field should not be blank.")]
     #[Assert\Length(
-       min : 7,
-       minMessage : "The field should be at least {{ limit }} characters long."
-  )]
-  #[Assert\Regex(
-       pattern : "/^[a-zA-Z]+$/",
-       message : "Only letters are allowed in this field."
-  )]
+        min: 7,
+        minMessage: "The field should be at least {{ limit }} characters long."
+    )]
+    #[Assert\Regex(
+        pattern: "/^[a-zA-Z]+$/",
+        message: "Only letters are allowed in this field."
+    )]
     private ?string $titre = null;
 
     #[ORM\Column(length: 500)]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -38,6 +39,9 @@ class Reclamation
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+    #[Assert\NotBlank(message: "This field should not be blank.")]
+>>>>>>> 175bd6f (changes)
     private ?string $description = null;
 
     #[ORM\Column(length: 255)]
@@ -46,7 +50,7 @@ class Reclamation
     #[ORM\Column(length: 255)]
     private ?string $etat = null;
 
-    #[ORM\Column]
+    #[ORM\Column(type: 'datetime_immutable')]
     private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\OneToOne(mappedBy: 'id_rec', cascade: ['persist', 'remove'])]
@@ -65,7 +69,7 @@ class Reclamation
         return $this->titre;
     }
 
-    public function setTitre(string $titre): static
+    public function setTitre(string $titre): self
     {
         $this->titre = $titre;
 
@@ -77,7 +81,7 @@ class Reclamation
         return $this->description;
     }
 
-    public function setDescription(string $description): static
+    public function setDescription(string $description): self
     {
         $this->description = $description;
 
@@ -89,7 +93,7 @@ class Reclamation
         return $this->type;
     }
 
-    public function setType(string $type): static
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -101,7 +105,7 @@ class Reclamation
         return $this->etat;
     }
 
-    public function setEtat(string $etat): static
+    public function setEtat(string $etat): self
     {
         $this->etat = $etat;
 
@@ -113,7 +117,7 @@ class Reclamation
         return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeImmutable $createdAt): static
+    public function setCreatedAt(\DateTimeImmutable $createdAt): self
     {
         $this->createdAt = $createdAt;
 
@@ -125,7 +129,7 @@ class Reclamation
         return $this->reponse;
     }
 
-    public function setReponse(Reponse $reponse): static
+    public function setReponse(Reponse $reponse): self
     {
         // set the owning side of the relation if necessary
         if ($reponse->getIdRec() !== $this) {
@@ -142,7 +146,7 @@ class Reclamation
         return $this->id_user;
     }
 
-    public function setIdUser(int $id_user): static
+    public function setIdUser(int $id_user): self
     {
         $this->id_user = $id_user;
 

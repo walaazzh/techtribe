@@ -31,6 +31,10 @@ class BloodStockRepository extends ServiceEntityRepository
 
         return (float) $result;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 175bd6f (changes)
 
 //    /**
 //     * @return BloodStock[] Returns an array of BloodStock objects

@@ -52,37 +52,53 @@
               
                 <div class="navbar-nav w-100">
                     <a href="#" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="#" class="dropdown-item">Buttons</a>
-                            <a href="#" class="dropdown-item">Typography</a>
-                            <a href="#" class="dropdown-item">Other Elements</a>
-                        </div>
-                    </div>
-                    <a href="#" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
-                    <a href="#" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i>Tables</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ path('user_index') }}" class="dropdown-item">Users </a>
-                            {# <a href="{{ path('app_donor_index') }}" class="dropdown-item">Donors</a> #}
-                            {# <a href="{{ path('app_hospital_index') }}" class="dropdown-item">Hospitals</a> #}
-                            <a href="{{ path('app_blood_stock_index') }}" class="dropdown-item">Blood Stock</a>
-                            <a href="{{ path('app_blood_transaction_index') }}" class="dropdown-item">Blood Transactions</a>
-                            <a href="{{ path('app_centrecollect_index') }}" class="dropdown-item">Collect Center</a>
-                            <a href="{{ path('app_event_index') }}" class="dropdown-item">Events</a>
-                            <a href="{{ path('app_event_category_index') }}" class="dropdown-item">Events Category</a>
-                            <a href="{{ path('app_rendezvous_index') }}" class="dropdown-item">Appointments</a>
-                            <a href="{{ path('app_ticket_index') }}" class="dropdown-item">Tickets</a>
-                            <a href="{{ path('app_reclamation_index') }}" class="dropdown-item">Reclamation</a>
-                        
-                        
-                        </div>
-                    </div>
                     <a href="#" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     
                 </div>
+                <div class="navbar-nav w-100">
+    <a href="{{ path('user_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Users</a>
+</div>
+
+{# <div class="navbar-nav w-100">
+    <a href="{{ path('app_donor_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Donors</a>
+</div> #}
+
+{# <div class="navbar-nav w-100">
+    <a href="{{ path('app_hospital_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Hospitals</a>
+</div> #}
+
+<div class="navbar-nav w-100">
+    <a href="{{ path('app_blood_stock_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Blood Stock</a>
+</div>
+
+<div class="navbar-nav w-100">
+    <a href="{{ path('app_blood_transaction_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Transactions</a>
+</div>
+
+<div class="navbar-nav w-100">
+    <a href="{{ path('app_centrecollect_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Collect Center</a>
+</div>
+
+<div class="navbar-nav w-100">
+    <a href="{{ path('app_event_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Events</a>
+</div>
+
+<div class="navbar-nav w-100">
+    <a href="{{ path('app_event_category_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Events Category</a>
+</div>
+
+<div class="navbar-nav w-100">
+    <a href="{{ path('app_rendezvous_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Appointments</a>
+</div>
+
+<div class="navbar-nav w-100">
+    <a href="{{ path('app_ticket_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Tickets</a>
+</div>
+
+<div class="navbar-nav w-100">
+    <a href="{{ path('app_reclamation_index') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Reclamation</a>
+</div>
+
             </nav>
         </div>
         <!-- Sidebar End -->

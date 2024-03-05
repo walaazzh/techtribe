@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Controller;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 175bd6f (changes)
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use App\Entity\User;
 use App\Entity\Hospital;
@@ -24,6 +28,7 @@ class HospitalController extends AbstractController
     }
 
     #[Route('/new', name: 'app_hospital_new', methods: ['GET', 'POST'])]
+<<<<<<< HEAD
 public function new(Request $request, EntityManagerInterface $entityManager, UserPasswordEncoderInterface $passwordEncoder): Response
 {
     $hospital = new Hospital();
@@ -80,21 +85,47 @@ public function new(Request $request, EntityManagerInterface $entityManager, Use
     #[Route('/{id}/edit', name: 'app_hospital_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Hospital $hospital, EntityManagerInterface $entityManager): Response
     {
+=======
+    public function new(Request $request, EntityManagerInterface $entityManager, UserPasswordEncoderInterface $passwordEncoder): Response
+    {
+        $hospital = new Hospital();
+>>>>>>> 175bd6f (changes)
         $form = $this->createForm(HospitalType::class, $hospital);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+<<<<<<< HEAD
             $entityManager->flush();
 
             return $this->redirectToRoute('app_hospital_index', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('hospital/edit.html.twig', [
+=======
+            // Create a new user account
+            $user = new User();
+            $user->setEmail($hospital->getEmail());
+            $user->setRoles(['ROLE_HOSPITAL']);
+            $user->setPassword($passwordEncoder->encodePassword($user, 'default_password')); // Replace 'default_password' with a secure default password
+            // Set other user attributes as needed
+
+            // Set user as related to the hospital
+            $hospital->setUser($user);
+
+            $entityManager->persist($hospital);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('app_hospital_index');
+        }
+
+        return $this->renderForm('hospital/new.html.twig', [
+>>>>>>> 175bd6f (changes)
             'hospital' => $hospital,
             'form' => $form,
         ]);
     }
 
+<<<<<<< HEAD
     #[Route('/{id}', name: 'app_hospital_delete', methods: ['POST'])]
     public function delete(Request $request, Hospital $hospital, EntityManagerInterface $entityManager): Response
     {
@@ -105,4 +136,7 @@ public function new(Request $request, EntityManagerInterface $entityManager, Use
 
         return $this->redirectToRoute('app_hospital_index', [], Response::HTTP_SEE_OTHER);
     }
+=======
+    // Other actions (show, edit, delete) remain unchanged...
+>>>>>>> 175bd6f (changes)
 }

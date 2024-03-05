@@ -3,11 +3,11 @@
 namespace App\Controller;
 
 use App\Entity\Reclamation;
-use App\Entity\Reponse;
 use App\Form\ReclamationType;
 use App\Repository\ReclamationRepository;
 use App\Repository\ReponseRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,6 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Knp\Component\Pager\PaginatorInterface;
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
@@ -23,6 +24,9 @@ use Knp\Component\Pager\PaginatorInterface;
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+use Symfony\Component\Security\Core\Security;
+>>>>>>> 175bd6f (changes)
 
 #[Route('/reclamation')]
 class ReclamationController extends AbstractController
@@ -30,16 +34,20 @@ class ReclamationController extends AbstractController
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
     #[Route('/search', name: 'app_search', methods: ['GET','POST'])]
     public function search(Request $request,ReclamationRepository $reclamationRepository): Response
+=======
+    private $security;
+
+    public function __construct(Security $security)
+>>>>>>> 175bd6f (changes)
     {
-        $search=$request->request->get('search');
-        return $this->render('reclamation/index.html.twig', [
-            'reclamations' => $reclamationRepository->search($search),
-        ]);
+        $this->security = $security;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> chiheb+walaa/syrinecopie_branch
@@ -47,6 +55,9 @@ class ReclamationController extends AbstractController
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+
+>>>>>>> 175bd6f (changes)
     #[Route('/', name: 'app_reclamation_index', methods: ['GET'])]
     public function index(ReclamationRepository $reclamationRepository): Response
     {
@@ -54,7 +65,9 @@ class ReclamationController extends AbstractController
             'reclamations' => $reclamationRepository->findAll(),
         ]);
     }
+
     #[Route('/Front', name: 'app_reclamation_index_front', methods: ['GET'])]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,10 +98,23 @@ class ReclamationController extends AbstractController
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+    public function indexFront(ReclamationRepository $reclamationRepository): Response
+    {
+        $user = $this->security->getUser();
+        if (!$user) {
+            // Handle case when user is not authenticated
+            // You can redirect to a login page or return an error response
+        }
+
+        return $this->render('reclamation/indexFront.html.twig', [
+            'reclamations' => $reclamationRepository->findBy(['user' => $user]),
+>>>>>>> 175bd6f (changes)
         ]);
     }
 
     #[Route('/new', name: 'app_reclamation_new', methods: ['GET', 'POST'])]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,12 +128,16 @@ class ReclamationController extends AbstractController
 =======
     public function new(Request $request, EntityManagerInterface $entityManager): Response
 >>>>>>> 8b6d46d (Rayen)
+=======
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
+>>>>>>> 175bd6f (changes)
     {
         $reclamation = new Reclamation();
         $form = $this->createForm(ReclamationType::class, $reclamation);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -127,8 +157,18 @@ class ReclamationController extends AbstractController
                 return $this->redirectToRoute('app_reclamation_index_front', [
                     'reclamations' => $pagination], Response::HTTP_SEE_OTHER
               );
+=======
+            $user = $this->security->getUser();
+            if (!$user) {
+                // Handle case when user is not authenticated
+                // You can redirect to a login page or return an error response
+>>>>>>> 175bd6f (changes)
             }
+
+            $reclamation->setUser($user);
+            $reclamation->setCreatedAt(new \DateTimeImmutable());
             $reclamation->setEtat("Not Treated");
+<<<<<<< HEAD
             $d=new \DateTimeImmutable();
             $reclamation->setCreatedAt($d);
             $reclamation->setIdUser($this->getUser()->getId());
@@ -148,10 +188,13 @@ class ReclamationController extends AbstractController
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+
+>>>>>>> 175bd6f (changes)
             $entityManager->persist($reclamation);
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_reclamation_index_front', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_reclamation_index_front');
         }
 
         return $this->renderForm('reclamation/new.html.twig', [
@@ -161,13 +204,12 @@ class ReclamationController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_reclamation_show', methods: ['GET'])]
-    public function show(Reclamation $reclamation,ReponseRepository $reprepo): Response
+    public function show(Reclamation $reclamation, ReponseRepository $reprepo): Response
     {
-        $reponse = new Reponse();
-        $reponse=$reprepo->findByRec($reclamation->getId());
+        $reponse = $reprepo->findByRec($reclamation->getId());
         return $this->render('reclamation/show.html.twig', [
             'reclamation' => $reclamation,
-            'reponse'=>$reponse,
+            'reponse' => $reponse,
         ]);
     }
 
@@ -180,7 +222,7 @@ class ReclamationController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_reclamation_index_front', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_reclamation_index_front');
         }
 
         return $this->renderForm('reclamation/edit.html.twig', [
@@ -192,17 +234,10 @@ class ReclamationController extends AbstractController
     #[Route('/{id}', name: 'app_reclamation_delete', methods: ['POST'])]
     public function delete(Request $request, Reclamation $reclamation, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$reclamation->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $reclamation->getId(), $request->request->get('_token'))) {
             $entityManager->remove($reclamation);
             $entityManager->flush();
         }
-       $check=$request->request->get('front');
-       if($check==1)
-       {
-        return $this->redirectToRoute('app_reclamation_index_front', [], Response::HTTP_SEE_OTHER);
-       }
-       else
-        return $this->redirectToRoute('app_reclamation_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('app_reclamation_index_front');
     }
-  
 }
