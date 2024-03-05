@@ -5,23 +5,27 @@ namespace App\Controller;
 use App\Entity\BloodTransaction;
 use App\Form\BloodTransactionType;
 use App\Repository\BloodTransactionRepository;
-<<<<<<< HEAD
-=======
-use App\Repository\HospitalRepository;
->>>>>>> Rayen_Majdoub
+use App\Repository\HospitalRepository; // Add this line
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-<<<<<<< HEAD
-=======
-use App\Service\TransactionAvailabilityService;
->>>>>>> Rayen_Majdoub
+use App\Service\TransactionAvailabilityService; // Add this line
 
 #[Route('/blood/transaction')]
 class BloodTransactionController extends AbstractController
 {
+    private $hospitalRepository; // Declare hospitalRepository property
+    private $transactionAvailabilityService; // Declare transactionAvailabilityService property
+
+    // Inject HospitalRepository and TransactionAvailabilityService via constructor
+    public function __construct(HospitalRepository $hospitalRepository, TransactionAvailabilityService $transactionAvailabilityService)
+    {
+        $this->hospitalRepository = $hospitalRepository;
+        $this->transactionAvailabilityService = $transactionAvailabilityService;
+    }
+
     #[Route('/', name: 'app_blood_transaction_index', methods: ['GET'])]
     public function index(BloodTransactionRepository $bloodTransactionRepository): Response
     {
@@ -38,33 +42,25 @@ class BloodTransactionController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-<<<<<<< HEAD
-            $entityManager->persist($bloodTransaction);
-            $entityManager->flush();
-
-            return $this->redirectToRoute('app_blood_transaction_index', [], Response::HTTP_SEE_OTHER);
-        }
-
-=======
-            // Vérifier la disponibilité de la quantité dans le stock
+            // Check availability of the requested quantity
             $requestedQuantity = $bloodTransaction->getQuantityDonated();
             if (!$this->transactionAvailabilityService->checkAvailability($requestedQuantity)) {
-                // Redirection ou affichage d'un message d'erreur si la quantité demandée n'est pas disponible
-                // Par exemple, vous pouvez utiliser addFlash() pour afficher un message flash
                 $this->addFlash('error', 'The requested quantity is not available in stock');
                 return $this->redirectToRoute('app_blood_transaction_index');
             }
 
-            // Si la quantité est disponible, persistez la nouvelle transaction
+            // Set hospital for the blood transaction
+            $user = $this->getUser();
+            $hospital = $user->getHospital();
+            $bloodTransaction->setHospital($hospital);
+
+            // Persist and flush the blood transaction
             $entityManager->persist($bloodTransaction);
             $entityManager->flush();
 
-            // Redirection vers la page d'index des transactions
             return $this->redirectToRoute('app_blood_transaction_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        // Affichage du formulaire de création de transaction
->>>>>>> Rayen_Majdoub
         return $this->renderForm('blood_transaction/new.html.twig', [
             'blood_transaction' => $bloodTransaction,
             'form' => $form,
@@ -107,14 +103,4 @@ class BloodTransactionController extends AbstractController
 
         return $this->redirectToRoute('app_blood_transaction_index', [], Response::HTTP_SEE_OTHER);
     }
-<<<<<<< HEAD
-=======
-    private $hospitalRepository;
-    private $transactionAvailabilityService;
-    public function __construct(HospitalRepository $hospitalRepository, TransactionAvailabilityService $transactionAvailabilityService)
-    {
-        $this->hospitalRepository = $hospitalRepository;
-        $this->transactionAvailabilityService = $transactionAvailabilityService;
-    }
->>>>>>> Rayen_Majdoub
 }

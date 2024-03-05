@@ -24,12 +24,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[Assert\NotBlank]
     private ?string $first_name = null;
 
-<<<<<<< HEAD
     #[ORM\Column(length: 255)]
     #[Assert\NotBlank]
-=======
-    #[ORM\Column(length: 255, nullable: true)]
->>>>>>> Rayen_Majdoub
     private ?string $last_name = null;
 
     #[ORM\Column]

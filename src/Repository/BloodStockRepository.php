@@ -20,8 +20,6 @@ class BloodStockRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, BloodStock::class);
     }
-<<<<<<< HEAD
-=======
     public function findAvailableQuantity(): float
     {
         // Implémentez votre logique pour récupérer la quantité disponible dans le stock ici
@@ -33,7 +31,7 @@ class BloodStockRepository extends ServiceEntityRepository
 
         return (float) $result;
     }
->>>>>>> Rayen_Majdoub
+
 
 //    /**
 //     * @return BloodStock[] Returns an array of BloodStock objects
