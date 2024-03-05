@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 
+<<<<<<< HEAD
 {% block title %}New Ticket{% endblock %}
 
 {% block body %}
@@ -8,4 +9,23 @@
     {{ include('ticket/_form.html.twig') }}
 
     <a href="{{ path('app_ticket_index') }}">back to list</a>
+=======
+{% block title %}Come Get Your Own Ticket {% endblock %}
+
+
+{% block body %}
+
+    
+    <div class="ticket-form-container" style="max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9;margin-top: 100px;margin-bottom: 100px">
+        <h1>Come Get Your Own Ticket</h1>
+
+        <div class="ticket-form" style="margin-bottom: 20px;margin-top: 20px">
+            {{ include('ticket/_form.html.twig') }}
+        </div>
+        
+        <a href="{{ path('app_events') }}" style="display: inline-block;margin-top: 10px;">❌</a>
+      
+    </div>
+      
+>>>>>>> chiheb+walaa/syrinecopie_branch
 {% endblock %}

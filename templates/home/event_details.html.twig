@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ event.name }}  Details{% endblock %}
+{% block body %}
+<div class="ticket-details-page">
+    <div class="container">
+        <div class="custom-row">
+            <div class="custom-col-left">
+                <div class="left-image">
+                    <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="{{ event.name }}" >
+                </div>
+            </div>
+            <div class="custom-col-right">
+                <div class="right-content">
+                    <h4>{{ event.name }}</h4>
+                    <span>{{ event.maxParticipant }} places are still available</span>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> {{ event.getDateDebut()|date('Y-m-d') }} to {{ event.getDateFin()|date('Y-m-d') }}</li>
+                        <li><i class="fa fa-map-marker"></i>{{ event.name }}</li>
+                        <li><i class="fa fa-map-marker"></i>{{ event.organisateur }}</li>
+                    </ul>
+                    <div class="quantity-content">
+                        
+                            <p>{{ event.description }}</p>
+                        
+                    </div>
+                    <div class="total">                     
+                     <a href="{{ path('app_ticket_new', {'eventId': event.id}) }}">Purchase Ticket</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    {% for flash_message in app.flashes('success') %}
+    <div class="alert alert-success" style="color:green;text-align:center">
+        {{ flash_message }}
+    </div>
+{% endfor %}
+
+{% for flash_message in app.flashes('warning') %}
+    <div class="alert alert-warning"style="color:red;text-align:center">
+        {{ flash_message }}
+    </div>
+{% endfor %}
+
+</div>
+
+{% endblock %}

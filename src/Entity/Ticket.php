@@ -23,6 +23,15 @@ class Ticket
     #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTimeInterface $date_creation = null;
 
+<<<<<<< HEAD
+=======
+    #[ORM\ManyToOne(inversedBy: 'tickets')]
+    private ?Event $Event = null;
+
+    #[ORM\ManyToOne(inversedBy: 'tickets')]
+    private ?User $User = null;
+
+>>>>>>> chiheb+walaa/syrinecopie_branch
     public function getId(): ?int
     {
         return $this->id;
@@ -57,10 +66,49 @@ class Ticket
         return $this->date_creation;
     }
 
+<<<<<<< HEAD
     public function setDateCreation(\DateTimeInterface $date_creation): static
+=======
+    public function setDateCreation(\DateTimeInterface $date_creation): self
+>>>>>>> chiheb+walaa/syrinecopie_branch
     {
         $this->date_creation = $date_creation;
 
         return $this;
     }
+<<<<<<< HEAD
+=======
+
+    #[ORM\PrePersist]
+    public function setDefaultDateCreation(): void
+    {
+        $this->date_creation = new \DateTime();
+    }
+
+
+    public function getEvent(): ?Event
+    {
+        return $this->Event;
+    }
+
+    public function setEvent(?Event $Event): static
+    {
+        $this->Event = $Event;
+
+        return $this;
+    }
+    
+
+    public function getUser(): ?User
+    {
+        return $this->User;
+    }
+
+    public function setUser(?User $User): static
+    {
+        $this->User = $User;
+
+        return $this;
+    }
+>>>>>>> chiheb+walaa/syrinecopie_branch
 }

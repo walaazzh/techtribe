@@ -14,8 +14,14 @@
         "doctrine/doctrine-bundle": "^2.11",
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^3.0",
+<<<<<<< HEAD
         "consoletvs/profanity": "^3.2",
         "google/recaptcha": "*",
+=======
+        "dompdf/dompdf": "^2.0",
+        "endroid/qr-code-bundle": "*",
+        "knplabs/knp-paginator-bundle": "^5.9",
+>>>>>>> chiheb+walaa/syrinecopie_branch
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.26",
         "sensio/framework-extra-bundle": "^6.2",
@@ -27,9 +33,13 @@
         "symfony/expression-language": "5.4.*",
         "symfony/flex": "^1.17|^2",
         "symfony/form": "5.4.*",
+<<<<<<< HEAD
         "knplabs/knp-paginator-bundle": "^5.9",
         "symfony/framework-bundle": "5.4.*",
         "symfony/google-mailer": "5.4.*",
+=======
+        "symfony/framework-bundle": "5.4.*",
+>>>>>>> chiheb+walaa/syrinecopie_branch
         "symfony/http-client": "5.4.*",
         "symfony/intl": "5.4.*",
         "symfony/mailer": "5.4.*",
@@ -52,7 +62,11 @@
         "symfony/yaml": "5.4.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0",
+<<<<<<< HEAD
         "victor-prdh/recaptcha-bundle": "^1.8"
+=======
+        "vich/uploader-bundle": "^2.3"
+>>>>>>> chiheb+walaa/syrinecopie_branch
     },
     "config": {
         "allow-plugins": {

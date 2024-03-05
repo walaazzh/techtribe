@@ -10,17 +10,43 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+<<<<<<< HEAD
+=======
+use Knp\Component\Pager\PaginatorInterface;
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
 #[Route('/event/category')]
 class EventCategoryController extends AbstractController
 {
     #[Route('/', name: 'app_event_category_index', methods: ['GET'])]
+<<<<<<< HEAD
     public function index(EventCategoryRepository $eventCategoryRepository): Response
     {
         return $this->render('event_category/index.html.twig', [
             'event_categories' => $eventCategoryRepository->findAll(),
         ]);
     }
+=======
+    public function index(EventCategoryRepository $eventCategoryRepository,PaginatorInterface $paginator, Request $request): Response
+    {
+        $eventCategories = $eventCategoryRepository->findAll();
+    
+        $eventCategoriesPaginated = $paginator->paginate(
+        $eventCategories,
+        $request->query->getInt('page', 1), 
+        5
+    );
+
+    return $this->render('event_category/index.html.twig', [
+        'event_categories' => $eventCategoriesPaginated,
+    ]);
+    }
+    /*
+             return $this->render('event_category/index.html.twig', [
+            'event_categories' => $eventCategoryRepository->findAll(),
+        ]);
+    */
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
     #[Route('/new', name: 'app_event_category_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response

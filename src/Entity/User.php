@@ -1,6 +1,11 @@
 <?php
 
 namespace App\Entity;
+<<<<<<< HEAD
+=======
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+>>>>>>> chiheb+walaa/syrinecopie_branch
 use Symfony\Component\Validator\Constraints as Assert;
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
@@ -37,10 +42,25 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     #[Assert\NotBlank]
     private ?string $password = null;
+<<<<<<< HEAD
     
     #[ORM\Column(type: 'string', length: 100, nullable: true)]
     private $resetToken;
 
+=======
+
+    #[ORM\OneToMany(targetEntity: Participation::class, mappedBy: 'User')]
+    private Collection $participations;
+
+    #[ORM\OneToMany(targetEntity: Ticket::class, mappedBy: 'User')]
+    private Collection $tickets;
+
+    public function __construct()
+    {
+        $this->participations = new ArrayCollection();
+        $this->tickets = new ArrayCollection();
+    }
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
     public function getId(): ?int
     {
@@ -151,6 +171,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->last_name = $last_name;
         return $this;
     }
+<<<<<<< HEAD
     public function getResetToken(): ?string
     {
         return $this->resetToken;
@@ -159,6 +180,69 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setResetToken(?string $resetToken): self
     {
         $this->resetToken = $resetToken;
+=======
+
+    /**
+     * @return Collection<int, Participation>
+     */
+    public function getParticipations(): Collection
+    {
+        return $this->participations;
+    }
+
+    public function addParticipation(Participation $participation): static
+    {
+        if (!$this->participations->contains($participation)) {
+            $this->participations->add($participation);
+            $participation->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeParticipation(Participation $participation): static
+    {
+        if ($this->participations->removeElement($participation)) {
+            // set the owning side to null (unless already changed)
+            if ($participation->getUser() === $this) {
+                $participation->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+    public function __toString()
+{
+    return (string) $this->getFirstName();
+}
+
+    /**
+     * @return Collection<int, Ticket>
+     */
+    public function getTickets(): Collection
+    {
+        return $this->tickets;
+    }
+
+    public function addTicket(Ticket $ticket): static
+    {
+        if (!$this->tickets->contains($ticket)) {
+            $this->tickets->add($ticket);
+            $ticket->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTicket(Ticket $ticket): static
+    {
+        if ($this->tickets->removeElement($ticket)) {
+            // set the owning side to null (unless already changed)
+            if ($ticket->getUser() === $this) {
+                $ticket->setUser(null);
+            }
+        }
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
         return $this;
     }

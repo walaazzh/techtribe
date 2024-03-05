@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 {% extends 'base_admin.html.twig' %}
+=======
+{% extends 'base.html.twig' %}
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
 {% block title %}Ticket index{% endblock %}
 
 {% block body %}
+<<<<<<< HEAD
+=======
+
+ <div class="containerticket" style=" margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;margin-top: 100px;margin-bottom: 100px">
+>>>>>>> chiheb+walaa/syrinecopie_branch
     <h1>Tickets Table</h1>
 
     <table class="table">
@@ -10,21 +19,37 @@
             <tr>
                 <th>Id</th>
                 <th>Type</th>
+<<<<<<< HEAD
                 <th>Quantite_dispo</th>
                 <th>Date_creation</th>
+=======
+                <th>Quantite_Disponible</th>
+                <th>creation Date</th>
+>>>>>>> chiheb+walaa/syrinecopie_branch
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for ticket in tickets %}
+<<<<<<< HEAD
+=======
+        
+>>>>>>> chiheb+walaa/syrinecopie_branch
             <tr>
                 <td>{{ ticket.id }}</td>
                 <td>{{ ticket.type }}</td>
                 <td>{{ ticket.quantiteDispo }}</td>
                 <td>{{ ticket.dateCreation ? ticket.dateCreation|date('Y-m-d') : '' }}</td>
+<<<<<<< HEAD
                 <td>
                     <a href="{{ path('app_ticket_show', {'id': ticket.id}) }}">show</a>
                     <a href="{{ path('app_ticket_edit', {'id': ticket.id}) }}">edit</a>
+=======
+               
+                 
+                <td>
+                  <a href="{{ path('print_ticket', {'id': ticket.id}) }}" style="text-align: center;">Imprimer Ticket</a>
+>>>>>>> chiheb+walaa/syrinecopie_branch
                 </td>
             </tr>
         {% else %}
@@ -34,6 +59,12 @@
         {% endfor %}
         </tbody>
     </table>
+<<<<<<< HEAD
 
     <a href="{{ path('app_ticket_new') }}">Create new</a>
+=======
+     </div>
+
+   
+>>>>>>> chiheb+walaa/syrinecopie_branch
 {% endblock %}

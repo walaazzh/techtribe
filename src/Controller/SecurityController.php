@@ -1,11 +1,16 @@
 <?php
 
 namespace App\Controller;
+<<<<<<< HEAD
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
+=======
+
+>>>>>>> chiheb+walaa/syrinecopie_branch
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+<<<<<<< HEAD
 use App\Form\ResetPasswordRequestFormType;
 use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,6 +21,8 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use App\Form\ResetPasswordFormType;
+=======
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
 class SecurityController extends AbstractController
 {
@@ -39,6 +46,7 @@ class SecurityController extends AbstractController
     {
         throw new \LogicException('This method can be blank - it will be intercepted by the logout key on your firewall.');
     }
+<<<<<<< HEAD
 
 
     #[Route('/forgotten', name: 'forgotten_password')]
@@ -188,3 +196,6 @@ class SecurityController extends AbstractController
 //             'requestPassForm' => $form->createView()
 //         ]);
 //     }
+=======
+}
+>>>>>>> chiheb+walaa/syrinecopie_branch

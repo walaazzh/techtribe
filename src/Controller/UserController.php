@@ -10,11 +10,15 @@ use App\Entity\User;
 use App\Form\UserType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+<<<<<<< HEAD
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use App\Security\LoginFormAuthenticator;
 use Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Form\RegistrationFormType;
+=======
+
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
 class UserController extends AbstractController
 {
@@ -52,13 +56,18 @@ public function edit(Request $request, User $user): Response
     ]);
 }
 #[Route('/admin/add', name: 'user_add')]
+<<<<<<< HEAD
 public function add(Request $request,  UserPasswordHasherInterface  $passwordEncoder): Response
+=======
+public function add(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
+>>>>>>> chiheb+walaa/syrinecopie_branch
 {
     $user = new User();
     $form = $this->createForm(UserType::class, $user);
     $form->handleRequest($request);
 
     if ($form->isSubmitted() && $form->isValid()) {
+<<<<<<< HEAD
         // encode the plain password
         $user->setPassword(
             $passwordEncoder->hashPassword(
@@ -66,6 +75,11 @@ public function add(Request $request,  UserPasswordHasherInterface  $passwordEnc
                 $form->get('password')->getData()
             )
         );
+=======
+        // Encode the password using the password encoder
+        $encodedPassword = $passwordEncoder->encodePassword($user, $user->getPassword());
+        $user->setPassword($encodedPassword);
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($user);
@@ -114,6 +128,7 @@ public function adminEdit(Request $request, User $user): Response
 
         return $this->redirectToRoute('user_index');
 }
+<<<<<<< HEAD
     #[Route('/register', name: 'app_register')]
     public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, UserAuthenticatorInterface $userAuthenticator, LoginFormAuthenticator $authenticator, EntityManagerInterface $entityManager): Response
     {
@@ -142,4 +157,6 @@ public function adminEdit(Request $request, User $user): Response
         ]);
     }
 
+=======
+>>>>>>> chiheb+walaa/syrinecopie_branch
 }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 {% extends 'base.html.twig' %}
+=======
+{% extends 'base_admin.html.twig' %}
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
 {% block title %}Event{% endblock %}
 
@@ -43,8 +47,43 @@
                 <th>Statut</th>
                 <td>{{ event.statut }}</td>
             </tr>
+<<<<<<< HEAD
         </tbody>
     </table>
+=======
+            <tr>
+                    <th>Image</th>
+                   <td>
+                    {% if event.imageName %}
+                        <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Event Image">
+                    {% endif %}
+                  </td>
+                </tr>
+            <tr>
+                    <th>Category</th>
+                    <td>{{ event.eventCategory.name }}</td>
+                </tr>
+        </tbody>
+    </table>
+    {# Affichage du nombre de participants et liste des participants #}
+   <dl>
+    <dt>Participants:</dt>
+    <dd>
+        {% set participations = event.getParticipations() %}
+        {{ participations|length }} participant(s)
+        <ul>
+            {% for participation in participations %}
+                <li>{{ participation.getUser().getUsername() }}</li>
+            {% else %}
+                <li>Aucun participant pour le moment.</li>
+            {% endfor %}
+        </ul>
+    </dd>
+</dl>
+
+
+    
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
     <a href="{{ path('app_event_index') }}">back to list</a>
 

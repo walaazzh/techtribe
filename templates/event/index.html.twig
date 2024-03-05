@@ -17,6 +17,11 @@
                 <th>Contact</th>
                 <th>Max_participant</th>
                 <th>Statut</th>
+<<<<<<< HEAD
+=======
+                <th>image</th>
+                <th>Category</th>
+>>>>>>> chiheb+walaa/syrinecopie_branch
                 <th>actions</th>
             </tr>
         </thead>
@@ -25,13 +30,26 @@
             <tr>
                 <td>{{ event.id }}</td>
                 <td>{{ event.name }}</td>
+<<<<<<< HEAD
                 <td>{{ event.description }}</td>
+=======
+                <td class="description-cell">{{ event.description }}</td>
+>>>>>>> chiheb+walaa/syrinecopie_branch
                 <td>{{ event.dateDebut ? event.dateDebut|date('Y-m-d') : '' }}</td>
                 <td>{{ event.dateFin ? event.dateFin|date('Y-m-d') : '' }}</td>
                 <td>{{ event.organisateur }}</td>
                 <td>{{ event.contact }}</td>
                 <td>{{ event.maxParticipant }}</td>
                 <td>{{ event.statut }}</td>
+<<<<<<< HEAD
+=======
+                 <td>
+                    {% if event.imageName %}
+                        <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Event Image" style="width: 100px; height: auto;">
+                    {% endif %}
+                </td>
+                 <td>{{ event.eventCategory.name }}</td>
+>>>>>>> chiheb+walaa/syrinecopie_branch
                 <td>
                     <a href="{{ path('app_event_show', {'id': event.id}) }}">show</a>
                     <a href="{{ path('app_event_edit', {'id': event.id}) }}">edit</a>
@@ -46,4 +64,8 @@
     </table>
 
     <a href="{{ path('app_event_new') }}">Create new</a>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> chiheb+walaa/syrinecopie_branch
 {% endblock %}

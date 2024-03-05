@@ -5,6 +5,12 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+<<<<<<< HEAD
+=======
+use Doctrine\Persistence\ManagerRegistry;
+use App\Entity\EventCategory;
+use App\Entity\Event;
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
 class HomeController extends AbstractController
 {
@@ -47,6 +53,7 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+<<<<<<< HEAD
     #[Route('/userbook', name: 'userbook')]
     public function rendezvous(): Response
     {
@@ -54,5 +61,27 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+=======
+    #[Route('/events', name: 'app_events')]
+    public function events(ManagerRegistry $registry): Response
+    {
+        // Fetch all event categories from the database
+        $eventCategories = $registry->getRepository(EventCategory::class)->findAll();
+    
+        return $this->render('home/events.html.twig', [
+            'eventCategories' => $eventCategories,
+        ]);
+    }
+   
+
+    #[Route('/eventdetails/{id}', name: 'event_details')]
+    public function eventDetails(Event $event): Response
+    {
+        return $this->render('home/event_details.html.twig', [
+            'event' => $event,
+        ]);
+    }
+
+>>>>>>> chiheb+walaa/syrinecopie_branch
 }
 

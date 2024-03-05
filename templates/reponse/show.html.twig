@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 {% extends 'base.html.twig' %}
+=======
+{% extends 'base_admin.html.twig' %}
+>>>>>>> chiheb+walaa/syrinecopie_branch
 
 {% block title %}Reponse{% endblock %}
 
 {% block body %}
+<<<<<<< HEAD
 <section>
   <div class="container my-5">
     <div class="row">
@@ -76,3 +81,34 @@
   </div>
 </section>
 {% endblock %}
+=======
+    <h1>{{reclamation.titre}}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ reponse.id }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ reponse.description }}</td>
+            </tr>
+            <tr>
+                <th>CreatedAt</th>
+                <td>{{ reponse.createdAt ? reponse.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Id_user</th>
+                <td>{{ reponse.idUser }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_reponse_index') }}">back to list</a>
+
+    <a href="{{ path('app_reponse_edit', {'id': reponse.id}) }}">edit</a>
+
+    {{ include('reponse/_delete_form.html.twig') }}
+{% endblock %}
+>>>>>>> chiheb+walaa/syrinecopie_branch

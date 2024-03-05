@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+{% block title %} events{% endblock %}
+
+{% block body %}
+   
+<div class="main-container">
+    <h2>Browse Events</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, velit.</p>
+     <div class="filter-container">
+        <div class="category-head">
+            <ul>
+                        <div class = "category-title active" id = "all">
+                            <li>All</li>
+                        </div>
+                {% for category in eventCategories %}
+                <div class="category-title{% if loop.first %} active{% endif %}" id="{{ category.id }}">
+                    <li>{{ category.name }}</li>
+                    
+                </div>
+                {% endfor %} 
+            </ul>
+        </div>
+    </div>
+
+        <div class="posts-collect">
+            <div class="posts-main-container">
+                <!-- Your loop content here -->
+                {% for category in eventCategories %}
+                {% for event in category.events %}
+                <div class="all {{ category.id }}" style="display: block;">
+                    <div class="post-img">
+                       <a href="{{ path('event_details', {'id': event.id}) }}">
+                          <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="post">
+                       </a>
+                        <span class="category-name">{{ category.name|lower }}</span>
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-content-top">
+                         <span><i class="fas fa-calendar"></i>{{ event.getDateDebut()|date('Y-m-d') }}</span>
+                            
+
+                            <span>
+                                <i class="fas fa-comment"></i> {{ event.statut }}
+                            </span>
+                        </div>
+                        <h2>{{ event.name }}</h2>
+                        <p>{{ event.description }}</p>
+                    </div>
+                    <a href="{{ path('event_participate', {'id': event.id}) }}" class="read-btn">participate</a>
+                </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JS file -->
+ <script src="{{ asset('assets/js/scriptevent.js') }}"></script>
+
+{% endblock %}
