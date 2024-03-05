@@ -1,8 +1,10 @@
-{% extends 'base_admin.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block title %}Ticket index{% endblock %}
 
 {% block body %}
+
+ <div class="containerticket" style=" margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;margin-top: 100px;margin-bottom: 100px">
     <h1>Tickets Table</h1>
 
     <table class="table">
@@ -10,21 +12,23 @@
             <tr>
                 <th>Id</th>
                 <th>Type</th>
-                <th>Quantite_dispo</th>
-                <th>Date_creation</th>
+                <th>Quantite_Disponible</th>
+                <th>creation Date</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for ticket in tickets %}
+        
             <tr>
                 <td>{{ ticket.id }}</td>
                 <td>{{ ticket.type }}</td>
                 <td>{{ ticket.quantiteDispo }}</td>
                 <td>{{ ticket.dateCreation ? ticket.dateCreation|date('Y-m-d') : '' }}</td>
+               
+                 
                 <td>
-                    <a href="{{ path('app_ticket_show', {'id': ticket.id}) }}">show</a>
-                    <a href="{{ path('app_ticket_edit', {'id': ticket.id}) }}">edit</a>
+                  <a href="{{ path('print_ticket', {'id': ticket.id}) }}" style="text-align: center;">Imprimer Ticket</a>
                 </td>
             </tr>
         {% else %}
@@ -34,6 +38,7 @@
         {% endfor %}
         </tbody>
     </table>
+     </div>
 
-    <a href="{{ path('app_ticket_new') }}">Create new</a>
+   
 {% endblock %}

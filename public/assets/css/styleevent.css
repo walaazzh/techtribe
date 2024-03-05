@@ -135,6 +135,8 @@ a.read-btn {
 .read-btn:hover{
     background: #f6f6f6;
 }
+
+
 /***************************************************************************************************/
                               /*EVENT_DETAILS*/
 /***************************************************************************************************/
@@ -313,7 +315,7 @@ a.read-btn {
 
 .total .main-dark-button {
     background-color: #4dc9dc;
-    width: 100px;
+    width: 150px;
     color: #f6f6f6;
     margin-top: 20px; /* Ajuster la marge supérieure selon vos besoins */
     display: inline-block; /* Permet de centrer horizontalement */

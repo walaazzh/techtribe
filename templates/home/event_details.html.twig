@@ -24,23 +24,22 @@
                         
                     </div>
                     <div class="total">                     
-                        <div class="main-dark-button"><a href="{{ path('event_participate', {'id': event.id}) }}">participate</a></div>
+                     <a href="{{ path('app_ticket_new', {'eventId': event.id}) }}">Purchase Ticket</a>
                     </div>
             </div>
         </div>
     </div>
+    {% for flash_message in app.flashes('success') %}
+    <div class="alert alert-success" style="color:green;text-align:center">
+        {{ flash_message }}
+    </div>
+{% endfor %}
 
-      <div class="follow-widget">
-  <h2>Share This</h2>
-<p>Spread the word with your friends</p>
-  <ul>
-    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-    <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-  </ul>
-</div>
+{% for flash_message in app.flashes('warning') %}
+    <div class="alert alert-warning"style="color:red;text-align:center">
+        {{ flash_message }}
+    </div>
+{% endfor %}
 
 </div>
 

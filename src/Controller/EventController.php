@@ -120,6 +120,12 @@ public function new(Request $request, EntityManagerInterface $entityManager): Re
         return $this->redirectToRoute('app_login');
     }
     // Vérifiez s'il y a des places disponibles
+
+    $currentDate = new \DateTime();
+    if ($event->getDateFin() < $currentDate) {
+        $this->addFlash('warning', 'Sorry, the event has already ended.');
+        return $this->redirectToRoute('event_details', ['id' => $event->getId()]);
+    }
     if ($event->getMaxParticipant() <= 0) {
         $this->addFlash('warning', 'Sorry, no more places available for this event.');
         return $this->redirectToRoute('event_details', ['id' => $event->getId()]);

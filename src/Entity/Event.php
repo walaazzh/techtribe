@@ -57,7 +57,7 @@ class Event
 
     #[ORM\Column]
     #[Assert\NotBlank(message: 'This value should not be blank.')]
-    #[Assert\Range(min: 30, minMessage: 'The maximum number of participants must be at least {{ limit }}.')]
+  
     private ?int $max_participant = null;
 
     #[ORM\Column(length: 255)]
@@ -79,9 +79,13 @@ class Event
     #[ORM\OneToMany(targetEntity: Participation::class, mappedBy: 'Event')]
     private Collection $participations;
 
+    #[ORM\OneToMany(targetEntity: Ticket::class, mappedBy: 'Event')]
+    private Collection $tickets;
+
     public function __construct()
     {
         $this->participations = new ArrayCollection();
+        $this->tickets = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -274,5 +278,35 @@ class Event
     }
     return false;
 }
+
+    /**
+     * @return Collection<int, Ticket>
+     */
+    public function getTickets(): Collection
+    {
+        return $this->tickets;
+    }
+
+    public function addTicket(Ticket $ticket): static
+    {
+        if (!$this->tickets->contains($ticket)) {
+            $this->tickets->add($ticket);
+            $ticket->setEvent($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTicket(Ticket $ticket): static
+    {
+        if ($this->tickets->removeElement($ticket)) {
+            // set the owning side to null (unless already changed)
+            if ($ticket->getEvent() === $this) {
+                $ticket->setEvent(null);
+            }
+        }
+
+        return $this;
+    }
 
 }

@@ -4,12 +4,17 @@ namespace App\Controller;
 
 use App\Entity\Ticket;
 use App\Form\TicketType;
+use App\Entity\User;
+use App\Entity\Event;
 use App\Repository\TicketRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Security;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
 #[Route('/ticket')]
 class TicketController extends AbstractController
@@ -22,7 +27,7 @@ class TicketController extends AbstractController
         ]);
     }
 
-    #[Route('/new', name: 'app_ticket_new', methods: ['GET', 'POST'])]
+   /* #[Route('/new', name: 'app_ticket_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $ticket = new Ticket();
@@ -41,6 +46,9 @@ class TicketController extends AbstractController
             'form' => $form,
         ]);
     }
+    */
+
+    
 
     #[Route('/{id}', name: 'app_ticket_show', methods: ['GET'])]
     public function show(Ticket $ticket): Response
@@ -78,4 +86,81 @@ class TicketController extends AbstractController
 
         return $this->redirectToRoute('app_ticket_index', [], Response::HTTP_SEE_OTHER);
     }
+    #[Route('/ticket/{id}/pdf', name: 'print_ticket')]
+public function printTicket(Ticket $ticket): Response
+{
+    // Créer une instance de Dompdf
+    $dompdf = new Dompdf();
+
+    // Options de configuration (optionnelles)
+    $options = new Options();
+    $options->set('isHtml5ParserEnabled', true);
+    $options->set('isPhpEnabled', true);
+
+    $dompdf->setOptions($options);
+
+    // Générer le contenu HTML du ticket
+    $html = $this->renderView('ticket/pdf.html.twig', ['ticket' => $ticket]);
+
+    // Charger le HTML dans Dompdf
+    $dompdf->loadHtml($html);
+
+    // Rendre le document PDF
+    $dompdf->render();
+
+    // Générer une réponse avec le contenu PDF
+    $response = new Response($dompdf->output());
+    $response->headers->set('Content-Type', 'application/pdf');
+
+    // Télécharger le fichier PDF au lieu de l'afficher dans le navigateur (facultatif)
+    // $response->headers->set('Content-Disposition', 'inline; filename="ticket.pdf"');
+
+    return $response;
+}
+
+#[Route('/new/{eventId}', name: 'app_ticket_new', methods: ['GET', 'POST'])]
+public function new(Request $request, EntityManagerInterface $entityManager, Security $security, $eventId): Response
+{
+    // Assuming $eventId contains the ID of the event
+    $event = $entityManager->getRepository(Event::class)->find($eventId);
+    
+    if (!$event) {
+        throw $this->createNotFoundException('Event not found');
+    }
+
+    $ticket = new Ticket();
+    $ticket->setEvent($event); // Set the event to the ticket
+
+    $form = $this->createForm(TicketType::class, $ticket);
+    $form->handleRequest($request);
+
+    if ($form->isSubmitted() && $form->isValid()) {
+        $user = $security->getUser();
+        $ticket->setUser($user); // Assuming your Ticket entity has a relationship with User
+        
+        $entityManager->persist($ticket);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('app_ticket_index', [], Response::HTTP_SEE_OTHER);
+    }
+
+    return $this->renderForm('ticket/new.html.twig', [
+        'ticket' => $ticket,
+        'form' => $form,
+        'event' => $event, // Pass the event to the template
+    ]);
+}
+
+
+#[Route('/my_tickets', name: 'app_my_tickets')]
+public function myTickets(TicketRepository $ticketRepository, Security $security): Response
+{
+    $user = $security->getUser();
+    $tickets = $ticketRepository->findBy(['user' => $user]);
+
+    return $this->render('ticket/my_tickets.html.twig', [
+        'tickets' => $tickets,
+    ]);
+}
+
 }
