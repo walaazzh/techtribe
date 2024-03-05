@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "f25d0fc40f9971805443227e8b848f2f",
 =======
     "content-hash": "163c15d5dc955c0d23e1f02c5a0a947b",
@@ -262,6 +263,9 @@
         {
 =======
     "content-hash": "fa77beb42a31e9999c2a7f40845949fe",
+=======
+    "content-hash": "6a641156020c51d3a7ba4b116a4aff5c",
+>>>>>>> ecb1cf1 (Rayen_Majdoub)
     "packages": [
         {
 >>>>>>> 8b6d46d (Rayen)
@@ -10501,12 +10505,64 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6f2e479 (walaa+bundles)
 =======
 >>>>>>> c98b2fa (walaa+chiheb integration)
 =======
 >>>>>>> 8b6d46d (Rayen)
+=======
+            "name": "twilio/sdk",
+            "version": "7.16.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:twilio/twilio-php.git",
+                "reference": "b5578d953c8d126b3d13b2440d21c68460035265"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/b5578d953c8d126b3d13b2440d21c68460035265",
+                "reference": "b5578d953c8d126b3d13b2440d21c68460035265",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.3 || ^7.0",
+                "phpunit/phpunit": ">=7.0 < 10"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Twilio\\": "src/Twilio/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Twilio API Team",
+                    "email": "api@twilio.com"
+                }
+            ],
+            "description": "A PHP wrapper for Twilio's API",
+            "homepage": "https://github.com/twilio/twilio-php",
+            "keywords": [
+                "api",
+                "sms",
+                "twilio"
+            ],
+            "time": "2024-02-27T14:19:44+00:00"
+        },
+        {
+>>>>>>> ecb1cf1 (Rayen_Majdoub)
             "name": "victor-prdh/recaptcha-bundle",
             "version": "1.8.0",
             "source": {

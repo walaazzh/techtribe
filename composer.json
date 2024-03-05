@@ -102,6 +102,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        "twilio/sdk": "*",
+>>>>>>> ecb1cf1 (Rayen_Majdoub)
         "victor-prdh/recaptcha-bundle": "^1.8"
 =======
         "vich/uploader-bundle": "^2.3"
