@@ -1,15 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {% extends 'base.html.twig' %}
 =======
 {% extends 'base_admin.html.twig' %}
 >>>>>>> 8b6d46d (Rayen)
+=======
+{% extends 'base.html.twig' %}
+>>>>>>> 0ef8c57 (Rayen_Majdoub)
 
 {% block title %}New BloodTransaction{% endblock %}
 
 {% block body %}
+<section class="section hero" id="home" >
+    <div class="container1">
+        <div class="form-container">
     <h1>Create new BloodTransaction</h1>
 
     {{ include('blood_transaction/_form.html.twig') }}
 
     <a href="{{ path('app_blood_transaction_index') }}">back to list</a>
+    </div>
+    </div>
+</section>
 {% endblock %}
