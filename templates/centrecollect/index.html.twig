@@ -1,0 +1,49 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}Centredecollect index{% endblock %}
+
+{% block body %}
+    <h1>Collect Centre Table </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Adress</th>
+                <th>Ville</th>
+                <th>Code_postal</th>
+                <th>Payes</th>
+                <th>Num_tel</th>
+                <th>Heure_ouverture</th>
+                <th>Capacite_max</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for centredecollect in centredecollects %}
+            <tr>
+                <td>{{ centredecollect.id }}</td>
+                <td>{{ centredecollect.nome }}</td>
+                <td>{{ centredecollect.adress }}</td>
+                <td>{{ centredecollect.ville }}</td>
+                <td>{{ centredecollect.codePostal }}</td>
+                <td>{{ centredecollect.payes }}</td>
+                <td>{{ centredecollect.numTel }}</td>
+                <td>{{ centredecollect.heureOuverture ? centredecollect.heureOuverture|date('H:i:s') : '' }}</td>
+                <td>{{ centredecollect.capaciteMax }}</td>
+                <td>
+                    <a href="{{ path('app_centrecollect_show', {'id': centredecollect.id}) }}">show</a>
+                    <a href="{{ path('app_centrecollect_edit', {'id': centredecollect.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_centrecollect_new') }}">Create new</a>
+{% endblock %}
