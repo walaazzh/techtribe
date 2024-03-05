@@ -20,6 +20,17 @@ class BloodStockRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, BloodStock::class);
     }
+    public function findAvailableQuantity(): float
+    {
+        // Implémentez votre logique pour récupérer la quantité disponible dans le stock ici
+        // Par exemple, vous pouvez simplement renvoyer la somme des quantités disponibles dans toutes les entrées du stock de sang
+        $qb = $this->createQueryBuilder('bs');
+        $qb->select('SUM(bs.quantity_available) as totalQuantity');
+        $query = $qb->getQuery();
+        $result = $query->getSingleScalarResult();
+
+        return (float) $result;
+    }
 
 //    /**
 //     * @return BloodStock[] Returns an array of BloodStock objects
