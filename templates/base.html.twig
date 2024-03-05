@@ -85,6 +85,8 @@
         {% endif %}
         <li><a class="navbar-link" href="{{ path('user_show', {'id': app.user.id}) }}"><i class="fas fa-user"></i> My Profile</a></li>
         <li><a class="navbar-link" href="{{ path('app_logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+        <li><a class="navbar-link" href="{{ path('app_blood_transaction_new', {'id': app.user.id}) }}"><i class="fas fa-user"></i> Transaction </a></li>
+
     </ul>
 {% else %}
     <a href="{{ path('app_register') }}" class="btn btn-primary">Login / Register</a>

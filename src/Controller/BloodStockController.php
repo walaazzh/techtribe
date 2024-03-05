@@ -22,25 +22,36 @@ class BloodStockController extends AbstractController
         ]);
     }
 
-    #[Route('/new', name: 'app_blood_stock_new', methods: ['GET', 'POST'])]
+    #[Route('/new', name: 'app_blood_transaction_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
-        $bloodStock = new BloodStock();
-        $form = $this->createForm(BloodStockType::class, $bloodStock);
+        // Retrieve the authenticated user
+        $user = $this->getUser();
+        
+        // Get the hospital associated with the user
+        $hospital = $user->getHospital();
+
+        $bloodTransaction = new BloodTransaction();
+        
+        // Set the hospital in the BloodTransaction entity
+        $bloodTransaction->setHospital($hospital);
+
+        $form = $this->createForm(BloodTransactionType::class, $bloodTransaction);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->persist($bloodStock);
+            $entityManager->persist($bloodTransaction);
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_blood_stock_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_blood_transaction_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('blood_stock/new.html.twig', [
-            'blood_stock' => $bloodStock,
+        return $this->renderForm('blood_transaction/new.html.twig', [
+            'blood_transaction' => $bloodTransaction,
             'form' => $form,
         ]);
     }
+
 
     #[Route('/{id}', name: 'app_blood_stock_show', methods: ['GET'])]
     public function show(BloodStock $bloodStock): Response
