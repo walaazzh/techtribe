@@ -3,6 +3,7 @@
 {% block title %}BloodTransaction{% endblock %}
 
 {% block body %}
+<<<<<<< HEAD
     <h1>BloodTransaction</h1>
 
     <table class="table">
@@ -32,3 +33,45 @@
 
     {{ include('blood_transaction/_delete_form.html.twig') }}
 {% endblock %}
+=======
+    <section class="section hero" id="home">
+        <div class="container1">
+            <div class="form-container">
+                <h1>BloodTransaction</h1>
+
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Id</th>
+                            <td>{{ blood_transaction.id }}</td>
+                        </tr>
+                        <tr>
+                            <th>Quantity_donated</th>
+                            <td>{{ blood_transaction.quantityDonated }}</td>
+                        </tr>
+                        <tr>
+                            <th>Donation_date</th>
+                            <td>{{ blood_transaction.donationDate ? blood_transaction.donationDate|date('Y-m-d') : '' }}</td>
+                        </tr>
+                        <tr>
+                            <th>Transaction_type</th>
+                            <td>{{ blood_transaction.transactionType }}</td>
+                        </tr>
+                        <!-- Add a new row for displaying the associated hospital information -->
+                        <tr>
+                            <th>Hospital</th>
+                            <td>{{ blood_transaction.hospital.name }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="{{ path('app_blood_transaction_index') }}">back to list</a>
+
+                <a href="{{ path('app_blood_transaction_edit', {'id': blood_transaction.id}) }}">edit</a>
+
+                {{ include('blood_transaction/_delete_form.html.twig') }}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+>>>>>>> Rayen_Majdoub

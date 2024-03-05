@@ -11,11 +11,14 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use App\Repository\RatingRepository;
 use App\Entity\Rating;
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
 
 #[Route('/reponse')]
 class ReponseController extends AbstractController
@@ -54,9 +57,12 @@ class ReponseController extends AbstractController
 
         return $this->renderForm('reponse/new.html.twig', [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'id'=>$reclamation,
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
             'reclamation'=>$reclamation,
             'reponse' => $reponse,
             'form' => $form,
@@ -64,11 +70,15 @@ class ReponseController extends AbstractController
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Rayen_Majdoub
     #[Route('/{id}', name: 'app_reponse_show', methods: ['GET'])]
     public function show(Reponse $reponse): Response
     {
         return $this->render('reponse/show.html.twig', [
             'reponse' => $reponse,
+<<<<<<< HEAD
 =======
     #[Route('/{id}', name: 'app_reponse_show', methods: ['GET','POST'])]
     public function show(Reponse $reponse,RatingRepository $ratingrepo,Request $request): Response
@@ -129,6 +139,8 @@ class ReponseController extends AbstractController
             
             'rating_form' => $form->createView(),
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
         ]);
     }
 
@@ -138,6 +150,9 @@ class ReponseController extends AbstractController
         $form = $this->createForm(ReponseType::class, $reponse);
         $form->handleRequest($request);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Rayen_Majdoub
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
@@ -146,6 +161,7 @@ class ReponseController extends AbstractController
         }
 
         return $this->renderForm('reponse/edit.html.twig', [
+<<<<<<< HEAD
 =======
         $reclamation=$reponse->getIdRec();
         $date=$reponse->getCreatedAt();
@@ -165,16 +181,22 @@ class ReponseController extends AbstractController
             'id'=>$reclamation->getId(),
             'reclamation'=>$reclamation,
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
             'reponse' => $reponse,
             'form' => $form,
         ]);
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Route('/{id}', name: 'app_reponse_delete', methods: ['POST'])]
 =======
     #[Route('/Delete/{id}', name: 'app_reponse_delete', methods: ['POST'])]
 >>>>>>> chiheb+walaa
+=======
+    #[Route('/{id}', name: 'app_reponse_delete', methods: ['POST'])]
+>>>>>>> Rayen_Majdoub
     public function delete(Request $request, Reponse $reponse, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$reponse->getId(), $request->request->get('_token'))) {
@@ -183,9 +205,13 @@ class ReponseController extends AbstractController
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->redirectToRoute('app_reponse_index', [], Response::HTTP_SEE_OTHER);
 =======
         return $this->redirectToRoute('app_reclamation_index', [], Response::HTTP_SEE_OTHER);
 >>>>>>> chiheb+walaa
+=======
+        return $this->redirectToRoute('app_reponse_index', [], Response::HTTP_SEE_OTHER);
+>>>>>>> Rayen_Majdoub
     }
 }

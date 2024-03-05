@@ -9,15 +9,23 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+<<<<<<< HEAD
         "doctrine/annotations": "^2.0",
+=======
+        "cmen/google-charts-bundle": "^6.0",
+        "doctrine/annotations": "*",
+>>>>>>> Rayen_Majdoub
         "doctrine/dbal": "^3",
         "doctrine/doctrine-bundle": "^2.11",
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^3.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "consoletvs/profanity": "^3.2",
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
         "google/recaptcha": "*",
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.26",
@@ -31,9 +39,12 @@
         "symfony/flex": "^1.17|^2",
         "symfony/form": "5.4.*",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "knplabs/knp-paginator-bundle": "^5.9",
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
         "symfony/framework-bundle": "5.4.*",
         "symfony/google-mailer": "5.4.*",
         "symfony/http-client": "5.4.*",
@@ -52,12 +63,20 @@
         "symfony/string": "5.4.*",
         "symfony/translation": "5.4.*",
         "symfony/twig-bundle": "5.4.*",
+<<<<<<< HEAD
+=======
+        "symfony/twilio-notifier": "5.4.*",
+>>>>>>> Rayen_Majdoub
         "symfony/ux-turbo": "^2.15",
         "symfony/validator": "5.4.*",
         "symfony/web-link": "5.4.*",
         "symfony/yaml": "5.4.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0",
+<<<<<<< HEAD
+=======
+        "twilio/sdk": "*",
+>>>>>>> Rayen_Majdoub
         "victor-prdh/recaptcha-bundle": "^1.8"
     },
     "config": {

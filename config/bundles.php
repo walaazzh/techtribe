@@ -15,7 +15,10 @@ return [
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
 ];

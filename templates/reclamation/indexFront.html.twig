@@ -1,11 +1,15 @@
 {% extends 'base.html.twig' %}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Rayen_Majdoub
 {% block title %}Reclamation Index{% endblock %}
 
 {% block body %}
     <h1 class="mt-4 mb-4">Reclamation Index</h1>
 
+<<<<<<< HEAD
 =======
 {% block body %}
 <style>
@@ -55,6 +59,8 @@
     <div class="container1">
         <div class="form-container">
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -80,10 +86,14 @@
                             {{ include('reclamation/_delete_form.html.twig') }}
                             {% if reclamation.etat == "Done" %}
 <<<<<<< HEAD
+<<<<<<< HEAD
                              <a href="{{ path('app_reclamation_show', {'id': reclamation.id}) }}" class="btn btn-info btn-sm">Details</a>
 =======
                             <a href="{{ path('app_reponse_show', {'id': reclamation.reponse.id}) }}" class="btn-voir-tous">Voir Reponse</a>
 >>>>>>> chiheb+walaa
+=======
+                             <a href="{{ path('app_reclamation_show', {'id': reclamation.id}) }}" class="btn btn-info btn-sm">Details</a>
+>>>>>>> Rayen_Majdoub
                              {% endif %}
                         </td>
                     </tr>
@@ -95,6 +105,7 @@
             </tbody>
         </table>
     </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     <a href="{{ path('app_reclamation_new') }}" class="btn btn-success">Create New</a>
@@ -109,4 +120,8 @@
         </div>
 </section>
 >>>>>>> chiheb+walaa
+=======
+
+    <a href="{{ path('app_reclamation_new') }}" class="btn btn-success">Create New</a>
+>>>>>>> Rayen_Majdoub
 {% endblock %}

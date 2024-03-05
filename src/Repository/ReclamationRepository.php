@@ -32,6 +32,7 @@ class ReclamationRepository extends ServiceEntityRepository
         ;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     public function countRecentReclamations(int $iduser, int $days)
 {
@@ -54,6 +55,8 @@ public function search($value): array
         ->getResult();
 }
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
 
 //    public function findOneBySomeField($value): ?Reclamation
 //    {

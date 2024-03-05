@@ -13,13 +13,17 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Knp\Component\Pager\PaginatorInterface;
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
 
 #[Route('/reclamation')]
 class ReclamationController extends AbstractController
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     #[Route('/search', name: 'app_search', methods: ['GET','POST'])]
@@ -31,6 +35,8 @@ class ReclamationController extends AbstractController
         ]);
     }
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
     #[Route('/', name: 'app_reclamation_index', methods: ['GET'])]
     public function index(ReclamationRepository $reclamationRepository): Response
     {
@@ -40,10 +46,14 @@ class ReclamationController extends AbstractController
     }
     #[Route('/Front', name: 'app_reclamation_index_front', methods: ['GET'])]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Rayen_Majdoub
     public function indexFront(ReclamationRepository $reclamationRepository): Response
     {
         return $this->render('reclamation/indexFront.html.twig', [
             'reclamations' => $reclamationRepository->findByIdUser(1),
+<<<<<<< HEAD
 =======
     public function indexFront(PaginatorInterface $paginator,ReclamationRepository $reclamationRepository, EntityManagerInterface $entityManager,Request $request): Response
     {
@@ -57,15 +67,21 @@ class ReclamationController extends AbstractController
         return $this->render('reclamation/indexFront.html.twig', [
             'reclamations' => $pagination,
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
         ]);
     }
 
     #[Route('/new', name: 'app_reclamation_new', methods: ['GET', 'POST'])]
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function new(Request $request, EntityManagerInterface $entityManager): Response
 =======
     public function new(Request $request,PaginatorInterface $paginator, EntityManagerInterface $entityManager,ReclamationRepository $reclamationRepository): Response
 >>>>>>> chiheb+walaa
+=======
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
+>>>>>>> Rayen_Majdoub
     {
         $reclamation = new Reclamation();
         $form = $this->createForm(ReclamationType::class, $reclamation);
@@ -73,10 +89,14 @@ class ReclamationController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Rayen_Majdoub
             $reclamation->setEtat("Not Treated");
             $d=new \DateTimeImmutable();
             $reclamation->setCreatedAt($d);
             $reclamation->setIdUser(1);
+<<<<<<< HEAD
 =======
             $count = $reclamationRepository->countRecentReclamations($this->getUser()->getId(), 3);
             if ($count >= 3) {
@@ -100,6 +120,8 @@ class ReclamationController extends AbstractController
             $cleaned=\ConsoleTVs\Profanity\Builder::blocker($reclamation->getDescription())->filter();
             $reclamation->setDescription($cleaned);
 >>>>>>> chiheb+walaa
+=======
+>>>>>>> Rayen_Majdoub
             $entityManager->persist($reclamation);
             $entityManager->flush();
 
