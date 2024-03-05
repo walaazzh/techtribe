@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Service\TransactionAvailabilityService;
 
 #[Route('/blood/transaction')]
 class BloodTransactionController extends AbstractController
@@ -31,12 +32,24 @@ class BloodTransactionController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            // Vérifier la disponibilité de la quantité dans le stock
+            $requestedQuantity = $bloodTransaction->getQuantityDonated();
+            if (!$this->transactionAvailabilityService->checkAvailability($requestedQuantity)) {
+                // Redirection ou affichage d'un message d'erreur si la quantité demandée n'est pas disponible
+                // Par exemple, vous pouvez utiliser addFlash() pour afficher un message flash
+                $this->addFlash('error', 'The requested quantity is not available in stock');
+                return $this->redirectToRoute('app_blood_transaction_index');
+            }
+
+            // Si la quantité est disponible, persistez la nouvelle transaction
             $entityManager->persist($bloodTransaction);
             $entityManager->flush();
 
+            // Redirection vers la page d'index des transactions
             return $this->redirectToRoute('app_blood_transaction_index', [], Response::HTTP_SEE_OTHER);
         }
 
+        // Affichage du formulaire de création de transaction
         return $this->renderForm('blood_transaction/new.html.twig', [
             'blood_transaction' => $bloodTransaction,
             'form' => $form,
@@ -79,5 +92,11 @@ class BloodTransactionController extends AbstractController
 
         return $this->redirectToRoute('app_blood_transaction_index', [], Response::HTTP_SEE_OTHER);
     }
-    public function __construct(private HospitalRepository $hospitalRepository) {}
+    private $hospitalRepository;
+    private $transactionAvailabilityService;
+    public function __construct(HospitalRepository $hospitalRepository, TransactionAvailabilityService $transactionAvailabilityService)
+    {
+        $this->hospitalRepository = $hospitalRepository;
+        $this->transactionAvailabilityService = $transactionAvailabilityService;
+    }
 }
